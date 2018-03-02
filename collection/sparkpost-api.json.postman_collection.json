@@ -11,7 +11,7 @@
 			"description": "",
 			"item": [
 				{
-					"name": "Retrieve Account Usage",
+					"name": "Retrieve Account information",
 					"request": {
 						"method": "GET",
 						"header": [
@@ -20,7 +20,46 @@
 								"value": "{{API_KEY}}"
 							}
 						],
-						"body": {},
+						"body": {
+							"mode": "raw",
+							"raw": ""
+						},
+						"url": {
+							"raw": "https://api.sparkpost.com/api/v1/account",
+							"protocol": "https",
+							"host": [
+								"api",
+								"sparkpost",
+								"com"
+							],
+							"path": [
+								"api",
+								"v1",
+								"account"
+							]
+						},
+						"description": "Get your SparkPost account information, including subscription status and quota usage."
+					},
+					"response": []
+				},
+				{
+					"name": "Update Account information",
+					"request": {
+						"method": "PUT",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "{{API_KEY}}"
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n  \"company_name\": \"Avocado Industries\",\n  \"options\": {\n    \"smtp_tracking_default\": true\n  }\n}"
+						},
 						"url": {
 							"raw": "https://api.sparkpost.com/api/v1/account?include=usage",
 							"protocol": "https",
@@ -37,22 +76,23 @@
 							"query": [
 								{
 									"key": "include",
-									"value": "usage"
+									"value": "usage",
+									"equals": true
 								}
 							]
 						},
-						"description": ""
+						"description": "Update your SparkPost account information and account-level options."
 					},
 					"response": []
 				}
 			]
 		},
 		{
-			"name": "Bounce Domains",
-			"description": "https://developers.sparkpost.com/api/bounce-domains",
+			"name": "Inbound Domains",
+			"description": "https://developers.sparkpost.com/api/#/reference/inbound-domains",
 			"item": [
 				{
-					"name": "Create a Bounce Domain",
+					"name": "Create an Inbound Domain",
 					"request": {
 						"method": "POST",
 						"header": [
@@ -71,10 +111,10 @@
 						],
 						"body": {
 							"mode": "raw",
-							"raw": "{\n    \"domain\" : \"example.domain.com\",\n}\n"
+							"raw": "{\n    \"domain\": \"inbounddomain\"\n}\n"
 						},
 						"url": {
-							"raw": "https://api.sparkpost.com/api/v1/bounce-domains",
+							"raw": "https://api.sparkpost.com/api/v1/inbound-domains",
 							"protocol": "https",
 							"host": [
 								"api",
@@ -84,15 +124,15 @@
 							"path": [
 								"api",
 								"v1",
-								"bounce-domains"
+								"inbound-domains"
 							]
 						},
-						"description": ""
+						"description": "Create an inbound domain by providing an **inbound domains object** as the POST request body.\n\n"
 					},
 					"response": []
 				},
 				{
-					"name": "List all Bounce Domains",
+					"name": "List all Inbound Domains",
 					"request": {
 						"method": "GET",
 						"header": [
@@ -107,7 +147,7 @@
 						],
 						"body": {},
 						"url": {
-							"raw": "https://api.sparkpost.com/api/v1/bounce-domains",
+							"raw": "https://api.sparkpost.com/api/v1/inbound-domains",
 							"protocol": "https",
 							"host": [
 								"api",
@@ -117,15 +157,15 @@
 							"path": [
 								"api",
 								"v1",
-								"bounce-domains"
+								"inbound-domains"
 							]
 						},
-						"description": "\n"
+						"description": "List all your inbound domains.\n\n"
 					},
 					"response": []
 				},
 				{
-					"name": "Retrieve a Bounce Domain",
+					"name": "Retrieve an Inbound Domain",
 					"request": {
 						"method": "GET",
 						"header": [
@@ -140,7 +180,7 @@
 						],
 						"body": {},
 						"url": {
-							"raw": "https://api.sparkpost.com/api/v1/bounce-domains/example.domain.com",
+							"raw": "https://api.sparkpost.com/api/v1/inbound-domains/inbounddomain.example.com",
 							"protocol": "https",
 							"host": [
 								"api",
@@ -150,16 +190,16 @@
 							"path": [
 								"api",
 								"v1",
-								"bounce-domains",
-								"example.domain.com"
+								"inbound-domains",
+								"inbounddomain.example.com"
 							]
 						},
-						"description": ""
+						"description": "Retrieve an inbound domain by specifying its domain name in the URI path.\n\n"
 					},
 					"response": []
 				},
 				{
-					"name": "Delete a Bounce Domain",
+					"name": "Delete an Inbound Domain",
 					"request": {
 						"method": "DELETE",
 						"header": [
@@ -174,7 +214,7 @@
 						],
 						"body": {},
 						"url": {
-							"raw": "https://api.sparkpost.com/api/v1/bounce-domains/example.domain.com",
+							"raw": "https://api.sparkpost.com/api/v1/inbound-domains/inbounddomain.example.com",
 							"protocol": "https",
 							"host": [
 								"api",
@@ -184,53 +224,11 @@
 							"path": [
 								"api",
 								"v1",
-								"bounce-domains",
-								"example.domain.com"
+								"inbound-domains",
+								"inbounddomain.example.com"
 							]
 						},
-						"description": ""
-					},
-					"response": []
-				},
-				{
-					"name": "Verify a Bounce Domain",
-					"request": {
-						"method": "POST",
-						"header": [
-							{
-								"key": "Content-Type",
-								"value": "application/json"
-							},
-							{
-								"key": "Accept",
-								"value": "application/json"
-							},
-							{
-								"key": "Authorization",
-								"value": "{{API_KEY}}"
-							}
-						],
-						"body": {
-							"mode": "raw",
-							"raw": ""
-						},
-						"url": {
-							"raw": "https://api.sparkpost.com/api/v1/bounce-domains/example.domain.com/verify",
-							"protocol": "https",
-							"host": [
-								"api",
-								"sparkpost",
-								"com"
-							],
-							"path": [
-								"api",
-								"v1",
-								"bounce-domains",
-								"example.domain.com",
-								"verify"
-							]
-						},
-						"description": ""
+						"description": "Delete an inbound domain by specifying its domain name in the URI path.\n\n"
 					},
 					"response": []
 				}
@@ -426,153 +424,6 @@
 							]
 						},
 						"description": ""
-					},
-					"response": []
-				}
-			]
-		},
-		{
-			"name": "Inbound Domains",
-			"description": "https://developers.sparkpost.com/api/#/reference/inbound-domains",
-			"item": [
-				{
-					"name": "Create an Inbound Domain",
-					"request": {
-						"method": "POST",
-						"header": [
-							{
-								"key": "Content-Type",
-								"value": "application/json"
-							},
-							{
-								"key": "Accept",
-								"value": "application/json"
-							},
-							{
-								"key": "Authorization",
-								"value": "{{API_KEY}}"
-							}
-						],
-						"body": {
-							"mode": "raw",
-							"raw": "{\n    \"domain\": \"inbounddomain\"\n}\n"
-						},
-						"url": {
-							"raw": "https://api.sparkpost.com/api/v1/inbound-domains",
-							"protocol": "https",
-							"host": [
-								"api",
-								"sparkpost",
-								"com"
-							],
-							"path": [
-								"api",
-								"v1",
-								"inbound-domains"
-							]
-						},
-						"description": "Create an inbound domain by providing an **inbound domains object** as the POST request body.\n\n"
-					},
-					"response": []
-				},
-				{
-					"name": "List all Inbound Domains",
-					"request": {
-						"method": "GET",
-						"header": [
-							{
-								"key": "Authorization",
-								"value": "{{API_KEY}}"
-							},
-							{
-								"key": "Accept",
-								"value": "application/json"
-							}
-						],
-						"body": {},
-						"url": {
-							"raw": "https://api.sparkpost.com/api/v1/inbound-domains",
-							"protocol": "https",
-							"host": [
-								"api",
-								"sparkpost",
-								"com"
-							],
-							"path": [
-								"api",
-								"v1",
-								"inbound-domains"
-							]
-						},
-						"description": "List all your inbound domains.\n\n"
-					},
-					"response": []
-				},
-				{
-					"name": "Retrieve an Inbound Domain",
-					"request": {
-						"method": "GET",
-						"header": [
-							{
-								"key": "Authorization",
-								"value": "{{API_KEY}}"
-							},
-							{
-								"key": "Accept",
-								"value": "application/json"
-							}
-						],
-						"body": {},
-						"url": {
-							"raw": "https://api.sparkpost.com/api/v1/inbound-domains/inbounddomain.test.com",
-							"protocol": "https",
-							"host": [
-								"api",
-								"sparkpost",
-								"com"
-							],
-							"path": [
-								"api",
-								"v1",
-								"inbound-domains",
-								"inbounddomain.test.com"
-							]
-						},
-						"description": "Retrieve an inbound domain by specifying its domain name in the URI path.\n\n"
-					},
-					"response": []
-				},
-				{
-					"name": "Delete an Inbound Domain",
-					"request": {
-						"method": "DELETE",
-						"header": [
-							{
-								"key": "Accept",
-								"value": "application/json"
-							},
-							{
-								"key": "Authorization",
-								"value": "{{API_KEY}}"
-							}
-						],
-						"body": {},
-						"url": {
-							"raw": "https://api.sparkpost.com/api/v1/inbound-domains/inbounddomain.test.com",
-							"protocol": "https",
-							"host": [
-								"api",
-								"sparkpost",
-								"com"
-							],
-							"path": [
-								"api",
-								"v1",
-								"inbound-domains",
-								"inbounddomain.test.com"
-							]
-						},
-						"description": "Delete an inbound domain by specifying its domain name in the URI path.\n\n"
 					},
 					"response": []
 				}
