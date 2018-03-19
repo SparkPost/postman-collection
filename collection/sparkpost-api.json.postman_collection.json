@@ -3023,7 +3023,7 @@
 								}
 							]
 						},
-						"description": "Create a recipient list by providing a **recipient list object** as the POST request body.\n\nAt a minimum, the \"recipients\" array is required, which must contain a valid \"address\".  If the\nrecipient list \"id\" is not provided in the POST request body, one will be generated and returned\nin the results body.  Use the **num_rcpt_errors** parameter to limit the number of recipient errors\nreturned.\n\n**Note:** The \"return_path\" in the POST request body applies to SparkPost Elite only.\n\n"
+						"description": "Create a recipient list by providing a **recipient list object** as the POST request body.\n\nAt a minimum, the `recipients` array is required, which must contain a valid `address`.  If the\nrecipient list `id` is not provided in the POST request body, one will be generated and returned\nin the results body.  Use the **num_rcpt_errors** parameter to limit the number of recipient errors\nreturned."
 					},
 					"response": []
 				},
@@ -3046,7 +3046,7 @@
 							"raw": ""
 						},
 						"url": {
-							"raw": "https://api.sparkpost.com/api/v1/recipient-lists/unique_id_4_graduate_students?show_recipients=true",
+							"raw": "https://api.sparkpost.com/api/v1/recipient-lists/unique_id_4_graduate_students_list?show_recipients=true",
 							"protocol": "https",
 							"host": [
 								"api",
@@ -3057,12 +3057,13 @@
 								"api",
 								"v1",
 								"recipient-lists",
-								"unique_id_4_graduate_students"
+								"unique_id_4_graduate_students_list"
 							],
 							"query": [
 								{
 									"key": "show_recipients",
-									"value": "true"
+									"value": "true",
+									"equals": true
 								}
 							]
 						},
