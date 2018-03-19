@@ -19,7 +19,7 @@ A Postman collection that demonstrates the SparkPost REST API, arranged in folde
 - Webhooks
 
 
-##See Also
+## See Also
 [SparkPost API documentation](https://developers.sparkpost.com/api/)
 
 [Postman API development tool](https://www.getpostman.com/)

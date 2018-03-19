@@ -628,7 +628,7 @@
 								""
 							]
 						},
-						"description": "Provides links to all child URIs within the Metrics API.\n\n**Note:** Links in the response for binding-groups, bindings, nodes, and protocols apply to SparkPost Elite only.\n\n"
+						"description": "Provides links to all child URIs within the Metrics API.\n\n"
 					},
 					"response": []
 				},
@@ -681,18 +681,6 @@
 								{
 									"key": "templates",
 									"value": "summer-sale"
-								},
-								{
-									"key": "nodes",
-									"value": "Email-MSys-1,Email-MSys-2,Email-MSys-3"
-								},
-								{
-									"key": "bindings",
-									"value": "Confirmation"
-								},
-								{
-									"key": "binding_groups",
-									"value": "Transaction"
 								},
 								{
 									"key": "protocols",
@@ -762,18 +750,6 @@
 								{
 									"key": "templates",
 									"value": "summer-sale"
-								},
-								{
-									"key": "nodes",
-									"value": "Email-MSys-1,Email-MSys-2,Email-MSys-3"
-								},
-								{
-									"key": "bindings",
-									"value": "Confirmation"
-								},
-								{
-									"key": "binding_groups",
-									"value": "Transaction"
 								},
 								{
 									"key": "protocols",
@@ -853,18 +829,6 @@
 									"value": "summer-sale"
 								},
 								{
-									"key": "nodes",
-									"value": "Email-MSys-1,Email-MSys-2,Email-MSys-3"
-								},
-								{
-									"key": "bindings",
-									"value": "Confirmation"
-								},
-								{
-									"key": "binding_groups",
-									"value": "Transaction"
-								},
-								{
 									"key": "protocols",
 									"value": "smtp"
 								},
@@ -940,18 +904,6 @@
 								{
 									"key": "templates",
 									"value": "summer-sale"
-								},
-								{
-									"key": "nodes",
-									"value": "Email-MSys-1,Email-MSys-2,Email-MSys-3"
-								},
-								{
-									"key": "bindings",
-									"value": "Confirmation"
-								},
-								{
-									"key": "binding_groups",
-									"value": "Transaction"
 								},
 								{
 									"key": "protocols",
@@ -1031,10 +983,6 @@
 									"value": "summer-sale"
 								},
 								{
-									"key": "nodes",
-									"value": "Email-MSys-1,Email-MSys-2,Email-MSys-3"
-								},
-								{
 									"key": "sending_ips",
 									"value": "Confirmation"
 								},
@@ -1049,14 +997,6 @@
 								{
 									"key": "subaccounts",
 									"value": "123,125,127"
-								},
-								{
-									"key": "bindings",
-									"value": "Confirmation"
-								},
-								{
-									"key": "binding_groups",
-									"value": "Transaction"
 								},
 								{
 									"key": "protocols",
@@ -1136,18 +1076,6 @@
 									"value": "summer-sale"
 								},
 								{
-									"key": "nodes",
-									"value": "Email-MSys-1,Email-MSys-2,Email-MSys-3"
-								},
-								{
-									"key": "bindings",
-									"value": "Confirmation"
-								},
-								{
-									"key": "binding_groups",
-									"value": "Transaction"
-								},
-								{
 									"key": "protocols",
 									"value": "smtp"
 								},
@@ -1223,18 +1151,6 @@
 								{
 									"key": "templates",
 									"value": "summer-sale"
-								},
-								{
-									"key": "nodes",
-									"value": "Email-MSys-1,Email-MSys-2,Email-MSys-3"
-								},
-								{
-									"key": "bindings",
-									"value": "Confirmation"
-								},
-								{
-									"key": "binding_groups",
-									"value": "Transaction"
 								},
 								{
 									"key": "protocols",
@@ -1314,18 +1230,6 @@
 									"value": "summer-sale"
 								},
 								{
-									"key": "nodes",
-									"value": "Email-MSys-1,Email-MSys-2,Email-MSys-3"
-								},
-								{
-									"key": "bindings",
-									"value": "Confirmation"
-								},
-								{
-									"key": "binding_groups",
-									"value": "Transaction"
-								},
-								{
 									"key": "protocols",
 									"value": "smtp"
 								},
@@ -1403,18 +1307,6 @@
 									"value": "summer-sale"
 								},
 								{
-									"key": "nodes",
-									"value": "Email-MSys-1,Email-MSys-2,Email-MSys-3"
-								},
-								{
-									"key": "bindings",
-									"value": "bindingA,bindingB,bindingC"
-								},
-								{
-									"key": "binding_groups",
-									"value": "bg1,bg2,bg3"
-								},
-								{
 									"key": "protocols",
 									"value": "smtp"
 								},
@@ -1486,18 +1378,6 @@
 								{
 									"key": "templates",
 									"value": "summer-sale"
-								},
-								{
-									"key": "nodes",
-									"value": "Email-MSys-1,Email-MSys-2,Email-MSys-3"
-								},
-								{
-									"key": "bindings",
-									"value": "Confirmation"
-								},
-								{
-									"key": "binding_groups",
-									"value": "Transaction"
 								},
 								{
 									"key": "protocols",
@@ -1574,18 +1454,6 @@
 									"value": "summer-sale"
 								},
 								{
-									"key": "nodes",
-									"value": "Email-MSys-1,Email-MSys-2,Email-MSys-3"
-								},
-								{
-									"key": "bindings",
-									"value": "Confirmation"
-								},
-								{
-									"key": "binding_groups",
-									"value": "Transaction"
-								},
-								{
 									"key": "protocols",
 									"value": "smtp"
 								},
@@ -1657,18 +1525,6 @@
 								{
 									"key": "templates",
 									"value": "summer-sale"
-								},
-								{
-									"key": "nodes",
-									"value": "Email-MSys-1,Email-MSys-2,Email-MSys-3,Email-MSys-4,Email-MSys-5"
-								},
-								{
-									"key": "bindings",
-									"value": "Confirmation"
-								},
-								{
-									"key": "binding_groups",
-									"value": "Transaction"
 								},
 								{
 									"key": "protocols",
@@ -1744,18 +1600,6 @@
 									"value": "summer-sale"
 								},
 								{
-									"key": "nodes",
-									"value": "Email-MSys-1,Email-MSys-2,Email-MSys-3,Email-MSys-4,Email-MSys-5"
-								},
-								{
-									"key": "bindings",
-									"value": "Confirmation"
-								},
-								{
-									"key": "binding_groups",
-									"value": "Transaction"
-								},
-								{
 									"key": "protocols",
 									"value": "smtp"
 								},
@@ -1824,18 +1668,6 @@
 								{
 									"key": "templates",
 									"value": "summer-sale"
-								},
-								{
-									"key": "nodes",
-									"value": "Email-MSys-1,Email-MSys-2,Email-MSys-3,Email-MSys-4,Email-MSys-5"
-								},
-								{
-									"key": "bindings",
-									"value": "Confirmation"
-								},
-								{
-									"key": "binding_groups",
-									"value": "Transaction"
 								},
 								{
 									"key": "protocols",
@@ -1907,18 +1739,6 @@
 									"value": "summer-sale"
 								},
 								{
-									"key": "nodes",
-									"value": "Email-MSys-1,Email-MSys-2,Email-MSys-3,Email-MSys-4,Email-MSys-5"
-								},
-								{
-									"key": "bindings",
-									"value": "Confirmation"
-								},
-								{
-									"key": "binding_groups",
-									"value": "Transaction"
-								},
-								{
 									"key": "protocols",
 									"value": "smtp"
 								},
@@ -1987,18 +1807,6 @@
 								{
 									"key": "templates",
 									"value": "summer-sale"
-								},
-								{
-									"key": "nodes",
-									"value": "Email-MSys-1,Email-MSys-2,Email-MSys-3,Email-MSys-4,Email-MSys-5"
-								},
-								{
-									"key": "bindings",
-									"value": "Confirmation"
-								},
-								{
-									"key": "binding_groups",
-									"value": "Transaction"
 								},
 								{
 									"key": "protocols",
@@ -2133,18 +1941,6 @@
 								{
 									"key": "templates",
 									"value": "summer-sale"
-								},
-								{
-									"key": "nodes",
-									"value": "Email-MSys-1,Email-MSys-2,Email-MSys-3,Email-MSys-4,Email-MSys-5"
-								},
-								{
-									"key": "bindings",
-									"value": "Confirmation"
-								},
-								{
-									"key": "binding_groups",
-									"value": "Transaction"
 								},
 								{
 									"key": "protocols",
@@ -2293,40 +2089,6 @@
 							]
 						},
 						"description": "Returns a list of domains that the Metrics API contains data on.\n\n"
-					},
-					"response": []
-				},
-				{
-					"name": "Nodes List",
-					"request": {
-						"method": "GET",
-						"header": [
-							{
-								"key": "Authorization",
-								"value": "{{API_KEY}}"
-							},
-							{
-								"key": "Accept",
-								"value": "application/json"
-							}
-						],
-						"body": {},
-						"url": {
-							"raw": "https://api.sparkpost.com/api/v1/metrics/nodes",
-							"protocol": "https",
-							"host": [
-								"api",
-								"sparkpost",
-								"com"
-							],
-							"path": [
-								"api",
-								"v1",
-								"metrics",
-								"nodes"
-							]
-						},
-						"description": "**Note:** This endpoint is available in SparkPost Elite only.\n\nReturns a list of nodes that the Metrics API contains data on.\n\n"
 					},
 					"response": []
 				},
