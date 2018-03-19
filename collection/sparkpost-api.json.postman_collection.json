@@ -1667,7 +1667,7 @@
 							"raw": ""
 						},
 						"url": {
-							"raw": "https://api.sparkpost.com/api/v1/metrics/deliverability/time-series?from=2014-07-11T07:00&to=2014-07-20T08:00&domains=gmail.com,yahoo.com,hotmail.com&campaigns=summerSale,promotionX&templates=summer-sale&protocols=smtp&precision=day&metrics=&timezone=America/New_York",
+							"raw": "https://api.sparkpost.com/api/v1/metrics/deliverability/time-series?from=2018-01-01T00:00&to=2018-12-31T23:59&delimiter=,&domains=gmail.com,yahoo.com,hotmail.com&campaigns=Black Friday&templates=summer-sale&sending_ips=123.456.789.123&ip_pools=Transactional&sending_domains=sales.sender.com,transactional.sender.com&subaccounts=123,125,127&precision=day&metrics=count_targeted&timezone=America/New_York&limit=5&order_by=count_injected",
 							"protocol": "https",
 							"host": [
 								"api",
@@ -1684,39 +1684,78 @@
 							"query": [
 								{
 									"key": "from",
-									"value": "2014-07-11T07:00"
+									"value": "2018-01-01T00:00",
+									"equals": true
 								},
 								{
 									"key": "to",
-									"value": "2014-07-20T08:00"
+									"value": "2018-12-31T23:59",
+									"equals": true
+								},
+								{
+									"key": "delimiter",
+									"value": ",",
+									"equals": true
 								},
 								{
 									"key": "domains",
-									"value": "gmail.com,yahoo.com,hotmail.com"
+									"value": "gmail.com,yahoo.com,hotmail.com",
+									"equals": true
 								},
 								{
 									"key": "campaigns",
-									"value": "summerSale,promotionX"
+									"value": "Black Friday",
+									"equals": true
 								},
 								{
 									"key": "templates",
-									"value": "summer-sale"
+									"value": "summer-sale",
+									"equals": true
 								},
 								{
-									"key": "protocols",
-									"value": "smtp"
+									"key": "sending_ips",
+									"value": "123.456.789.123",
+									"equals": true
+								},
+								{
+									"key": "ip_pools",
+									"value": "Transactional",
+									"equals": true
+								},
+								{
+									"key": "sending_domains",
+									"value": "sales.sender.com,transactional.sender.com",
+									"equals": true
+								},
+								{
+									"key": "subaccounts",
+									"value": "123,125,127",
+									"equals": true
 								},
 								{
 									"key": "precision",
-									"value": "day"
+									"value": "day",
+									"equals": true
 								},
 								{
 									"key": "metrics",
-									"value": ""
+									"value": "count_targeted",
+									"equals": true
 								},
 								{
 									"key": "timezone",
-									"value": "America/New_York"
+									"value": "America/New_York",
+									"equals": true
+								},
+								{
+									"key": "limit",
+									"value": "5",
+									"equals": true
+								},
+								{
+									"key": "order_by",
+									"value": "count_injected",
+									"equals": true
 								}
 							]
 						},
@@ -1743,7 +1782,7 @@
 							"raw": ""
 						},
 						"url": {
-							"raw": "https://api.sparkpost.com/api/v1/metrics/deliverability/bounce-reason?from=2018-01-01T00:00&to=2018-12-31T23:59&domains=gmail.com,yahoo.com,hotmail.com&campaigns=Black Friday&templates=summer-sale&protocols=smtp&metrics=&timezone=America/New_York&limit=5",
+							"raw": "https://api.sparkpost.com/api/v1/metrics/deliverability/bounce-reason?from=2018-01-01T00:00&to=2018-12-31T23:59&delimiter=,&domains=gmail.com,yahoo.com,hotmail.com&campaigns=Black Friday&templates=summer-sale&sending_ips=123.456.789.123&ip_pools=Transactional&sending_domains=sales.sender.com,transactional.sender.com&subaccounts=123,125,127&metrics=count_bounce,count_inband_bounce,count_outofband_bounce&timezone=America/New_York&limit=5",
 							"protocol": "https",
 							"host": [
 								"api",
@@ -1760,39 +1799,68 @@
 							"query": [
 								{
 									"key": "from",
-									"value": "2018-01-01T00:00"
+									"value": "2018-01-01T00:00",
+									"equals": true
 								},
 								{
 									"key": "to",
-									"value": "2018-12-31T23:59"
+									"value": "2018-12-31T23:59",
+									"equals": true
+								},
+								{
+									"key": "delimiter",
+									"value": ",",
+									"equals": true
 								},
 								{
 									"key": "domains",
-									"value": "gmail.com,yahoo.com,hotmail.com"
+									"value": "gmail.com,yahoo.com,hotmail.com",
+									"equals": true
 								},
 								{
 									"key": "campaigns",
-									"value": "Black Friday"
+									"value": "Black Friday",
+									"equals": true
 								},
 								{
 									"key": "templates",
-									"value": "summer-sale"
+									"value": "summer-sale",
+									"equals": true
 								},
 								{
-									"key": "protocols",
-									"value": "smtp"
+									"key": "sending_ips",
+									"value": "123.456.789.123",
+									"equals": true
+								},
+								{
+									"key": "ip_pools",
+									"value": "Transactional",
+									"equals": true
+								},
+								{
+									"key": "sending_domains",
+									"value": "sales.sender.com,transactional.sender.com",
+									"equals": true
+								},
+								{
+									"key": "subaccounts",
+									"value": "123,125,127",
+									"equals": true
 								},
 								{
 									"key": "metrics",
-									"value": ""
+									"value": "count_bounce,count_inband_bounce,count_outofband_bounce",
+									"equals": true
 								},
 								{
 									"key": "timezone",
-									"value": "America/New_York"
+									"value": "America/New_York",
+									"equals": true
 								},
 								{
 									"key": "limit",
-									"value": "5"
+									"value": "5",
+									"equals": true
 								}
 							]
 						},
@@ -1819,7 +1887,7 @@
 							"raw": ""
 						},
 						"url": {
-							"raw": "https://api.sparkpost.com/api/v1/metrics/deliverability/bounce-reason/domain?from=2018-01-01T00:00&to=2018-12-31T23:59&domains=gmail.com,yahoo.com,hotmail.com&campaigns=Black Friday&templates=summer-sale&protocols=smtp&metrics=&timezone=America/New_York&limit=5",
+							"raw": "https://api.sparkpost.com/api/v1/metrics/deliverability/bounce-reason/domain?from=2018-01-01T00:00&to=2018-12-31T23:59&delimiter=,&domains=gmail.com,yahoo.com,hotmail.com&campaigns=Black Friday&templates=summer-sale&sending_ips=123.456.789.123&ip_pools=Transactional&sending_domains=sales.sender.com,transactional.sender.com&subaccounts=123,125,127&metrics=count_bounce,count_inband_bounce,count_outofband_bounce&timezone=America/New_York&limit=5",
 							"protocol": "https",
 							"host": [
 								"api",
@@ -1837,39 +1905,68 @@
 							"query": [
 								{
 									"key": "from",
-									"value": "2018-01-01T00:00"
+									"value": "2018-01-01T00:00",
+									"equals": true
 								},
 								{
 									"key": "to",
-									"value": "2018-12-31T23:59"
+									"value": "2018-12-31T23:59",
+									"equals": true
+								},
+								{
+									"key": "delimiter",
+									"value": ",",
+									"equals": true
 								},
 								{
 									"key": "domains",
-									"value": "gmail.com,yahoo.com,hotmail.com"
+									"value": "gmail.com,yahoo.com,hotmail.com",
+									"equals": true
 								},
 								{
 									"key": "campaigns",
-									"value": "Black Friday"
+									"value": "Black Friday",
+									"equals": true
 								},
 								{
 									"key": "templates",
-									"value": "summer-sale"
+									"value": "summer-sale",
+									"equals": true
 								},
 								{
-									"key": "protocols",
-									"value": "smtp"
+									"key": "sending_ips",
+									"value": "123.456.789.123",
+									"equals": true
+								},
+								{
+									"key": "ip_pools",
+									"value": "Transactional",
+									"equals": true
+								},
+								{
+									"key": "sending_domains",
+									"value": "sales.sender.com,transactional.sender.com",
+									"equals": true
+								},
+								{
+									"key": "subaccounts",
+									"value": "123,125,127",
+									"equals": true
 								},
 								{
 									"key": "metrics",
-									"value": ""
+									"value": "count_bounce,count_inband_bounce,count_outofband_bounce",
+									"equals": true
 								},
 								{
 									"key": "timezone",
-									"value": "America/New_York"
+									"value": "America/New_York",
+									"equals": true
 								},
 								{
 									"key": "limit",
-									"value": "5"
+									"value": "5",
+									"equals": true
 								}
 							]
 						},
@@ -1896,7 +1993,7 @@
 							"raw": ""
 						},
 						"url": {
-							"raw": "https://api.sparkpost.com/api/v1/metrics/deliverability/bounce-classification?from=2018-01-01T00:00&to=2018-12-31T23:59&domains=gmail.com,yahoo.com,hotmail.com&campaigns=Black Friday&templates=summer-sale&protocols=smtp&metrics=&timezone=America/New_York&limit=5",
+							"raw": "https://api.sparkpost.com/api/v1/metrics/deliverability/bounce-classification?from=2018-01-01T00:00&to=2018-12-31T23:59&delimiter=,&domains=gmail.com,yahoo.com,hotmail.com&campaigns=Black Friday&templates=summer-sale&sending_ips=123.456.789.123&ip_pools=Transactional&sending_domains=sales.sender.com,transactional.sender.com&subaccounts=123,125,127&metrics=count_bounce,count_inband_bounce,count_outofband_bounce&timezone=America/New_York&limit=5",
 							"protocol": "https",
 							"host": [
 								"api",
@@ -1913,39 +2010,68 @@
 							"query": [
 								{
 									"key": "from",
-									"value": "2018-01-01T00:00"
+									"value": "2018-01-01T00:00",
+									"equals": true
 								},
 								{
 									"key": "to",
-									"value": "2018-12-31T23:59"
+									"value": "2018-12-31T23:59",
+									"equals": true
+								},
+								{
+									"key": "delimiter",
+									"value": ",",
+									"equals": true
 								},
 								{
 									"key": "domains",
-									"value": "gmail.com,yahoo.com,hotmail.com"
+									"value": "gmail.com,yahoo.com,hotmail.com",
+									"equals": true
 								},
 								{
 									"key": "campaigns",
-									"value": "Black Friday"
+									"value": "Black Friday",
+									"equals": true
 								},
 								{
 									"key": "templates",
-									"value": "summer-sale"
+									"value": "summer-sale",
+									"equals": true
 								},
 								{
-									"key": "protocols",
-									"value": "smtp"
+									"key": "sending_ips",
+									"value": "123.456.789.123",
+									"equals": true
+								},
+								{
+									"key": "ip_pools",
+									"value": "Transactional",
+									"equals": true
+								},
+								{
+									"key": "sending_domains",
+									"value": "sales.sender.com,transactional.sender.com",
+									"equals": true
+								},
+								{
+									"key": "subaccounts",
+									"value": "123,125,127",
+									"equals": true
 								},
 								{
 									"key": "metrics",
-									"value": ""
+									"value": "count_bounce,count_inband_bounce,count_outofband_bounce",
+									"equals": true
 								},
 								{
 									"key": "timezone",
-									"value": "America/New_York"
+									"value": "America/New_York",
+									"equals": true
 								},
 								{
 									"key": "limit",
-									"value": "5"
+									"value": "5",
+									"equals": true
 								}
 							]
 						},
@@ -1972,7 +2098,7 @@
 							"raw": ""
 						},
 						"url": {
-							"raw": "https://api.sparkpost.com/api/v1/metrics/deliverability/rejection-reason?from=2018-01-01T00:00&to=2018-12-31T23:59&domains=gmail.com,yahoo.com,hotmail.com&campaigns=Black Friday&templates=summer-sale&protocols=smtp&timezone=America/New_York&limit=5",
+							"raw": "https://api.sparkpost.com/api/v1/metrics/deliverability/rejection-reason?from=2018-01-01T00:00&to=2018-12-31T23:59&delimiter=,&domains=gmail.com,yahoo.com,hotmail.com&campaigns=Black Friday&templates=summer-sale&sending_ips=123.456.789.123&ip_pools=Transactional&sending_domains=sales.sender.com,transactional.sender.com&subaccounts=123,125,127&timezone=America/New_York&limit=5",
 							"protocol": "https",
 							"host": [
 								"api",
@@ -1989,35 +2115,63 @@
 							"query": [
 								{
 									"key": "from",
-									"value": "2018-01-01T00:00"
+									"value": "2018-01-01T00:00",
+									"equals": true
 								},
 								{
 									"key": "to",
-									"value": "2018-12-31T23:59"
+									"value": "2018-12-31T23:59",
+									"equals": true
+								},
+								{
+									"key": "delimiter",
+									"value": ",",
+									"equals": true
 								},
 								{
 									"key": "domains",
-									"value": "gmail.com,yahoo.com,hotmail.com"
+									"value": "gmail.com,yahoo.com,hotmail.com",
+									"equals": true
 								},
 								{
 									"key": "campaigns",
-									"value": "Black Friday"
+									"value": "Black Friday",
+									"equals": true
 								},
 								{
 									"key": "templates",
-									"value": "summer-sale"
+									"value": "summer-sale",
+									"equals": true
 								},
 								{
-									"key": "protocols",
-									"value": "smtp"
+									"key": "sending_ips",
+									"value": "123.456.789.123",
+									"equals": true
+								},
+								{
+									"key": "ip_pools",
+									"value": "Transactional",
+									"equals": true
+								},
+								{
+									"key": "sending_domains",
+									"value": "sales.sender.com,transactional.sender.com",
+									"equals": true
+								},
+								{
+									"key": "subaccounts",
+									"value": "123,125,127",
+									"equals": true
 								},
 								{
 									"key": "timezone",
-									"value": "America/New_York"
+									"value": "America/New_York",
+									"equals": true
 								},
 								{
 									"key": "limit",
-									"value": "5"
+									"value": "5",
+									"equals": true
 								}
 							]
 						},
@@ -2044,7 +2198,7 @@
 							"raw": ""
 						},
 						"url": {
-							"raw": "https://api.sparkpost.com/api/v1/metrics/deliverability/rejection-reason/domain?from=2018-01-01T00:00&to=2018-12-31T23:59&domains=gmail.com,yahoo.com,hotmail.com&campaigns=Black Friday&templates=summer-sale&protocols=smtp&timezone=America/New_York&limit=5",
+							"raw": "https://api.sparkpost.com/api/v1/metrics/deliverability/rejection-reason/domain?from=2018-01-01T00:00&to=2018-12-31T23:59&delimiter=,&domains=gmail.com,yahoo.com,hotmail.com&campaigns=Black Friday&templates=summer-sale&sending_ips=123.456.789.123&ip_pools=Transactional&sending_domains=sales.sender.com,transactional.sender.com&subaccounts=123,125,127&timezone=America/New_York&limit=5",
 							"protocol": "https",
 							"host": [
 								"api",
@@ -2062,35 +2216,63 @@
 							"query": [
 								{
 									"key": "from",
-									"value": "2018-01-01T00:00"
+									"value": "2018-01-01T00:00",
+									"equals": true
 								},
 								{
 									"key": "to",
-									"value": "2018-12-31T23:59"
+									"value": "2018-12-31T23:59",
+									"equals": true
+								},
+								{
+									"key": "delimiter",
+									"value": ",",
+									"equals": true
 								},
 								{
 									"key": "domains",
-									"value": "gmail.com,yahoo.com,hotmail.com"
+									"value": "gmail.com,yahoo.com,hotmail.com",
+									"equals": true
 								},
 								{
 									"key": "campaigns",
-									"value": "Black Friday"
+									"value": "Black Friday",
+									"equals": true
 								},
 								{
 									"key": "templates",
-									"value": "summer-sale"
+									"value": "summer-sale",
+									"equals": true
 								},
 								{
-									"key": "protocols",
-									"value": "smtp"
+									"key": "sending_ips",
+									"value": "123.456.789.123",
+									"equals": true
+								},
+								{
+									"key": "ip_pools",
+									"value": "Transactional",
+									"equals": true
+								},
+								{
+									"key": "sending_domains",
+									"value": "sales.sender.com,transactional.sender.com",
+									"equals": true
+								},
+								{
+									"key": "subaccounts",
+									"value": "123,125,127",
+									"equals": true
 								},
 								{
 									"key": "timezone",
-									"value": "America/New_York"
+									"value": "America/New_York",
+									"equals": true
 								},
 								{
 									"key": "limit",
-									"value": "5"
+									"value": "5",
+									"equals": true
 								}
 							]
 						},
@@ -2117,7 +2299,7 @@
 							"raw": ""
 						},
 						"url": {
-							"raw": "https://api.sparkpost.com/api/v1/metrics/deliverability/delay-reason?from=2018-01-01T00:00&to=2018-12-31T23:59&domains=gmail.com,yahoo.com,hotmail.com&campaigns=Black Friday&templates=summer-sale&protocols=smtp&timezone=America/New_York&limit=5",
+							"raw": "https://api.sparkpost.com/api/v1/metrics/deliverability/delay-reason?from=2018-01-01T00:00&to=2018-12-31T23:59&delimiter=,&domains=gmail.com,yahoo.com,hotmail.com&campaigns=Black Friday&templates=summer-sale&sending_ips=123.456.789.123&ip_pools=Transactional&sending_domains=sales.sender.com,transactional.sender.com&subaccounts=123,125,127&timezone=America/New_York&limit=5",
 							"protocol": "https",
 							"host": [
 								"api",
@@ -2134,35 +2316,63 @@
 							"query": [
 								{
 									"key": "from",
-									"value": "2018-01-01T00:00"
+									"value": "2018-01-01T00:00",
+									"equals": true
 								},
 								{
 									"key": "to",
-									"value": "2018-12-31T23:59"
+									"value": "2018-12-31T23:59",
+									"equals": true
+								},
+								{
+									"key": "delimiter",
+									"value": ",",
+									"equals": true
 								},
 								{
 									"key": "domains",
-									"value": "gmail.com,yahoo.com,hotmail.com"
+									"value": "gmail.com,yahoo.com,hotmail.com",
+									"equals": true
 								},
 								{
 									"key": "campaigns",
-									"value": "Black Friday"
+									"value": "Black Friday",
+									"equals": true
 								},
 								{
 									"key": "templates",
-									"value": "summer-sale"
+									"value": "summer-sale",
+									"equals": true
 								},
 								{
-									"key": "protocols",
-									"value": "smtp"
+									"key": "sending_ips",
+									"value": "123.456.789.123",
+									"equals": true
+								},
+								{
+									"key": "ip_pools",
+									"value": "Transactional",
+									"equals": true
+								},
+								{
+									"key": "sending_domains",
+									"value": "sales.sender.com,transactional.sender.com",
+									"equals": true
+								},
+								{
+									"key": "subaccounts",
+									"value": "123,125,127",
+									"equals": true
 								},
 								{
 									"key": "timezone",
-									"value": "America/New_York"
+									"value": "America/New_York",
+									"equals": true
 								},
 								{
 									"key": "limit",
-									"value": "5"
+									"value": "5",
+									"equals": true
 								}
 							]
 						},
@@ -2189,7 +2399,7 @@
 							"raw": ""
 						},
 						"url": {
-							"raw": "https://api.sparkpost.com/api/v1/metrics/deliverability/delay-reason/domain?from=2018-01-01T00:00&to=2018-12-31T23:59&domains=gmail.com,yahoo.com,hotmail.com&campaigns=Black Friday&templates=summer-sale&protocols=smtp&timezone=America/New_York&limit=5",
+							"raw": "https://api.sparkpost.com/api/v1/metrics/deliverability/delay-reason/domain?from=2018-01-01T00:00&to=2018-12-31T23:59&delimiter=,&domains=gmail.com,yahoo.com,hotmail.com&campaigns=Black Friday&templates=summer-sale&sending_ips=123.456.789.123&ip_pools=Transactional&sending_domains=sales.sender.com,transactional.sender.com&subaccounts=123,125,127&timezone=America/New_York&limit=5",
 							"protocol": "https",
 							"host": [
 								"api",
@@ -2207,35 +2417,63 @@
 							"query": [
 								{
 									"key": "from",
-									"value": "2018-01-01T00:00"
+									"value": "2018-01-01T00:00",
+									"equals": true
 								},
 								{
 									"key": "to",
-									"value": "2018-12-31T23:59"
+									"value": "2018-12-31T23:59",
+									"equals": true
+								},
+								{
+									"key": "delimiter",
+									"value": ",",
+									"equals": true
 								},
 								{
 									"key": "domains",
-									"value": "gmail.com,yahoo.com,hotmail.com"
+									"value": "gmail.com,yahoo.com,hotmail.com",
+									"equals": true
 								},
 								{
 									"key": "campaigns",
-									"value": "Black Friday"
+									"value": "Black Friday",
+									"equals": true
 								},
 								{
 									"key": "templates",
-									"value": "summer-sale"
+									"value": "summer-sale",
+									"equals": true
 								},
 								{
-									"key": "protocols",
-									"value": "smtp"
+									"key": "sending_ips",
+									"value": "123.456.789.123",
+									"equals": true
+								},
+								{
+									"key": "ip_pools",
+									"value": "Transactional",
+									"equals": true
+								},
+								{
+									"key": "sending_domains",
+									"value": "sales.sender.com,transactional.sender.com",
+									"equals": true
+								},
+								{
+									"key": "subaccounts",
+									"value": "123,125,127",
+									"equals": true
 								},
 								{
 									"key": "timezone",
-									"value": "America/New_York"
+									"value": "America/New_York",
+									"equals": true
 								},
 								{
 									"key": "limit",
-									"value": "5"
+									"value": "5",
+									"equals": true
 								}
 							]
 						},
@@ -2262,7 +2500,7 @@
 							"raw": ""
 						},
 						"url": {
-							"raw": "https://api.sparkpost.com/api/v1/metrics/deliverability/link-name?from=2014-07-11T09:00&to=2014-07-20T00:00&timezone=America/New_York&campaigns=Black Friday&templates=summer-sale&metrics=&limit=5",
+							"raw": "https://api.sparkpost.com/api/v1/metrics/deliverability/link-name?from=2018-01-01T00:00&to=2018-12-31T23:59&delimiter=,&timezone=America/New_York&metrics=count_clicked,count_raw_clicked&campaigns=Black Friday&templates=summer-sale&sending_domains=sales.sender.com,transactional.sender.com&subaccounts=123,125,127&limit=5",
 							"protocol": "https",
 							"host": [
 								"api",
@@ -2279,35 +2517,69 @@
 							"query": [
 								{
 									"key": "from",
-									"value": "2014-07-11T09:00"
+									"value": "2018-01-01T00:00",
+									"equals": true
 								},
 								{
 									"key": "to",
-									"value": "2014-07-20T00:00"
+									"value": "2018-12-31T23:59",
+									"equals": true
+								},
+								{
+									"key": "delimiter",
+									"value": ",",
+									"equals": true
 								},
 								{
 									"key": "timezone",
-									"value": "America/New_York"
-								},
-								{
-									"key": "campaigns",
-									"value": "Black Friday"
-								},
-								{
-									"key": "templates",
-									"value": "summer-sale"
+									"value": "America/New_York",
+									"equals": true
 								},
 								{
 									"key": "metrics",
-									"value": ""
+									"value": "count_clicked,count_raw_clicked",
+									"equals": true
+								},
+								{
+									"key": "campaigns",
+									"value": "Black Friday",
+									"equals": true
+								},
+								{
+									"key": "templates",
+									"value": "summer-sale",
+									"equals": true
+								},
+								{
+									"key": "sending_domains",
+									"value": "sales.sender.com,transactional.sender.com",
+									"equals": true
+								},
+								{
+									"key": "subaccounts",
+									"value": "123,125,127",
+									"equals": true
+								},
+								{
+									"key": "sending_ips",
+									"value": "123.456.789.123",
+									"equals": true,
+									"disabled": true
+								},
+								{
+									"key": "ip_pools",
+									"value": "Transactional",
+									"equals": true,
+									"disabled": true
 								},
 								{
 									"key": "limit",
-									"value": "5"
+									"value": "5",
+									"equals": true
 								}
 							]
 						},
-						"description": "Provides deliverability metrics, specific to engagement events (clicks/opens), grouped by the link\nname (or URL if no link name exists).\n\n"
+						"description": "Provides deliverability metrics, specific to engagement events (clicks/opens), grouped by the link\nname (or URL if no link name exists).\n\nTo name the links in your messages, [read about the `data-msys-link-name` HTML attribute here](https://developers.sparkpost.com/api/substitutions-reference.html#header-link-names)"
 					},
 					"response": []
 				},
@@ -2330,7 +2602,7 @@
 							"raw": ""
 						},
 						"url": {
-							"raw": "https://api.sparkpost.com/api/v1/metrics/deliverability/attempt?from=2018-01-01T00:00&to=2018-12-31T23:59&domains=gmail.com,yahoo.com,hotmail.com&campaigns=Black Friday&templates=summer-sale&protocols=smtp&timezone=America/New_York",
+							"raw": "https://api.sparkpost.com/api/v1/metrics/deliverability/attempt?from=2018-01-01T00:00&to=2018-12-31T23:59&delimiter=,&domains=gmail.com,yahoo.com,hotmail.com&campaigns=Black Friday&templates=summer-sale&sending_ips=123.456.789.123&ip_pools=Transactional&sending_domains=sales.sender.com,transactional.sender.com&subaccounts=123,125,127&timezone=America/New_York",
 							"protocol": "https",
 							"host": [
 								"api",
@@ -2347,31 +2619,76 @@
 							"query": [
 								{
 									"key": "from",
-									"value": "2018-01-01T00:00"
+									"value": "2018-01-01T00:00",
+									"equals": true
 								},
 								{
 									"key": "to",
-									"value": "2018-12-31T23:59"
+									"value": "2018-12-31T23:59",
+									"equals": true
+								},
+								{
+									"key": "delimiter",
+									"value": ",",
+									"equals": true
 								},
 								{
 									"key": "domains",
-									"value": "gmail.com,yahoo.com,hotmail.com"
+									"value": "gmail.com,yahoo.com,hotmail.com",
+									"equals": true
 								},
 								{
 									"key": "campaigns",
-									"value": "Black Friday"
+									"value": "Black Friday",
+									"equals": true
 								},
 								{
 									"key": "templates",
-									"value": "summer-sale"
+									"value": "summer-sale",
+									"equals": true
 								},
 								{
-									"key": "protocols",
-									"value": "smtp"
+									"key": "sending_ips",
+									"value": "123.456.789.123",
+									"equals": true
+								},
+								{
+									"key": "ip_pools",
+									"value": "Transactional",
+									"equals": true
+								},
+								{
+									"key": "sending_domains",
+									"value": "sales.sender.com,transactional.sender.com",
+									"equals": true
+								},
+								{
+									"key": "bindings",
+									"value": "Confirmation",
+									"equals": true,
+									"disabled": true
+								},
+								{
+									"key": "binding_groups",
+									"value": "Transaction",
+									"equals": true,
+									"disabled": true
+								},
+								{
+									"key": "subaccounts",
+									"value": "123,125,127",
+									"equals": true
 								},
 								{
 									"key": "timezone",
-									"value": "America/New_York"
+									"value": "America/New_York",
+									"equals": true
+								},
+								{
+									"key": "limit",
+									"value": "5",
+									"equals": true,
+									"disabled": true
 								}
 							]
 						},
@@ -2380,7 +2697,7 @@
 					"response": []
 				},
 				{
-					"name": "Binding Groups List",
+					"name": "IP Pools List",
 					"request": {
 						"method": "GET",
 						"header": [
@@ -2398,7 +2715,7 @@
 							"raw": ""
 						},
 						"url": {
-							"raw": "https://api.sparkpost.com/api/v1/metrics/binding-groups",
+							"raw": "https://api.sparkpost.com/api/v1/metrics/ip-pools?match=test&limit=5&from=2018-01-01T00:00&to=2018-12-31T23:59&timezone=America/New_York",
 							"protocol": "https",
 							"host": [
 								"api",
@@ -2409,15 +2726,42 @@
 								"api",
 								"v1",
 								"metrics",
-								"binding-groups"
+								"ip-pools"
+							],
+							"query": [
+								{
+									"key": "match",
+									"value": "test",
+									"equals": true
+								},
+								{
+									"key": "limit",
+									"value": "5",
+									"equals": true
+								},
+								{
+									"key": "from",
+									"value": "2018-01-01T00:00",
+									"equals": true
+								},
+								{
+									"key": "to",
+									"value": "2018-12-31T23:59",
+									"equals": true
+								},
+								{
+									"key": "timezone",
+									"value": "America/New_York",
+									"equals": true
+								}
 							]
 						},
-						"description": "**Note:** This endpoint is available in SparkPost Elite only.\n\nReturns a list of binding groups that the Metrics API contains data on.\n\n"
+						"description": "Returns a list of IP pools that the Metrics API contains data on."
 					},
 					"response": []
 				},
 				{
-					"name": "Bindings List",
+					"name": "Sending IPs List",
 					"request": {
 						"method": "GET",
 						"header": [
@@ -2435,7 +2779,7 @@
 							"raw": ""
 						},
 						"url": {
-							"raw": "https://api.sparkpost.com/api/v1/metrics/bindings",
+							"raw": "https://api.sparkpost.com/api/v1/metrics/sending-ips?limit=5&from=2018-01-01T00:00&to=2018-12-31T23:59&timezone=America/New_York",
 							"protocol": "https",
 							"host": [
 								"api",
@@ -2446,10 +2790,38 @@
 								"api",
 								"v1",
 								"metrics",
-								"bindings"
+								"sending-ips"
+							],
+							"query": [
+								{
+									"key": "match",
+									"value": "35.163",
+									"equals": true,
+									"disabled": true
+								},
+								{
+									"key": "limit",
+									"value": "5",
+									"equals": true
+								},
+								{
+									"key": "from",
+									"value": "2018-01-01T00:00",
+									"equals": true
+								},
+								{
+									"key": "to",
+									"value": "2018-12-31T23:59",
+									"equals": true
+								},
+								{
+									"key": "timezone",
+									"value": "America/New_York",
+									"equals": true
+								}
 							]
 						},
-						"description": "**Note:** This endpoint is available in SparkPost Elite only.\n\nReturns a list of bindings that the Metrics API contains data on.\n\n"
+						"description": "Returns a list of sending IPs that the Metrics API contains data on."
 					},
 					"response": []
 				},
@@ -2472,7 +2844,7 @@
 							"raw": ""
 						},
 						"url": {
-							"raw": "https://api.sparkpost.com/api/v1/metrics/campaigns",
+							"raw": "https://api.sparkpost.com/api/v1/metrics/campaigns?limit=5&from=2018-01-01T00:00&to=2018-12-31T23:59&timezone=America/New_York",
 							"protocol": "https",
 							"host": [
 								"api",
@@ -2484,6 +2856,34 @@
 								"v1",
 								"metrics",
 								"campaigns"
+							],
+							"query": [
+								{
+									"key": "match",
+									"value": "example",
+									"type": "text",
+									"disabled": true
+								},
+								{
+									"key": "limit",
+									"value": "5",
+									"type": "text"
+								},
+								{
+									"key": "from",
+									"value": "2018-01-01T00:00",
+									"type": "text"
+								},
+								{
+									"key": "to",
+									"value": "2018-12-31T23:59",
+									"type": "text"
+								},
+								{
+									"key": "timezone",
+									"value": "America/New_York",
+									"type": "text"
+								}
 							]
 						},
 						"description": "Returns a list of campaigns that the Metrics API contains data on.\n\n"
@@ -2509,7 +2909,7 @@
 							"raw": ""
 						},
 						"url": {
-							"raw": "https://api.sparkpost.com/api/v1/metrics/domains",
+							"raw": "https://api.sparkpost.com/api/v1/metrics/domains?limit=5&from=2018-01-01T00:00&to=2018-12-31T23:59&timezone=America/New_York",
 							"protocol": "https",
 							"host": [
 								"api",
@@ -2521,46 +2921,37 @@
 								"v1",
 								"metrics",
 								"domains"
+							],
+							"query": [
+								{
+									"key": "match",
+									"value": "",
+									"type": "text",
+									"disabled": true
+								},
+								{
+									"key": "limit",
+									"value": "5",
+									"equals": true
+								},
+								{
+									"key": "from",
+									"value": "2018-01-01T00:00",
+									"equals": true
+								},
+								{
+									"key": "to",
+									"value": "2018-12-31T23:59",
+									"equals": true
+								},
+								{
+									"key": "timezone",
+									"value": "America/New_York",
+									"equals": true
+								}
 							]
 						},
 						"description": "Returns a list of domains that the Metrics API contains data on.\n\n"
-					},
-					"response": []
-				},
-				{
-					"name": "Protocols List",
-					"request": {
-						"method": "GET",
-						"header": [
-							{
-								"key": "Authorization",
-								"value": "{{API_KEY}}"
-							},
-							{
-								"key": "Accept",
-								"value": "application/json"
-							}
-						],
-						"body": {
-							"mode": "raw",
-							"raw": ""
-						},
-						"url": {
-							"raw": "https://api.sparkpost.com/api/v1/metrics/protocols",
-							"protocol": "https",
-							"host": [
-								"api",
-								"sparkpost",
-								"com"
-							],
-							"path": [
-								"api",
-								"v1",
-								"metrics",
-								"protocols"
-							]
-						},
-						"description": "**Note:** This endpoint is available in SparkPost Elite only.\n\nReturns a list of protocols that the Metrics API contains data on.\n\n"
 					},
 					"response": []
 				}
