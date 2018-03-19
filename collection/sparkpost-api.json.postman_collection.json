@@ -445,180 +445,6 @@
 			]
 		},
 		{
-			"name": "Message Events",
-			"description": "https://developers.sparkpost.com/api/#/reference/message-events",
-			"item": [
-				{
-					"name": "Documentation",
-					"request": {
-						"method": "GET",
-						"header": [
-							{
-								"key": "Accept",
-								"value": "application/json"
-							}
-						],
-						"body": {
-							"mode": "raw",
-							"raw": ""
-						},
-						"url": {
-							"raw": "https://api.sparkpost.com/api/v1/message-events/events/documentation",
-							"protocol": "https",
-							"host": [
-								"api",
-								"sparkpost",
-								"com"
-							],
-							"path": [
-								"api",
-								"v1",
-								"message-events",
-								"events",
-								"documentation"
-							]
-						},
-						"description": "List descriptions of the event fields that could be included in a response from the Message Events search endpoint. Fields will vary by event type.\n\n"
-					},
-					"response": []
-				},
-				{
-					"name": "Samples",
-					"request": {
-						"method": "GET",
-						"header": [
-							{
-								"key": "Accept",
-								"value": "application/json"
-							}
-						],
-						"body": {
-							"mode": "raw",
-							"raw": ""
-						},
-						"url": {
-							"raw": "https://api.sparkpost.com/api/v1/message-events/events/samples?events=bounce",
-							"protocol": "https",
-							"host": [
-								"api",
-								"sparkpost",
-								"com"
-							],
-							"path": [
-								"api",
-								"v1",
-								"message-events",
-								"events",
-								"samples"
-							],
-							"query": [
-								{
-									"key": "events",
-									"value": "bounce"
-								}
-							]
-						},
-						"description": "List an example of the event data that will be included in a response from the Message Events search endpoint.\n\n"
-					},
-					"response": []
-				},
-				{
-					"name": "Search for Message Events",
-					"request": {
-						"method": "GET",
-						"header": [
-							{
-								"key": "Accept",
-								"value": "application/json"
-							},
-							{
-								"key": "Authorization",
-								"value": "{{API_KEY}}"
-							}
-						],
-						"body": {
-							"mode": "raw",
-							"raw": ""
-						},
-						"url": {
-							"raw": "https://api.sparkpost.com/api/v1/message-events?bounce_classes=1&campaign_ids=Example Campaign Name&events=delivery,injection,bounce,delay,policy_rejection,out_of_band,open,click,generation_failure,generation_rejection,spam_complaint,list_unsubscribe,link_unsubscribe&friendly_froms=sender@mail.example.com&from=2014-07-20T08:00&message_ids=0e0d94b7-9085-4e3c-ab30-e3f2cd9c273e&page=25&per_page=100&reason=bounce&recipients=recipient@example.com&template_ids=templ-1234&timezone=America/New_York&to=2018-12-31T23:59&transmission_ids=65832150921904138",
-							"protocol": "https",
-							"host": [
-								"api",
-								"sparkpost",
-								"com"
-							],
-							"path": [
-								"api",
-								"v1",
-								"message-events"
-							],
-							"query": [
-								{
-									"key": "bounce_classes",
-									"value": "1"
-								},
-								{
-									"key": "campaign_ids",
-									"value": "Example Campaign Name"
-								},
-								{
-									"key": "events",
-									"value": "delivery,injection,bounce,delay,policy_rejection,out_of_band,open,click,generation_failure,generation_rejection,spam_complaint,list_unsubscribe,link_unsubscribe"
-								},
-								{
-									"key": "friendly_froms",
-									"value": "sender@mail.example.com"
-								},
-								{
-									"key": "from",
-									"value": "2014-07-20T08:00"
-								},
-								{
-									"key": "message_ids",
-									"value": "0e0d94b7-9085-4e3c-ab30-e3f2cd9c273e"
-								},
-								{
-									"key": "page",
-									"value": "25"
-								},
-								{
-									"key": "per_page",
-									"value": "100"
-								},
-								{
-									"key": "reason",
-									"value": "bounce"
-								},
-								{
-									"key": "recipients",
-									"value": "recipient@example.com"
-								},
-								{
-									"key": "template_ids",
-									"value": "templ-1234"
-								},
-								{
-									"key": "timezone",
-									"value": "America/New_York"
-								},
-								{
-									"key": "to",
-									"value": "2018-12-31T23:59"
-								},
-								{
-									"key": "transmission_ids",
-									"value": "65832150921904138"
-								}
-							]
-						},
-						"description": "Perform a filtered search for message event data. The response is sorted by descending timestamp.\n\n"
-					},
-					"response": []
-				}
-			]
-		},
-		{
 			"name": "Metrics",
 			"description": "https://developers.sparkpost.com/api/#/reference/metrics",
 			"item": [
@@ -2692,7 +2518,7 @@
 								}
 							]
 						},
-						"description": "Provides aggregate count of deliveries grouped by the attempt number.\n\n"
+						"description": "Provides aggregate count of deliveries grouped by the attempt number.\n\n`bindings` and `binding_groups` are SparkPost Enterprise only."
 					},
 					"response": []
 				},
@@ -2952,6 +2778,200 @@
 							]
 						},
 						"description": "Returns a list of domains that the Metrics API contains data on.\n\n"
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Message Events",
+			"description": "https://developers.sparkpost.com/api/#/reference/message-events",
+			"item": [
+				{
+					"name": "Documentation",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "application/json"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": ""
+						},
+						"url": {
+							"raw": "https://api.sparkpost.com/api/v1/message-events/events/documentation",
+							"protocol": "https",
+							"host": [
+								"api",
+								"sparkpost",
+								"com"
+							],
+							"path": [
+								"api",
+								"v1",
+								"message-events",
+								"events",
+								"documentation"
+							]
+						},
+						"description": "List descriptions of the event fields that could be included in a response from the Message Events search endpoint. Fields will vary by event type.\n\n"
+					},
+					"response": []
+				},
+				{
+					"name": "Samples",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "application/json"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": ""
+						},
+						"url": {
+							"raw": "https://api.sparkpost.com/api/v1/message-events/events/samples?events=bounce",
+							"protocol": "https",
+							"host": [
+								"api",
+								"sparkpost",
+								"com"
+							],
+							"path": [
+								"api",
+								"v1",
+								"message-events",
+								"events",
+								"samples"
+							],
+							"query": [
+								{
+									"key": "events",
+									"value": "bounce",
+									"equals": true
+								}
+							]
+						},
+						"description": "List an example of the event data that will be included in a response from the Message Events search endpoint.\n\n"
+					},
+					"response": []
+				},
+				{
+					"name": "Search for Message Events",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "application/json"
+							},
+							{
+								"key": "Authorization",
+								"value": "{{API_KEY}}"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": ""
+						},
+						"url": {
+							"raw": "https://api.sparkpost.com/api/v1/message-events?bounce_classes=1&campaign_ids=Example Campaign Name&delimiter=,&events=delivery,injection,bounce,delay,policy_rejection,out_of_band,open,click,generation_failure,generation_rejection,spam_complaint,list_unsubscribe,link_unsubscribe&friendly_froms=sender@mail.example.com&from=2018-01-01T00:00&message_ids=0e0d94b7-9085-4e3c-ab30-e3f2cd9c273e&page=25&per_page=1000&reason=bounce&recipients=recipient@example.com&template_ids=templ-1234&timezone=America/New_York&to=2018-12-31T23:59&transmission_ids=65832150921904138",
+							"protocol": "https",
+							"host": [
+								"api",
+								"sparkpost",
+								"com"
+							],
+							"path": [
+								"api",
+								"v1",
+								"message-events"
+							],
+							"query": [
+								{
+									"key": "bounce_classes",
+									"value": "1",
+									"equals": true
+								},
+								{
+									"key": "campaign_ids",
+									"value": "Example Campaign Name",
+									"equals": true
+								},
+								{
+									"key": "delimiter",
+									"value": ",",
+									"equals": true
+								},
+								{
+									"key": "events",
+									"value": "delivery,injection,bounce,delay,policy_rejection,out_of_band,open,click,generation_failure,generation_rejection,spam_complaint,list_unsubscribe,link_unsubscribe",
+									"equals": true
+								},
+								{
+									"key": "friendly_froms",
+									"value": "sender@mail.example.com",
+									"equals": true
+								},
+								{
+									"key": "from",
+									"value": "2018-01-01T00:00",
+									"equals": true
+								},
+								{
+									"key": "message_ids",
+									"value": "0e0d94b7-9085-4e3c-ab30-e3f2cd9c273e",
+									"equals": true
+								},
+								{
+									"key": "page",
+									"value": "25",
+									"equals": true
+								},
+								{
+									"key": "per_page",
+									"value": "1000",
+									"equals": true
+								},
+								{
+									"key": "reason",
+									"value": "bounce",
+									"equals": true
+								},
+								{
+									"key": "recipients",
+									"value": "recipient@example.com",
+									"equals": true
+								},
+								{
+									"key": "template_ids",
+									"value": "templ-1234",
+									"equals": true
+								},
+								{
+									"key": "timezone",
+									"value": "America/New_York",
+									"equals": true
+								},
+								{
+									"key": "to",
+									"value": "2018-12-31T23:59",
+									"equals": true
+								},
+								{
+									"key": "transmission_ids",
+									"value": "65832150921904138",
+									"equals": true
+								}
+							]
+						},
+						"description": "Perform a filtered search for message event data. The response is sorted by descending timestamp.\n\n"
 					},
 					"response": []
 				}
