@@ -3454,7 +3454,7 @@
 						],
 						"body": {
 							"mode": "raw",
-							"raw": "{\n    \"domain\" : \"example1.com\",\n    \"dkim\": {\n    \t\"private\" : \"MIICXgIBAAKBgQC+W6scd3XWwvC/hPRksfDYFi3ztgyS9OSqnnjtNQeDdTSD1DRx/xFar2wjmzxp2+SnJ5pspaF77VZveN3P/HVmXZVghr3asoV9WBx/uW1nDIUxU35L4juXiTwsMAbgMyh3NqIKTNKyMDy4P8vpEhtH1iv/BrwMdBjHDVCycB8WnwIDAQABAoGBAITb3BCRPBi5lGhHdn+1RgC7cjUQEbSb4eFHm+ULRwQ0UIPWHwiVWtptZ09usHq989fKp1g/PfcNzm8c78uTS6gCxfECweFCRK6EdO6cCCr1cfWvmBdSjzYhODUdQeyWZi2ozqd0FhGWoV4VHseh4iLj36DzleTLtOZj3FhAo1WJAkEA68T+KkGeDyWwvttYtuSiQCCTrXYAWTQnkIUxduCp7Ap6tVeIDn3TaXTj74UbEgaNgLhjG4bX//fdeDW6PaK9YwJBAM6xJmwHLPMgwNVjiz3u/6fhY3kaZTWcxtMkXCjh1QE82KzDwqyrCg7EFjTtFysSHCAZxXZMcivGl4TZLHnydJUCQQCx16+M+mAatuiCnvxlQUMuMiSTNK6Amzm45u9v53nlZeY3weYMYFdHdfe1pebMiwrT7MI9clKebz6svYJVmdtXAkApDAc8VuR3WB7TgdRKNWdyGJGfoD1PO1ZE4iinOcoKV+IT1UCY99Kkgg6C7j62n/8T5OpRBvd5eBPpHxP1F9BNAkEA5Nf2VO9lcTetksHdIeKK+F7sio6UZn0Rv7iUo3ALrN1D1cGfWIh2dj3ko1iSreyNVSwGW0ePP27qDmU+u6/Y1g==\",\n        \"public\" : \"MIGfMA0GCSqGSIb3DQEBAQUAA4GNADCBiQKBgQC+W6scd3XWwvC/hPRksfDYFi3ztgyS9OSqnnjtNQeDdTSD1DRx/xFar2wjmzxp2+SnJ5pspaF77VZveN3P/HVmXZVghr3asoV9WBx/uW1nDIUxU35L4juXiTwsMAbgMyh3NqIKTNKyMDy4P8vpEhtH1iv/BrwMdBjHDVCycB8WnwIDAQAB\",\n        \"selector\" : \"brisbane\",\n        \"headers\" : \"from:to:subject:date\"\n    }\n}\n"
+							"raw": "{\n    \"domain\" : \"example1.com\",\n    \"dkim\": {\n      \"private\" : \"MIICXgIBAAKBgQC+W6scd3XWwvC/hPRksfDYFi3ztgyS9OSqnnjtNQeDdTSD1DRx/xFar2wjmzxp2+SnJ5pspaF77VZveN3P/HVmXZVghr3asoV9WBx/uW1nDIUxU35L4juXiTwsMAbgMyh3NqIKTNKyMDy4P8vpEhtH1iv/BrwMdBjHDVCycB8WnwIDAQABAoGBAITb3BCRPBi5lGhHdn+1RgC7cjUQEbSb4eFHm+ULRwQ0UIPWHwiVWtptZ09usHq989fKp1g/PfcNzm8c78uTS6gCxfECweFCRK6EdO6cCCr1cfWvmBdSjzYhODUdQeyWZi2ozqd0FhGWoV4VHseh4iLj36DzleTLtOZj3FhAo1WJAkEA68T+KkGeDyWwvttYtuSiQCCTrXYAWTQnkIUxduCp7Ap6tVeIDn3TaXTj74UbEgaNgLhjG4bX//fdeDW6PaK9YwJBAM6xJmwHLPMgwNVjiz3u/6fhY3kaZTWcxtMkXCjh1QE82KzDwqyrCg7EFjTtFysSHCAZxXZMcivGl4TZLHnydJUCQQCx16+M+mAatuiCnvxlQUMuMiSTNK6Amzm45u9v53nlZeY3weYMYFdHdfe1pebMiwrT7MI9clKebz6svYJVmdtXAkApDAc8VuR3WB7TgdRKNWdyGJGfoD1PO1ZE4iinOcoKV+IT1UCY99Kkgg6C7j62n/8T5OpRBvd5eBPpHxP1F9BNAkEA5Nf2VO9lcTetksHdIeKK+F7sio6UZn0Rv7iUo3ALrN1D1cGfWIh2dj3ko1iSreyNVSwGW0ePP27qDmU+u6/Y1g==\",\n        \"public\" : \"MIGfMA0GCSqGSIb3DQEBAQUAA4GNADCBiQKBgQC+W6scd3XWwvC/hPRksfDYFi3ztgyS9OSqnnjtNQeDdTSD1DRx/xFar2wjmzxp2+SnJ5pspaF77VZveN3P/HVmXZVghr3asoV9WBx/uW1nDIUxU35L4juXiTwsMAbgMyh3NqIKTNKyMDy4P8vpEhtH1iv/BrwMdBjHDVCycB8WnwIDAQAB\",\n        \"selector\" : \"brisbane\",\n        \"headers\" : \"from:to:subject:date\"\n    }\n}\n"
 						},
 						"url": {
 							"raw": "https://api.sparkpost.com/api/v1/sending-domains",
@@ -3645,7 +3645,7 @@
 						],
 						"body": {
 							"mode": "raw",
-							"raw": "{\n    \"tracking_domain\": \"click.example1.com\",\n    \"dkim\" : {\n    \t\"private\" : \"MIICXgIBAAKBgQC+W6scd3XWwvC/hPRksfDYFi3ztgyS9OSqnnjtNQeDdTSD1DRx/xFar2wjmzxp2+SnJ5pspaF77VZveN3P/HVmXZVghr3asoV9WBx/uW1nDIUxU35L4juXiTwsMAbgMyh3NqIKTNKyMDy4P8vpEhtH1iv/BrwMdBjHDVCycB8WnwIDAQABAoGBAITb3BCRPBi5lGhHdn+1RgC7cjUQEbSb4eFHm+ULRwQ0UIPWHwiVWtptZ09usHq989fKp1g/PfcNzm8c78uTS6gCxfECweFCRK6EdO6cCCr1cfWvmBdSjzYhODUdQeyWZi2ozqd0FhGWoV4VHseh4iLj36DzleTLtOZj3FhAo1WJAkEA68T+KkGeDyWwvttYtuSiQCCTrXYAWTQnkIUxduCp7Ap6tVeIDn3TaXTj74UbEgaNgLhjG4bX//fdeDW6PaK9YwJBAM6xJmwHLPMgwNVjiz3u/6fhY3kaZTWcxtMkXCjh1QE82KzDwqyrCg7EFjTtFysSHCAZxXZMcivGl4TZLHnydJUCQQCx16+M+mAatuiCnvxlQUMuMiSTNK6Amzm45u9v53nlZeY3weYMYFdHdfe1pebMiwrT7MI9clKebz6svYJVmdtXAkApDAc8VuR3WB7TgdRKNWdyGJGfoD1PO1ZE4iinOcoKV+IT1UCY99Kkgg6C7j62n/8T5OpRBvd5eBPpHxP1F9BNAkEA5Nf2VO9lcTetksHdIeKK+F7sio6UZn0Rv7iUo3ALrN1D1cGfWIh/Y1g==\",\n        \"public\" : \"MIGfMA0GCSqGSIb3DQEBAQUAA4GNADCBiQKBgQC+W6scd3XWwvC/hPRksfDYFi3ztgyS9OSqnnjtNQeDdTSD1DRx/xFar2wjmzxp2+SnJ5pspaF77VZveN3P/HVmXZVghr3asoV9WBx/uW1nDIUxU35L4juXiTwsMAbgMyh3NqIKTNKyMDy4P8vpEhtH1iv/BrwMdBjHDVCycB8WnwIDAQAB\",\n        \"selector\" : \"hello_selector\",\n        \"headers\" : \"from:to:subject:date\"\n    }\n}\n"
+							"raw": "{\n    \"tracking_domain\": \"click.example1.com\",\n    \"dkim\" : {\n      \"private\" : \"MIICXgIBAAKBgQC+W6scd3XWwvC/hPRksfDYFi3ztgyS9OSqnnjtNQeDdTSD1DRx/xFar2wjmzxp2+SnJ5pspaF77VZveN3P/HVmXZVghr3asoV9WBx/uW1nDIUxU35L4juXiTwsMAbgMyh3NqIKTNKyMDy4P8vpEhtH1iv/BrwMdBjHDVCycB8WnwIDAQABAoGBAITb3BCRPBi5lGhHdn+1RgC7cjUQEbSb4eFHm+ULRwQ0UIPWHwiVWtptZ09usHq989fKp1g/PfcNzm8c78uTS6gCxfECweFCRK6EdO6cCCr1cfWvmBdSjzYhODUdQeyWZi2ozqd0FhGWoV4VHseh4iLj36DzleTLtOZj3FhAo1WJAkEA68T+KkGeDyWwvttYtuSiQCCTrXYAWTQnkIUxduCp7Ap6tVeIDn3TaXTj74UbEgaNgLhjG4bX//fdeDW6PaK9YwJBAM6xJmwHLPMgwNVjiz3u/6fhY3kaZTWcxtMkXCjh1QE82KzDwqyrCg7EFjTtFysSHCAZxXZMcivGl4TZLHnydJUCQQCx16+M+mAatuiCnvxlQUMuMiSTNK6Amzm45u9v53nlZeY3weYMYFdHdfe1pebMiwrT7MI9clKebz6svYJVmdtXAkApDAc8VuR3WB7TgdRKNWdyGJGfoD1PO1ZE4iinOcoKV+IT1UCY99Kkgg6C7j62n/8T5OpRBvd5eBPpHxP1F9BNAkEA5Nf2VO9lcTetksHdIeKK+F7sio6UZn0Rv7iUo3ALrN1D1cGfWIh/Y1g==\",\n        \"public\" : \"MIGfMA0GCSqGSIb3DQEBAQUAA4GNADCBiQKBgQC+W6scd3XWwvC/hPRksfDYFi3ztgyS9OSqnnjtNQeDdTSD1DRx/xFar2wjmzxp2+SnJ5pspaF77VZveN3P/HVmXZVghr3asoV9WBx/uW1nDIUxU35L4juXiTwsMAbgMyh3NqIKTNKyMDy4P8vpEhtH1iv/BrwMdBjHDVCycB8WnwIDAQAB\",\n        \"selector\" : \"hello_selector\",\n        \"headers\" : \"from:to:subject:date\"\n    }\n}\n"
 						},
 						"url": {
 							"raw": "https://api.sparkpost.com/api/v1/sending-domains/example1.com",
@@ -3765,10 +3765,7 @@
 								"value": "application/json"
 							}
 						],
-						"body": {
-							"mode": "raw",
-							"raw": ""
-						},
+						"body": {},
 						"url": {
 							"raw": "https://api.sparkpost.com/api/v1/sending-ips",
 							"protocol": "https",
@@ -3801,10 +3798,7 @@
 								"value": "application/json"
 							}
 						],
-						"body": {
-							"mode": "raw",
-							"raw": ""
-						},
+						"body": {},
 						"url": {
 							"raw": "https://api.sparkpost.com/api/v1/sending-ips/123.456.789.012",
 							"protocol": "https",
@@ -3885,10 +3879,7 @@
 								"value": "application/json"
 							}
 						],
-						"body": {
-							"mode": "raw",
-							"raw": ""
-						},
+						"body": {},
 						"url": {
 							"raw": "https://api.sparkpost.com/api/v1/subaccounts",
 							"protocol": "https",
@@ -3958,10 +3949,7 @@
 								"value": "application/json"
 							}
 						],
-						"body": {
-							"mode": "raw",
-							"raw": ""
-						},
+						"body": {},
 						"url": {
 							"raw": "https://api.sparkpost.com/api/v1/subaccounts/123",
 							"protocol": "https",
@@ -4088,7 +4076,7 @@
 						],
 						"body": {
 							"mode": "raw",
-							"raw": ""
+							"raw": "{\n  \"recipients\": [\n    {\n      \"recipient\": \"rcpt_1@example.com\",\n      \"type\": \"transactional\",\n      \"description\": \"User requested to not receive any transactional emails.\"\n    },\n    {\n      \"recipient\": \"rcpt_2@example.com\",\n      \"type\": \"non_transactional\",\n      \"description\": \"User requested to not receive any non-transactional emails.\"\n    }\n  ]\n}\n"
 						},
 						"url": {
 							"raw": "https://api.sparkpost.com/api/v1/suppression-list/",
@@ -4123,12 +4111,9 @@
 								"value": "application/json"
 							}
 						],
-						"body": {
-							"mode": "raw",
-							"raw": ""
-						},
+						"body": {},
 						"url": {
-							"raw": "https://api.sparkpost.com/api/v1/suppression-list?to=2018-12-31T23:59:00%2B0000&from=2018-12-31T23:59:00%2B0000&types=&limit=5",
+							"raw": "https://api.sparkpost.com/api/v1/suppression-list?to=2018-12-31T23:59:00-0000&from=2018-01-01T23:59:00-0000&types=transactional,non_transactional&domain=example.com&per_page=10000&page=1&sources=Manually Added&description=requested to not receive",
 							"protocol": "https",
 							"host": [
 								"api",
@@ -4143,19 +4128,43 @@
 							"query": [
 								{
 									"key": "to",
-									"value": "2018-12-31T23:59:00%2B0000"
+									"value": "2018-12-31T23:59:00-0000",
+									"equals": true
 								},
 								{
 									"key": "from",
-									"value": "2018-12-31T23:59:00%2B0000"
+									"value": "2018-01-01T23:59:00-0000",
+									"equals": true
 								},
 								{
 									"key": "types",
-									"value": ""
+									"value": "transactional,non_transactional",
+									"equals": true
 								},
 								{
-									"key": "limit",
-									"value": "5"
+									"key": "domain",
+									"value": "example.com",
+									"equals": true
+								},
+								{
+									"key": "per_page",
+									"value": "10000",
+									"equals": true
+								},
+								{
+									"key": "page",
+									"value": "1",
+									"equals": true
+								},
+								{
+									"key": "sources",
+									"value": "Manually Added",
+									"equals": true
+								},
+								{
+									"key": "description",
+									"value": "requested to not receive",
+									"equals": true
 								}
 							]
 						},
@@ -4244,7 +4253,47 @@
 			"description": "https://developers.sparkpost.com/api/#/reference/templates",
 			"item": [
 				{
-					"name": "Create a Template",
+					"name": "Create a Template (text and html content)",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							},
+							{
+								"key": "Accept",
+								"value": "application/json"
+							},
+							{
+								"key": "Authorization",
+								"value": "{{API_KEY}}"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n  \"id\": \"summer_sale\",\n  \"name\": \"Summer Sale!\",\n  \"published\": true,\n  \"description\": \"Template for a Summer Sale!\",\n  \"shared_with_subaccounts\": false,\n  \"options\": {\n    \"open_tracking\": false,\n    \"click_tracking\": true\n  },\n  \"content\": {\n    \"from\": {\n      \"email\": \"marketing@bounces.company.example\",\n      \"name\": \"Example Company Marketing\"\n    },\n    \"subject\": \"Summer deals for \",\n    \"reply_to\": \"Summer deals <summer_deals@company.example>\",\n    \"text\": \"Check out these deals !\",\n    \"html\": \"<b>Check out these deals !</b>\",\n    \"headers\": {\n      \"X-Customer-Campaign-ID\": \"Summer2014\"\n    }\n  }\n}"
+						},
+						"url": {
+							"raw": "https://api.sparkpost.com/api/v1/templates",
+							"protocol": "https",
+							"host": [
+								"api",
+								"sparkpost",
+								"com"
+							],
+							"path": [
+								"api",
+								"v1",
+								"templates"
+							]
+						},
+						"description": "Create a template by providing a **template object** as the POST request body.\n\nAt a minimum, the \"name\" and \"content\" fields are required, where content must contain the \"from\", \"subject\", and at least one of \"html\" or \"text\" fields.\n\nBy default, when a template is referenced in a transmission, it is the published version of that template.  To submit a transmission that uses a draft template, set the transmission field \"use_draft_template\" to true.  For additional details, see the Transmissions API documentation for Using a Stored Template.\n\n\n#### Create Parts\n\nThe following are key points about creating parts in your templates, as shown in the example:\n\n* The \"id\" field may be supplied, and it must be unique.\n\n* By default, templates are created as drafts.  If you would like to directly publish a template upon creation, set the \"published\" field to true.\n\n* Open and click tracking may be enable/disabled at the template level using the \"open_tracking\" and\n\"click_tracking\" fields.\n\n* The \"from\" field may be a JSON object composed of \"email\" and \"name\".\n\n* A \"Reply-To\" header may be specified using the \"reply_to\" field.\n\n* Both \"text\" and \"html\" may be provided.\n\n* Additional headers may be specified in the \"headers\" JSON dictionary."
+					},
+					"response": []
+				},
+				{
+					"name": "Create a Template (RFC822 content)",
 					"request": {
 						"method": "POST",
 						"header": [
@@ -4313,9 +4362,23 @@
 								"api",
 								"v1",
 								"templates"
+							],
+							"query": [
+								{
+									"key": "draft",
+									"value": "true",
+									"equals": true,
+									"disabled": true
+								},
+								{
+									"key": "shared_with_subaccounts",
+									"value": "true",
+									"equals": true,
+									"disabled": true
+								}
 							]
 						},
-						"description": "Lists the most recent version of each template in your account. Each template object in the list will have the following fields:\n\n- id: Unique template ID\n\n- name: Template name\n\n- published: Published state of the template (true = published, false = draft)\n\n- description: Template description\n\n"
+						"description": "Lists the most recent version of each template in your account. Each template object in the list will have the following fields:\n\n- id: Unique template ID\n\n- name: Template name\n\n- published: Published state of the template (true = published, false = draft)\n\n- description: Template description\n\n- last_update_time: The time the template was last updated.\n\n- has_draft: flag indicating whether the template has a draft version.\n\n- has_published: flag indicating whether the template has a published version.\n\nAdditional, templates owned by the Master subaccount will have the following field:\n\n- shared_with_subaccounts: Whether the template is shared with subaccounts."
 					},
 					"response": []
 				},
@@ -4338,7 +4401,7 @@
 							"raw": ""
 						},
 						"url": {
-							"raw": "https://api.sparkpost.com/api/v1/templates/11714265276872?draft=true",
+							"raw": "https://api.sparkpost.com/api/v1/templates/11714265276872",
 							"protocol": "https",
 							"host": [
 								"api",
@@ -4354,7 +4417,9 @@
 							"query": [
 								{
 									"key": "draft",
-									"value": "true"
+									"value": "true",
+									"equals": true,
+									"disabled": true
 								}
 							]
 						},
@@ -4378,10 +4443,10 @@
 						],
 						"body": {
 							"mode": "raw",
-							"raw": "{\n  \"published\": true\n}\n"
+							"raw": "{\n  \"options\": {\n    \"open_tracking\": true\n  },\n  \"name\": \"A new name!\",\n  \"shared_with_subaccounts\": true,\n  \"content\": {\n    \"from\": {\n      \"email\": \"marketing@bounces.company.example\",\n      \"name\": \"Example Company Marketing\"\n    },\n    \"subject\": \"Updated Summer deals for \",\n    \"reply_to\": \"Summer deals <summer_deals@company.example>\",\n    \"text\": \"Updated: Check out these deals !\",\n    \"html\": \"<b>Updated: Check out these deals !</b>\"\n  }\n}\n"
 						},
 						"url": {
-							"raw": "https://api.sparkpost.com/api/v1/templates/11714265276872?update_published=true",
+							"raw": "https://api.sparkpost.com/api/v1/templates/another_summer_sale?update_published=true",
 							"protocol": "https",
 							"host": [
 								"api",
@@ -4392,16 +4457,61 @@
 								"api",
 								"v1",
 								"templates",
-								"11714265276872"
+								"another_summer_sale"
 							],
 							"query": [
 								{
 									"key": "update_published",
-									"value": "true"
+									"value": "true",
+									"equals": true
 								}
 							]
 						},
 						"description": "Update an existing template by specifying its ID in the URI path and use a **template object** as the PUT request body.\nBy default, the update will result in a new draft version, but the published version can be overwritten directly by using the **update_published** query parameter.\n\nThe \"name\" field may be modified, but the \"id\" field is read only.\n\nIf a content object is provided in the update request, it must\ncontain all relevant content fields whether they are being changed or not.\nThe new content will completely overwrite the existing content.\n\nThe example shows an update that will rename the template, enable open tracking,\nand update the content all in one API call. All content fields are included whether they are being\nchanged or not.\n\nPublishing a template is a specific case of an update.  The body of the PUT\nrequest should contain the `\"published\": true` field as shown in the example. The\n**update_published** query parameter does not apply.\n\n"
+					},
+					"response": []
+				},
+				{
+					"name": "Update a Template (draft->published)",
+					"request": {
+						"method": "PUT",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							},
+							{
+								"key": "Authorization",
+								"value": "{{API_KEY}}"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n  \"published\": true\n}"
+						},
+						"url": {
+							"raw": "https://api.sparkpost.com/api/v1/templates/another_summer_sale?update_published=false",
+							"protocol": "https",
+							"host": [
+								"api",
+								"sparkpost",
+								"com"
+							],
+							"path": [
+								"api",
+								"v1",
+								"templates",
+								"another_summer_sale"
+							],
+							"query": [
+								{
+									"key": "update_published",
+									"value": "false",
+									"equals": true
+								}
+							]
+						},
+						"description": "Publishing a template is a special kind of update. It uses the most recent draft version to create a new published version, even if one does not already exist. The body of the PUT request should contain the `\"published\": true` field as shown.\nWhen publishing a draft template, `update_published` should be omitted, or specified as false."
 					},
 					"response": []
 				},
@@ -4428,7 +4538,7 @@
 							"raw": "{\n  \"substitution_data\" : {\n    \"name\" : \"Natalie\",\n    \"age\" : 35,\n    \"member\" : true\n  }\n}\n"
 						},
 						"url": {
-							"raw": "https://api.sparkpost.com/api/v1/templates/11714265276872/preview?draft=true",
+							"raw": "https://api.sparkpost.com/api/v1/templates/another_summer_sale/preview?draft=true",
 							"protocol": "https",
 							"host": [
 								"api",
@@ -4439,13 +4549,14 @@
 								"api",
 								"v1",
 								"templates",
-								"11714265276872",
+								"another_summer_sale",
 								"preview"
 							],
 							"query": [
 								{
 									"key": "draft",
-									"value": "true"
+									"value": "true",
+									"equals": true
 								}
 							]
 						},
@@ -4472,7 +4583,7 @@
 							"raw": ""
 						},
 						"url": {
-							"raw": "https://api.sparkpost.com/api/v1/templates/11714265276872",
+							"raw": "https://api.sparkpost.com/api/v1/templates/another_summer_sale",
 							"protocol": "https",
 							"host": [
 								"api",
@@ -4483,7 +4594,7 @@
 								"api",
 								"v1",
 								"templates",
-								"11714265276872"
+								"another_summer_sale"
 							]
 						},
 						"description": "Delete a template by specifying its ID in the URI path.\nIf the template delete API call succeeds, then ALL versions of the template will be deleted from the system (both published AND draft versions).\n\nIf a transmission uses a stored template, the template cannot be deleted if the transmission is submitted or generating.\n\n"
