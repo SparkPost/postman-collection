@@ -4627,7 +4627,7 @@
 						],
 						"body": {
 							"mode": "raw",
-							"raw": "{\n  \"domain\": \"example.domain.com\",\n  \"port\": 8080,\n  \"secure\": true\n}\n"
+							"raw": "{\n  \"domain\": \"example.domain.com\",\n  \"secure\": false,\n  \"default\": false\n}"
 						},
 						"url": {
 							"raw": "https://api.sparkpost.com/api/v1/tracking-domains",
@@ -4643,7 +4643,7 @@
 								"tracking-domains"
 							]
 						},
-						"description": "Create a tracking domain. A tracking domain cannot be set as the default until it is verified.\n\n**NOTE:** For SparkPost, only domain is required in the POST request body. The values for port (80) and secure (false) are not configurable.\n\n"
+						"description": "Create a tracking domain. A tracking domain cannot be set as the default until it is verified.\n\n**Note**: The value for <tt>port</tt> is not configurable. <tt>port</tt> will be 80 for Non-Secure and 443 for Secure.</div>"
 					},
 					"response": []
 				},
@@ -4679,7 +4679,7 @@
 								"tracking-domains"
 							]
 						},
-						"description": "Retrieve a list of all tracking domains.\n\n**NOTE:** For SparkPost, port and secure are not returned since they are hard coded values.\n\n"
+						"description": "Retrieve a list of all tracking domains."
 					},
 					"response": []
 				},
@@ -4716,7 +4716,7 @@
 								"example.domain.com"
 							]
 						},
-						"description": "Retrieve an existing tracking domain.\n\n**NOTE:** For SparkPost, port and secure are not returned since they are hard coded values.\n\n"
+						"description": "Retrieve an existing tracking domain."
 					},
 					"response": []
 				},
@@ -4736,7 +4736,7 @@
 						],
 						"body": {
 							"mode": "raw",
-							"raw": "{\n    \"port\"    : 80,\n    \"secure\"  : true,\n    \"default\" : true\n}\n"
+							"raw": "{\n    \"secure\"  : true,\n    \"default\" : true\n}\n"
 						},
 						"url": {
 							"raw": "https://api.sparkpost.com/api/v1/tracking-domains/example.domain.com",
