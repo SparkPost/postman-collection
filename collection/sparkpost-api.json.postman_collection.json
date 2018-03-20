@@ -3395,7 +3395,7 @@
 			"description": "https://developers.sparkpost.com/api/#/reference/sending-domains",
 			"item": [
 				{
-					"name": "Create a Sending Domain",
+					"name": "Create a Sending Domain (auto gen DKIM)",
 					"request": {
 						"method": "POST",
 						"header": [
@@ -3414,7 +3414,7 @@
 						],
 						"body": {
 							"mode": "raw",
-							"raw": "{\n    \"domain\" : \"example1.com\",\n    \"tracking_domain\" : \"click.example1.com\",\n    \"dkim\" : {  \"private\" : \"MIICXgIBAAKBgQC+W6scd3XWwvC/hPRksfDYFi3ztgyS9OSqnnjtNQeDdTSD1DRx/xFar2wjmzxp2+SnJ5pspaF77VZveN3P/HVmXZVghr3asoV9WBx/uW1nDIUxU35L4juXiTwsMAbgMyh3NqIKTNKyMDy4P8vpEhtH1iv/BrwMdBjHDVCycB8WnwIDAQABAoGBAITb3BCRPBi5lGhHdn+1RgC7cjUQEbSb4eFHm+ULRwQ0UIPWHwiVWtptZ09usHq989fKp1g/PfcNzm8c78uTS6gCxfECweFCRK6EdO6cCCr1cfWvmBdSjzYhODUdQeyWZi2ozqd0FhGWoV4VHseh4iLj36DzleTLtOZj3FhAo1WJAkEA68T+KkGeDyWwvttYtuSiQCCTrXYAWTQnkIUxduCp7Ap6tVeIDn3TaXTj74UbEgaNgLhjG4bX//fdeDW6PaK9YwJBAM6xJmwHLPMgwNVjiz3u/6fhY3kaZTWcxtMkXCjh1QE82KzDwqyrCg7EFjTtFysSHCAZxXZMcivGl4TZLHnydJUCQQCx16+M+mAatuiCnvxlQUMuMiSTNK6Amzm45u9v53nlZeY3weYMYFdHdfe1pebMiwrT7MI9clKebz6svYJVmdtXAkApDAc8VuR3WB7TgdRKNWdyGJGfoD1PO1ZE4iinOcoKV+IT1UCY99Kkgg6C7j62n/8T5OpRBvd5eBPpHxP1F9BNAkEA5Nf2VO9lcTetksHdIeKK+F7sio6UZn0Rv7iUo3ALrN1D1cGfWIh2dj3ko1iSreyNVSwGW0ePP27qDmU+u6/Y1g==\",\n        \"public\" : \"MIGfMA0GCSqGSIb3DQEBAQUAA4GNADCBiQKBgQC+W6scd3XWwvC/hPRksfDYFi3ztgyS9OSqnnjtNQeDdTSD1DRx/xFar2wjmzxp2+SnJ5pspaF77VZveN3P/HVmXZVghr3asoV9WBx/uW1nDIUxU35L4juXiTwsMAbgMyh3NqIKTNKyMDy4P8vpEhtH1iv/BrwMdBjHDVCycB8WnwIDAQAB\",\n        \"selector\" : \"brisbane\",\n        \"headers\" : \"from:to:subject:date\"\n    }\n}\n"
+							"raw": "{\n  \"domain\": \"example1.com\",\n  \"tracking_domain\": \"click.example1.com\",\n  \"generate_dkim\": true,\n  \"shared_with_subaccounts\": false\n}"
 						},
 						"url": {
 							"raw": "https://api.sparkpost.com/api/v1/sending-domains",
@@ -3430,7 +3430,47 @@
 								"sending-domains"
 							]
 						},
-						"description": "Create a sending domain by providing a **sending domain object** as the POST request body.\n\n**Note**: For some SparkPost Elite customers, Sending Domains will be set to verified automatically when they are created, and can be used to send messages immediately. For these customers, there is no need to use the \"verify\" endpoint to verify Sending Domains. To find out if this applies in your SparkPost Elite environment, please contact support <support@sparkpostelite.com>, or contact your TAM.\n\n"
+						"description": "Create a sending domain by providing a sending domain object as the POST request body.\n\nWe allow any given domain (including its subdomains) to only be used by a single customer account. Please see our support article for additional reasons a domain might not be approved for sending.\n\nSparkPost Enterprise accounts: To use a DKIM Signing Domain Identifier different to the Sending Domain, set the dkim.signing_domain field.\nSparkPost Enterprise accounts: In some configurations, Sending Domains will be set to verified automatically when they are created, and can be used to send messages immediately. In that case, there is no need to use the verify endpoint to verify Sending Domains. To find out if this applies to your SparkPost Enterprise service, please contact support support@sparkpostelite.com, or your TAM.\n"
+					},
+					"response": []
+				},
+				{
+					"name": "Create a Sending Domain (specified DKIM)",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							},
+							{
+								"key": "Accept",
+								"value": "application/json"
+							},
+							{
+								"key": "Authorization",
+								"value": "{{API_KEY}}"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"domain\" : \"example1.com\",\n    \"dkim\": {\n    \t\"private\" : \"MIICXgIBAAKBgQC+W6scd3XWwvC/hPRksfDYFi3ztgyS9OSqnnjtNQeDdTSD1DRx/xFar2wjmzxp2+SnJ5pspaF77VZveN3P/HVmXZVghr3asoV9WBx/uW1nDIUxU35L4juXiTwsMAbgMyh3NqIKTNKyMDy4P8vpEhtH1iv/BrwMdBjHDVCycB8WnwIDAQABAoGBAITb3BCRPBi5lGhHdn+1RgC7cjUQEbSb4eFHm+ULRwQ0UIPWHwiVWtptZ09usHq989fKp1g/PfcNzm8c78uTS6gCxfECweFCRK6EdO6cCCr1cfWvmBdSjzYhODUdQeyWZi2ozqd0FhGWoV4VHseh4iLj36DzleTLtOZj3FhAo1WJAkEA68T+KkGeDyWwvttYtuSiQCCTrXYAWTQnkIUxduCp7Ap6tVeIDn3TaXTj74UbEgaNgLhjG4bX//fdeDW6PaK9YwJBAM6xJmwHLPMgwNVjiz3u/6fhY3kaZTWcxtMkXCjh1QE82KzDwqyrCg7EFjTtFysSHCAZxXZMcivGl4TZLHnydJUCQQCx16+M+mAatuiCnvxlQUMuMiSTNK6Amzm45u9v53nlZeY3weYMYFdHdfe1pebMiwrT7MI9clKebz6svYJVmdtXAkApDAc8VuR3WB7TgdRKNWdyGJGfoD1PO1ZE4iinOcoKV+IT1UCY99Kkgg6C7j62n/8T5OpRBvd5eBPpHxP1F9BNAkEA5Nf2VO9lcTetksHdIeKK+F7sio6UZn0Rv7iUo3ALrN1D1cGfWIh2dj3ko1iSreyNVSwGW0ePP27qDmU+u6/Y1g==\",\n        \"public\" : \"MIGfMA0GCSqGSIb3DQEBAQUAA4GNADCBiQKBgQC+W6scd3XWwvC/hPRksfDYFi3ztgyS9OSqnnjtNQeDdTSD1DRx/xFar2wjmzxp2+SnJ5pspaF77VZveN3P/HVmXZVghr3asoV9WBx/uW1nDIUxU35L4juXiTwsMAbgMyh3NqIKTNKyMDy4P8vpEhtH1iv/BrwMdBjHDVCycB8WnwIDAQAB\",\n        \"selector\" : \"brisbane\",\n        \"headers\" : \"from:to:subject:date\"\n    }\n}\n"
+						},
+						"url": {
+							"raw": "https://api.sparkpost.com/api/v1/sending-domains",
+							"protocol": "https",
+							"host": [
+								"api",
+								"sparkpost",
+								"com"
+							],
+							"path": [
+								"api",
+								"v1",
+								"sending-domains"
+							]
+						},
+						"description": "Create a sending domain by providing a sending domain object as the POST request body.\n\nWe allow any given domain (including its subdomains) to only be used by a single customer account. Please see our support article for additional reasons a domain might not be approved for sending.\n\nSparkPost Enterprise accounts: To use a DKIM Signing Domain Identifier different to the Sending Domain, set the dkim.signing_domain field.\nSparkPost Enterprise accounts: In some configurations, Sending Domains will be set to verified automatically when they are created, and can be used to send messages immediately. In that case, there is no need to use the verify endpoint to verify Sending Domains. To find out if this applies to your SparkPost Enterprise service, please contact support support@sparkpostelite.com, or your TAM.\n"
 					},
 					"response": []
 				},
@@ -3464,6 +3504,84 @@
 								"api",
 								"v1",
 								"sending-domains"
+							]
+						},
+						"description": "List an overview of all sending domains in the system.\n\n"
+					},
+					"response": []
+				},
+				{
+					"name": "List all Sending Domains (with search params)",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "{{API_KEY}}"
+							},
+							{
+								"key": "Accept",
+								"value": "application/json"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": ""
+						},
+						"url": {
+							"raw": "https://api.sparkpost.com/api/v1/sending-domains?ownership_verified=true&dkim_status=valid&cname_status=valid&mx_status=unverified&abuse_at_status=unverified&postmaster_at_status=unverified&compliance_status=valid&is_default_bounce_domain=false",
+							"protocol": "https",
+							"host": [
+								"api",
+								"sparkpost",
+								"com"
+							],
+							"path": [
+								"api",
+								"v1",
+								"sending-domains"
+							],
+							"query": [
+								{
+									"key": "ownership_verified",
+									"value": "true",
+									"equals": true
+								},
+								{
+									"key": "dkim_status",
+									"value": "valid",
+									"equals": true
+								},
+								{
+									"key": "cname_status",
+									"value": "valid",
+									"equals": true
+								},
+								{
+									"key": "mx_status",
+									"value": "unverified",
+									"equals": true
+								},
+								{
+									"key": "abuse_at_status",
+									"value": "unverified",
+									"equals": true
+								},
+								{
+									"key": "postmaster_at_status",
+									"value": "unverified",
+									"equals": true
+								},
+								{
+									"key": "compliance_status",
+									"value": "valid",
+									"equals": true
+								},
+								{
+									"key": "is_default_bounce_domain",
+									"value": "false",
+									"equals": true
+								}
 							]
 						},
 						"description": "List an overview of all sending domains in the system.\n\n"
@@ -3527,7 +3645,7 @@
 						],
 						"body": {
 							"mode": "raw",
-							"raw": "{\n    \"tracking_domain\": \"click.example1.com\",\n    \"dkim\" : {  \"private\" : \"MIICXgIBAAKBgQC+W6scd3XWwvC/hPRksfDYFi3ztgyS9OSqnnjtNQeDdTSD1DRx/xFar2wjmzxp2+SnJ5pspaF77VZveN3P/HVmXZVghr3asoV9WBx/uW1nDIUxU35L4juXiTwsMAbgMyh3NqIKTNKyMDy4P8vpEhtH1iv/BrwMdBjHDVCycB8WnwIDAQABAoGBAITb3BCRPBi5lGhHdn+1RgC7cjUQEbSb4eFHm+ULRwQ0UIPWHwiVWtptZ09usHq989fKp1g/PfcNzm8c78uTS6gCxfECweFCRK6EdO6cCCr1cfWvmBdSjzYhODUdQeyWZi2ozqd0FhGWoV4VHseh4iLj36DzleTLtOZj3FhAo1WJAkEA68T+KkGeDyWwvttYtuSiQCCTrXYAWTQnkIUxduCp7Ap6tVeIDn3TaXTj74UbEgaNgLhjG4bX//fdeDW6PaK9YwJBAM6xJmwHLPMgwNVjiz3u/6fhY3kaZTWcxtMkXCjh1QE82KzDwqyrCg7EFjTtFysSHCAZxXZMcivGl4TZLHnydJUCQQCx16+M+mAatuiCnvxlQUMuMiSTNK6Amzm45u9v53nlZeY3weYMYFdHdfe1pebMiwrT7MI9clKebz6svYJVmdtXAkApDAc8VuR3WB7TgdRKNWdyGJGfoD1PO1ZE4iinOcoKV+IT1UCY99Kkgg6C7j62n/8T5OpRBvd5eBPpHxP1F9BNAkEA5Nf2VO9lcTetksHdIeKK+F7sio6UZn0Rv7iUo3ALrN1D1cGfWIh/Y1g==\",\n        \"public\" : \"MIGfMA0GCSqGSIb3DQEBAQUAA4GNADCBiQKBgQC+W6scd3XWwvC/hPRksfDYFi3ztgyS9OSqnnjtNQeDdTSD1DRx/xFar2wjmzxp2+SnJ5pspaF77VZveN3P/HVmXZVghr3asoV9WBx/uW1nDIUxU35L4juXiTwsMAbgMyh3NqIKTNKyMDy4P8vpEhtH1iv/BrwMdBjHDVCycB8WnwIDAQAB\",\n        \"selector\" : \"hello_selector\",\n        \"headers\" : \"from:to:subject:date\"\n    }\n}\n"
+							"raw": "{\n    \"tracking_domain\": \"click.example1.com\",\n    \"dkim\" : {\n    \t\"private\" : \"MIICXgIBAAKBgQC+W6scd3XWwvC/hPRksfDYFi3ztgyS9OSqnnjtNQeDdTSD1DRx/xFar2wjmzxp2+SnJ5pspaF77VZveN3P/HVmXZVghr3asoV9WBx/uW1nDIUxU35L4juXiTwsMAbgMyh3NqIKTNKyMDy4P8vpEhtH1iv/BrwMdBjHDVCycB8WnwIDAQABAoGBAITb3BCRPBi5lGhHdn+1RgC7cjUQEbSb4eFHm+ULRwQ0UIPWHwiVWtptZ09usHq989fKp1g/PfcNzm8c78uTS6gCxfECweFCRK6EdO6cCCr1cfWvmBdSjzYhODUdQeyWZi2ozqd0FhGWoV4VHseh4iLj36DzleTLtOZj3FhAo1WJAkEA68T+KkGeDyWwvttYtuSiQCCTrXYAWTQnkIUxduCp7Ap6tVeIDn3TaXTj74UbEgaNgLhjG4bX//fdeDW6PaK9YwJBAM6xJmwHLPMgwNVjiz3u/6fhY3kaZTWcxtMkXCjh1QE82KzDwqyrCg7EFjTtFysSHCAZxXZMcivGl4TZLHnydJUCQQCx16+M+mAatuiCnvxlQUMuMiSTNK6Amzm45u9v53nlZeY3weYMYFdHdfe1pebMiwrT7MI9clKebz6svYJVmdtXAkApDAc8VuR3WB7TgdRKNWdyGJGfoD1PO1ZE4iinOcoKV+IT1UCY99Kkgg6C7j62n/8T5OpRBvd5eBPpHxP1F9BNAkEA5Nf2VO9lcTetksHdIeKK+F7sio6UZn0Rv7iUo3ALrN1D1cGfWIh/Y1g==\",\n        \"public\" : \"MIGfMA0GCSqGSIb3DQEBAQUAA4GNADCBiQKBgQC+W6scd3XWwvC/hPRksfDYFi3ztgyS9OSqnnjtNQeDdTSD1DRx/xFar2wjmzxp2+SnJ5pspaF77VZveN3P/HVmXZVghr3asoV9WBx/uW1nDIUxU35L4juXiTwsMAbgMyh3NqIKTNKyMDy4P8vpEhtH1iv/BrwMdBjHDVCycB8WnwIDAQAB\",\n        \"selector\" : \"hello_selector\",\n        \"headers\" : \"from:to:subject:date\"\n    }\n}\n"
 						},
 						"url": {
 							"raw": "https://api.sparkpost.com/api/v1/sending-domains/example1.com",
@@ -3605,10 +3723,10 @@
 						],
 						"body": {
 							"mode": "raw",
-							"raw": "{\n    \"abuse_at_verify\" : true\n}\n"
+							"raw": "{\n  \"dkim_verify\": true\n}"
 						},
 						"url": {
-							"raw": "https://api.sparkpost.com/api/v1/sending-domains//verify",
+							"raw": "https://api.sparkpost.com/api/v1/sending-domains/example.com/verify",
 							"protocol": "https",
 							"host": [
 								"api",
@@ -3619,11 +3737,11 @@
 								"api",
 								"v1",
 								"sending-domains",
-								"",
+								"example.com",
 								"verify"
 							]
 						},
-						"description": "The verify resource operates differently depending on the provided request fields:\n\n  * Including the fields \"dkim_verify\" and/or \"spf_verify\" in the request initiates a check against the associated DNS record type for the specified sending domain.\n\n  * Including the fields \"postmaster_at_verify\" and/or \"abuse_at_verify\" in the request results in an email sent to the specified sending domain's postmaster@ and/or abuse@ mailbox where a verification link can be clicked.\n\n  * Including the fields \"postmaster_at_token\" and/or \"abuse_at_token\" in the request initiates a check of the provided token(s) against the stored token(s) for the specified sending domain.\n\nThe domain's \"status\" object is returned on success.\n\n"
+						"description": "\nThe verify resource operates differently depending on the provided request fields:\n  * Including the fields `dkim_verify`, `cname_verify`, and/or `spf_verify` in the request initiates a check against the associated DNS record type for the specified sending domain.\n  * Including the fields `postmaster_at_verify` and/or `abuse_at_verify` in the request results in an email sent to the specified sending domain's postmaster@ and/or abuse@ mailbox where a verification link can be clicked.\n  * Including the fields `verification_mailbox_verify` and `verification_mailbox` in the request results in an email sent to the specified mailbox where a verification link can be clicked.\n  * For `postmaster_at_verify`, `abuse_at_verify` and `verification_mailbox_verify` ownership verification, if the request is made a 2nd time another email will be sent with a new verification link. If the link in the previously sent message is subsequently clicked it will not verify domain ownership. However, if the link in the most recent email is clicked it will verify domain ownership. \n  * Including the fields `verification_mailbox_token` and/or `postmaster_at_token` and/or `abuse_at_token` in the request initiates a check of the provided token(s) against the stored token(s) for the specified sending domain.\n"
 					},
 					"response": []
 				}
