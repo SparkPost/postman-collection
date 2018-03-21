@@ -1,8 +1,7 @@
 {
 	"info": {
-		"name": "SparkPost API",
 		"_postman_id": "63a25a0c-3703-4fdc-b20d-acf431b3232e",
-		"description": "",
+		"name": "SparkPost API",
 		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
 	},
 	"item": [
@@ -76,8 +75,7 @@
 							"query": [
 								{
 									"key": "include",
-									"value": "usage",
-									"equals": true
+									"value": "usage"
 								}
 							]
 						},
@@ -278,8 +276,7 @@
 								"v1",
 								"ip-pools"
 							]
-						},
-						"description": null
+						}
 					},
 					"response": []
 				},
@@ -318,8 +315,7 @@
 								"v1",
 								"ip-pools"
 							]
-						},
-						"description": null
+						}
 					},
 					"response": []
 				},
@@ -355,8 +351,7 @@
 								"ip-pools",
 								"warm_up_ip_pool"
 							]
-						},
-						"description": null
+						}
 					},
 					"response": []
 				},
@@ -396,8 +391,7 @@
 								"ip-pools",
 								"warm_up_ip_pool"
 							]
-						},
-						"description": null
+						}
 					},
 					"response": []
 				},
@@ -437,8 +431,7 @@
 								"ip-pools",
 								"warm_up_ip_pool"
 							]
-						},
-						"description": null
+						}
 					},
 					"response": []
 				}
@@ -520,73 +513,59 @@
 							"query": [
 								{
 									"key": "from",
-									"value": "2018-01-01T00:00",
-									"equals": true
+									"value": "2018-01-01T00:00"
 								},
 								{
 									"key": "to",
-									"value": "2018-12-31T23:59",
-									"equals": true
+									"value": "2018-12-31T23:59"
 								},
 								{
 									"key": "delimiter",
-									"value": ",",
-									"equals": true
+									"value": ","
 								},
 								{
 									"key": "domains",
-									"value": "gmail.com,yahoo.com,hotmail.com",
-									"equals": true
+									"value": "gmail.com,yahoo.com,hotmail.com"
 								},
 								{
 									"key": "campaigns",
-									"value": "Black Friday",
-									"equals": true
+									"value": "Black Friday"
 								},
 								{
 									"key": "templates",
-									"value": "summer-sale",
-									"equals": true
+									"value": "summer-sale"
 								},
 								{
 									"key": "sending_ips",
-									"value": "123.456.789.123",
-									"equals": true
+									"value": "123.456.789.123"
 								},
 								{
 									"key": "ip_pools",
-									"value": "Transactional",
-									"equals": true
+									"value": "Transactional"
 								},
 								{
 									"key": "sending_domains",
-									"value": "sales.sender.com,transactional.sender.com",
-									"equals": true
+									"value": "sales.sender.com,transactional.sender.com"
 								},
 								{
 									"key": "subaccounts",
-									"value": "123,125,127",
-									"equals": true
+									"value": "123,125,127"
 								},
 								{
 									"key": "metrics",
-									"value": "count_accepted,count_admin_bounce,count_block_bounce,count_bounce,count_clicked,count_delayed,count_delayed_first,count_delivered,count_delivered_first,count_delivered_subsequent,count_generation_failed,count_generation_rejection,count_hard_bounce,count_inband_bounce,count_initial_rendered,count_injected,count_outofband_bounce,count_policy_rejection,count_rejected,count_rendered,count_sent,count_soft_bounce,count_spam_complaint,count_targeted,count_undetermined_bounce,count_unique_clicked,count_unique_confirmed_opened,count_unique_initial_rendered,count_unique_rendered,total_delivery_time_first,total_delivery_time_subsequent,total_msg_volume",
-									"equals": true
+									"value": "count_accepted,count_admin_bounce,count_block_bounce,count_bounce,count_clicked,count_delayed,count_delayed_first,count_delivered,count_delivered_first,count_delivered_subsequent,count_generation_failed,count_generation_rejection,count_hard_bounce,count_inband_bounce,count_initial_rendered,count_injected,count_outofband_bounce,count_policy_rejection,count_rejected,count_rendered,count_sent,count_soft_bounce,count_spam_complaint,count_targeted,count_undetermined_bounce,count_unique_clicked,count_unique_confirmed_opened,count_unique_initial_rendered,count_unique_rendered,total_delivery_time_first,total_delivery_time_subsequent,total_msg_volume"
 								},
 								{
 									"key": "timezone",
-									"value": "America/New_York",
-									"equals": true
+									"value": "America/New_York"
 								},
 								{
 									"key": "limit",
-									"value": "5",
-									"equals": true
+									"value": "5"
 								},
 								{
 									"key": "order_by",
-									"value": "count_injected",
-									"equals": true
+									"value": "count_injected"
 								}
 							]
 						},
@@ -630,73 +609,59 @@
 							"query": [
 								{
 									"key": "from",
-									"value": "2018-01-01T00:00",
-									"equals": true
+									"value": "2018-01-01T00:00"
 								},
 								{
 									"key": "to",
-									"value": "2018-12-31T23:59",
-									"equals": true
+									"value": "2018-12-31T23:59"
 								},
 								{
 									"key": "delimiter",
-									"value": ",",
-									"equals": true
+									"value": ","
 								},
 								{
 									"key": "domains",
-									"value": "gmail.com,yahoo.com,hotmail.com",
-									"equals": true
+									"value": "gmail.com,yahoo.com,hotmail.com"
 								},
 								{
 									"key": "campaigns",
-									"value": "Black Friday",
-									"equals": true
+									"value": "Black Friday"
 								},
 								{
 									"key": "templates",
-									"value": "summer-sale",
-									"equals": true
+									"value": "summer-sale"
 								},
 								{
 									"key": "sending_ips",
-									"value": "123.456.789.123",
-									"equals": true
+									"value": "123.456.789.123"
 								},
 								{
 									"key": "ip_pools",
-									"value": "Transactional",
-									"equals": true
+									"value": "Transactional"
 								},
 								{
 									"key": "sending_domains",
-									"value": "sales.sender.com,transactional.sender.com",
-									"equals": true
+									"value": "sales.sender.com,transactional.sender.com"
 								},
 								{
 									"key": "subaccounts",
-									"value": "123,125,127",
-									"equals": true
+									"value": "123,125,127"
 								},
 								{
 									"key": "metrics",
-									"value": "count_accepted,count_admin_bounce,count_block_bounce,count_bounce,count_clicked,count_delayed,count_delayed_first,count_delivered,count_delivered_first,count_delivered_subsequent,count_generation_failed,count_generation_rejection,count_hard_bounce,count_inband_bounce,count_initial_rendered,count_injected,count_outofband_bounce,count_policy_rejection,count_rejected,count_rendered,count_sent,count_soft_bounce,count_spam_complaint,count_targeted,count_undetermined_bounce,count_unique_clicked,count_unique_confirmed_opened,count_unique_initial_rendered,count_unique_rendered,total_delivery_time_first,total_delivery_time_subsequent,total_msg_volume",
-									"equals": true
+									"value": "count_accepted,count_admin_bounce,count_block_bounce,count_bounce,count_clicked,count_delayed,count_delayed_first,count_delivered,count_delivered_first,count_delivered_subsequent,count_generation_failed,count_generation_rejection,count_hard_bounce,count_inband_bounce,count_initial_rendered,count_injected,count_outofband_bounce,count_policy_rejection,count_rejected,count_rendered,count_sent,count_soft_bounce,count_spam_complaint,count_targeted,count_undetermined_bounce,count_unique_clicked,count_unique_confirmed_opened,count_unique_initial_rendered,count_unique_rendered,total_delivery_time_first,total_delivery_time_subsequent,total_msg_volume"
 								},
 								{
 									"key": "timezone",
-									"value": "America/New_York",
-									"equals": true
+									"value": "America/New_York"
 								},
 								{
 									"key": "limit",
-									"value": "5",
-									"equals": true
+									"value": "5"
 								},
 								{
 									"key": "order_by",
-									"value": "count_injected",
-									"equals": true
+									"value": "count_injected"
 								}
 							]
 						},
@@ -740,73 +705,59 @@
 							"query": [
 								{
 									"key": "from",
-									"value": "2018-01-01T00:00",
-									"equals": true
+									"value": "2018-01-01T00:00"
 								},
 								{
 									"key": "to",
-									"value": "2018-12-31T23:59",
-									"equals": true
+									"value": "2018-12-31T23:59"
 								},
 								{
 									"key": "delimiter",
-									"value": ",",
-									"equals": true
+									"value": ","
 								},
 								{
 									"key": "domains",
-									"value": "gmail.com,yahoo.com,hotmail.com",
-									"equals": true
+									"value": "gmail.com,yahoo.com,hotmail.com"
 								},
 								{
 									"key": "campaigns",
-									"value": "Black Friday",
-									"equals": true
+									"value": "Black Friday"
 								},
 								{
 									"key": "templates",
-									"value": "summer-sale",
-									"equals": true
+									"value": "summer-sale"
 								},
 								{
 									"key": "sending_ips",
-									"value": "123.456.789.123",
-									"equals": true
+									"value": "123.456.789.123"
 								},
 								{
 									"key": "ip_pools",
-									"value": "Transactional",
-									"equals": true
+									"value": "Transactional"
 								},
 								{
 									"key": "sending_domains",
-									"value": "sales.sender.com,transactional.sender.com",
-									"equals": true
+									"value": "sales.sender.com,transactional.sender.com"
 								},
 								{
 									"key": "subaccounts",
-									"value": "123,125,127",
-									"equals": true
+									"value": "123,125,127"
 								},
 								{
 									"key": "metrics",
-									"value": "count_targeted",
-									"equals": true
+									"value": "count_targeted"
 								},
 								{
 									"key": "timezone",
-									"value": "America/New_York",
-									"equals": true
+									"value": "America/New_York"
 								},
 								{
 									"key": "limit",
-									"value": "5",
-									"equals": true
+									"value": "5"
 								},
 								{
 									"key": "order_by",
-									"value": "count_injected",
-									"equals": true
+									"value": "count_injected"
 								}
 							]
 						},
@@ -850,73 +801,59 @@
 							"query": [
 								{
 									"key": "from",
-									"value": "2018-01-01T00:00",
-									"equals": true
+									"value": "2018-01-01T00:00"
 								},
 								{
 									"key": "to",
-									"value": "2018-12-31T23:59",
-									"equals": true
+									"value": "2018-12-31T23:59"
 								},
 								{
 									"key": "delimiter",
-									"value": ",",
-									"equals": true
+									"value": ","
 								},
 								{
 									"key": "domains",
-									"value": "gmail.com,yahoo.com,hotmail.com",
-									"equals": true
+									"value": "gmail.com,yahoo.com,hotmail.com"
 								},
 								{
 									"key": "campaigns",
-									"value": "Black Friday",
-									"equals": true
+									"value": "Black Friday"
 								},
 								{
 									"key": "templates",
-									"value": "summer-sale",
-									"equals": true
+									"value": "summer-sale"
 								},
 								{
 									"key": "sending_ips",
-									"value": "123.456.789.123",
-									"equals": true
+									"value": "123.456.789.123"
 								},
 								{
 									"key": "ip_pools",
-									"value": "Transactional",
-									"equals": true
+									"value": "Transactional"
 								},
 								{
 									"key": "sending_domains",
-									"value": "sales.sender.com,transactional.sender.com",
-									"equals": true
+									"value": "sales.sender.com,transactional.sender.com"
 								},
 								{
 									"key": "subaccounts",
-									"value": "123,125,127",
-									"equals": true
+									"value": "123,125,127"
 								},
 								{
 									"key": "metrics",
-									"value": "count_targeted",
-									"equals": true
+									"value": "count_targeted"
 								},
 								{
 									"key": "timezone",
-									"value": "America/New_York",
-									"equals": true
+									"value": "America/New_York"
 								},
 								{
 									"key": "limit",
-									"value": "5",
-									"equals": true
+									"value": "5"
 								},
 								{
 									"key": "order_by",
-									"value": "count_injected",
-									"equals": true
+									"value": "count_injected"
 								}
 							]
 						},
@@ -960,73 +897,59 @@
 							"query": [
 								{
 									"key": "from",
-									"value": "2018-01-01T00:00",
-									"equals": true
+									"value": "2018-01-01T00:00"
 								},
 								{
 									"key": "to",
-									"value": "2018-12-31T23:59",
-									"equals": true
+									"value": "2018-12-31T23:59"
 								},
 								{
 									"key": "delimiter",
-									"value": ",",
-									"equals": true
+									"value": ","
 								},
 								{
 									"key": "domains",
-									"value": "gmail.com,yahoo.com,hotmail.com",
-									"equals": true
+									"value": "gmail.com,yahoo.com,hotmail.com"
 								},
 								{
 									"key": "campaigns",
-									"value": "Black Friday",
-									"equals": true
+									"value": "Black Friday"
 								},
 								{
 									"key": "templates",
-									"value": "summer-sale",
-									"equals": true
+									"value": "summer-sale"
 								},
 								{
 									"key": "sending_ips",
-									"value": "123.456.789.123",
-									"equals": true
+									"value": "123.456.789.123"
 								},
 								{
 									"key": "ip_pools",
-									"value": "Transactional",
-									"equals": true
+									"value": "Transactional"
 								},
 								{
 									"key": "sending_domains",
-									"value": "sales.sender.com,transactional.sender.com",
-									"equals": true
+									"value": "sales.sender.com,transactional.sender.com"
 								},
 								{
 									"key": "subaccounts",
-									"value": "123,125,127",
-									"equals": true
+									"value": "123,125,127"
 								},
 								{
 									"key": "metrics",
-									"value": "count_targeted",
-									"equals": true
+									"value": "count_targeted"
 								},
 								{
 									"key": "timezone",
-									"value": "America/New_York",
-									"equals": true
+									"value": "America/New_York"
 								},
 								{
 									"key": "limit",
-									"value": "5",
-									"equals": true
+									"value": "5"
 								},
 								{
 									"key": "order_by",
-									"value": "count_injected",
-									"equals": true
+									"value": "count_injected"
 								}
 							]
 						},
@@ -1070,73 +993,59 @@
 							"query": [
 								{
 									"key": "from",
-									"value": "2018-01-01T00:00",
-									"equals": true
+									"value": "2018-01-01T00:00"
 								},
 								{
 									"key": "to",
-									"value": "2018-12-31T23:59",
-									"equals": true
+									"value": "2018-12-31T23:59"
 								},
 								{
 									"key": "delimiter",
-									"value": ",",
-									"equals": true
+									"value": ","
 								},
 								{
 									"key": "domains",
-									"value": "gmail.com,yahoo.com,hotmail.com",
-									"equals": true
+									"value": "gmail.com,yahoo.com,hotmail.com"
 								},
 								{
 									"key": "campaigns",
-									"value": "Black Friday",
-									"equals": true
+									"value": "Black Friday"
 								},
 								{
 									"key": "templates",
-									"value": "summer-sale",
-									"equals": true
+									"value": "summer-sale"
 								},
 								{
 									"key": "sending_ips",
-									"value": "123.456.789.123",
-									"equals": true
+									"value": "123.456.789.123"
 								},
 								{
 									"key": "ip_pools",
-									"value": "Transactional",
-									"equals": true
+									"value": "Transactional"
 								},
 								{
 									"key": "sending_domains",
-									"value": "sales.sender.com,transactional.sender.com",
-									"equals": true
+									"value": "sales.sender.com,transactional.sender.com"
 								},
 								{
 									"key": "subaccounts",
-									"value": "123,125,127",
-									"equals": true
+									"value": "123,125,127"
 								},
 								{
 									"key": "metrics",
-									"value": "count_targeted",
-									"equals": true
+									"value": "count_targeted"
 								},
 								{
 									"key": "timezone",
-									"value": "America/New_York",
-									"equals": true
+									"value": "America/New_York"
 								},
 								{
 									"key": "limit",
-									"value": "5",
-									"equals": true
+									"value": "5"
 								},
 								{
 									"key": "order_by",
-									"value": "count_injected",
-									"equals": true
+									"value": "count_injected"
 								}
 							]
 						},
@@ -1180,73 +1089,59 @@
 							"query": [
 								{
 									"key": "from",
-									"value": "2018-01-01T00:00",
-									"equals": true
+									"value": "2018-01-01T00:00"
 								},
 								{
 									"key": "to",
-									"value": "2018-12-31T23:59",
-									"equals": true
+									"value": "2018-12-31T23:59"
 								},
 								{
 									"key": "delimiter",
-									"value": ",",
-									"equals": true
+									"value": ","
 								},
 								{
 									"key": "domains",
-									"value": "gmail.com,yahoo.com,hotmail.com",
-									"equals": true
+									"value": "gmail.com,yahoo.com,hotmail.com"
 								},
 								{
 									"key": "campaigns",
-									"value": "Black Friday",
-									"equals": true
+									"value": "Black Friday"
 								},
 								{
 									"key": "templates",
-									"value": "summer-sale",
-									"equals": true
+									"value": "summer-sale"
 								},
 								{
 									"key": "sending_ips",
-									"value": "123.456.789.123",
-									"equals": true
+									"value": "123.456.789.123"
 								},
 								{
 									"key": "ip_pools",
-									"value": "Transactional",
-									"equals": true
+									"value": "Transactional"
 								},
 								{
 									"key": "sending_domains",
-									"value": "sales.sender.com,transactional.sender.com",
-									"equals": true
+									"value": "sales.sender.com,transactional.sender.com"
 								},
 								{
 									"key": "subaccounts",
-									"value": "123,125,127",
-									"equals": true
+									"value": "123,125,127"
 								},
 								{
 									"key": "metrics",
-									"value": "count_targeted",
-									"equals": true
+									"value": "count_targeted"
 								},
 								{
 									"key": "timezone",
-									"value": "America/New_York",
-									"equals": true
+									"value": "America/New_York"
 								},
 								{
 									"key": "limit",
-									"value": "5",
-									"equals": true
+									"value": "5"
 								},
 								{
 									"key": "order_by",
-									"value": "count_injected",
-									"equals": true
+									"value": "count_injected"
 								}
 							]
 						},
@@ -1290,73 +1185,59 @@
 							"query": [
 								{
 									"key": "from",
-									"value": "2018-01-01T00:00",
-									"equals": true
+									"value": "2018-01-01T00:00"
 								},
 								{
 									"key": "to",
-									"value": "2018-12-31T23:59",
-									"equals": true
+									"value": "2018-12-31T23:59"
 								},
 								{
 									"key": "delimiter",
-									"value": ",",
-									"equals": true
+									"value": ","
 								},
 								{
 									"key": "domains",
-									"value": "gmail.com,yahoo.com,hotmail.com",
-									"equals": true
+									"value": "gmail.com,yahoo.com,hotmail.com"
 								},
 								{
 									"key": "campaigns",
-									"value": "Black Friday",
-									"equals": true
+									"value": "Black Friday"
 								},
 								{
 									"key": "templates",
-									"value": "summer-sale",
-									"equals": true
+									"value": "summer-sale"
 								},
 								{
 									"key": "sending_ips",
-									"value": "123.456.789.123",
-									"equals": true
+									"value": "123.456.789.123"
 								},
 								{
 									"key": "ip_pools",
-									"value": "Transactional",
-									"equals": true
+									"value": "Transactional"
 								},
 								{
 									"key": "sending_domains",
-									"value": "sales.sender.com,transactional.sender.com",
-									"equals": true
+									"value": "sales.sender.com,transactional.sender.com"
 								},
 								{
 									"key": "subaccounts",
-									"value": "123,125,127",
-									"equals": true
+									"value": "123,125,127"
 								},
 								{
 									"key": "metrics",
-									"value": "count_targeted",
-									"equals": true
+									"value": "count_targeted"
 								},
 								{
 									"key": "timezone",
-									"value": "America/New_York",
-									"equals": true
+									"value": "America/New_York"
 								},
 								{
 									"key": "limit",
-									"value": "5",
-									"equals": true
+									"value": "5"
 								},
 								{
 									"key": "order_by",
-									"value": "count_injected",
-									"equals": true
+									"value": "count_injected"
 								}
 							]
 						},
@@ -1400,73 +1281,59 @@
 							"query": [
 								{
 									"key": "from",
-									"value": "2018-01-01T00:00",
-									"equals": true
+									"value": "2018-01-01T00:00"
 								},
 								{
 									"key": "to",
-									"value": "2018-12-31T23:59",
-									"equals": true
+									"value": "2018-12-31T23:59"
 								},
 								{
 									"key": "delimiter",
-									"value": ",",
-									"equals": true
+									"value": ","
 								},
 								{
 									"key": "domains",
-									"value": "gmail.com,yahoo.com,hotmail.com",
-									"equals": true
+									"value": "gmail.com,yahoo.com,hotmail.com"
 								},
 								{
 									"key": "campaigns",
-									"value": "Black Friday",
-									"equals": true
+									"value": "Black Friday"
 								},
 								{
 									"key": "templates",
-									"value": "summer-sale",
-									"equals": true
+									"value": "summer-sale"
 								},
 								{
 									"key": "sending_ips",
-									"value": "123.456.789.123",
-									"equals": true
+									"value": "123.456.789.123"
 								},
 								{
 									"key": "ip_pools",
-									"value": "Transactional",
-									"equals": true
+									"value": "Transactional"
 								},
 								{
 									"key": "sending_domains",
-									"value": "sales.sender.com,transactional.sender.com",
-									"equals": true
+									"value": "sales.sender.com,transactional.sender.com"
 								},
 								{
 									"key": "subaccounts",
-									"value": "123,125,127",
-									"equals": true
+									"value": "123,125,127"
 								},
 								{
 									"key": "metrics",
-									"value": "count_targeted",
-									"equals": true
+									"value": "count_targeted"
 								},
 								{
 									"key": "timezone",
-									"value": "America/New_York",
-									"equals": true
+									"value": "America/New_York"
 								},
 								{
 									"key": "limit",
-									"value": "5",
-									"equals": true
+									"value": "5"
 								},
 								{
 									"key": "order_by",
-									"value": "count_injected",
-									"equals": true
+									"value": "count_injected"
 								}
 							]
 						},
@@ -1510,78 +1377,63 @@
 							"query": [
 								{
 									"key": "from",
-									"value": "2018-01-01T00:00",
-									"equals": true
+									"value": "2018-01-01T00:00"
 								},
 								{
 									"key": "to",
-									"value": "2018-12-31T23:59",
-									"equals": true
+									"value": "2018-12-31T23:59"
 								},
 								{
 									"key": "delimiter",
-									"value": ",",
-									"equals": true
+									"value": ","
 								},
 								{
 									"key": "domains",
-									"value": "gmail.com,yahoo.com,hotmail.com",
-									"equals": true
+									"value": "gmail.com,yahoo.com,hotmail.com"
 								},
 								{
 									"key": "campaigns",
-									"value": "Black Friday",
-									"equals": true
+									"value": "Black Friday"
 								},
 								{
 									"key": "templates",
-									"value": "summer-sale",
-									"equals": true
+									"value": "summer-sale"
 								},
 								{
 									"key": "sending_ips",
-									"value": "123.456.789.123",
-									"equals": true
+									"value": "123.456.789.123"
 								},
 								{
 									"key": "ip_pools",
-									"value": "Transactional",
-									"equals": true
+									"value": "Transactional"
 								},
 								{
 									"key": "sending_domains",
-									"value": "sales.sender.com,transactional.sender.com",
-									"equals": true
+									"value": "sales.sender.com,transactional.sender.com"
 								},
 								{
 									"key": "subaccounts",
-									"value": "123,125,127",
-									"equals": true
+									"value": "123,125,127"
 								},
 								{
 									"key": "precision",
-									"value": "day",
-									"equals": true
+									"value": "day"
 								},
 								{
 									"key": "metrics",
-									"value": "count_targeted",
-									"equals": true
+									"value": "count_targeted"
 								},
 								{
 									"key": "timezone",
-									"value": "America/New_York",
-									"equals": true
+									"value": "America/New_York"
 								},
 								{
 									"key": "limit",
-									"value": "5",
-									"equals": true
+									"value": "5"
 								},
 								{
 									"key": "order_by",
-									"value": "count_injected",
-									"equals": true
+									"value": "count_injected"
 								}
 							]
 						},
@@ -1625,68 +1477,55 @@
 							"query": [
 								{
 									"key": "from",
-									"value": "2018-01-01T00:00",
-									"equals": true
+									"value": "2018-01-01T00:00"
 								},
 								{
 									"key": "to",
-									"value": "2018-12-31T23:59",
-									"equals": true
+									"value": "2018-12-31T23:59"
 								},
 								{
 									"key": "delimiter",
-									"value": ",",
-									"equals": true
+									"value": ","
 								},
 								{
 									"key": "domains",
-									"value": "gmail.com,yahoo.com,hotmail.com",
-									"equals": true
+									"value": "gmail.com,yahoo.com,hotmail.com"
 								},
 								{
 									"key": "campaigns",
-									"value": "Black Friday",
-									"equals": true
+									"value": "Black Friday"
 								},
 								{
 									"key": "templates",
-									"value": "summer-sale",
-									"equals": true
+									"value": "summer-sale"
 								},
 								{
 									"key": "sending_ips",
-									"value": "123.456.789.123",
-									"equals": true
+									"value": "123.456.789.123"
 								},
 								{
 									"key": "ip_pools",
-									"value": "Transactional",
-									"equals": true
+									"value": "Transactional"
 								},
 								{
 									"key": "sending_domains",
-									"value": "sales.sender.com,transactional.sender.com",
-									"equals": true
+									"value": "sales.sender.com,transactional.sender.com"
 								},
 								{
 									"key": "subaccounts",
-									"value": "123,125,127",
-									"equals": true
+									"value": "123,125,127"
 								},
 								{
 									"key": "metrics",
-									"value": "count_bounce,count_inband_bounce,count_outofband_bounce",
-									"equals": true
+									"value": "count_bounce,count_inband_bounce,count_outofband_bounce"
 								},
 								{
 									"key": "timezone",
-									"value": "America/New_York",
-									"equals": true
+									"value": "America/New_York"
 								},
 								{
 									"key": "limit",
-									"value": "5",
-									"equals": true
+									"value": "5"
 								}
 							]
 						},
@@ -1731,68 +1570,55 @@
 							"query": [
 								{
 									"key": "from",
-									"value": "2018-01-01T00:00",
-									"equals": true
+									"value": "2018-01-01T00:00"
 								},
 								{
 									"key": "to",
-									"value": "2018-12-31T23:59",
-									"equals": true
+									"value": "2018-12-31T23:59"
 								},
 								{
 									"key": "delimiter",
-									"value": ",",
-									"equals": true
+									"value": ","
 								},
 								{
 									"key": "domains",
-									"value": "gmail.com,yahoo.com,hotmail.com",
-									"equals": true
+									"value": "gmail.com,yahoo.com,hotmail.com"
 								},
 								{
 									"key": "campaigns",
-									"value": "Black Friday",
-									"equals": true
+									"value": "Black Friday"
 								},
 								{
 									"key": "templates",
-									"value": "summer-sale",
-									"equals": true
+									"value": "summer-sale"
 								},
 								{
 									"key": "sending_ips",
-									"value": "123.456.789.123",
-									"equals": true
+									"value": "123.456.789.123"
 								},
 								{
 									"key": "ip_pools",
-									"value": "Transactional",
-									"equals": true
+									"value": "Transactional"
 								},
 								{
 									"key": "sending_domains",
-									"value": "sales.sender.com,transactional.sender.com",
-									"equals": true
+									"value": "sales.sender.com,transactional.sender.com"
 								},
 								{
 									"key": "subaccounts",
-									"value": "123,125,127",
-									"equals": true
+									"value": "123,125,127"
 								},
 								{
 									"key": "metrics",
-									"value": "count_bounce,count_inband_bounce,count_outofband_bounce",
-									"equals": true
+									"value": "count_bounce,count_inband_bounce,count_outofband_bounce"
 								},
 								{
 									"key": "timezone",
-									"value": "America/New_York",
-									"equals": true
+									"value": "America/New_York"
 								},
 								{
 									"key": "limit",
-									"value": "5",
-									"equals": true
+									"value": "5"
 								}
 							]
 						},
@@ -1836,68 +1662,55 @@
 							"query": [
 								{
 									"key": "from",
-									"value": "2018-01-01T00:00",
-									"equals": true
+									"value": "2018-01-01T00:00"
 								},
 								{
 									"key": "to",
-									"value": "2018-12-31T23:59",
-									"equals": true
+									"value": "2018-12-31T23:59"
 								},
 								{
 									"key": "delimiter",
-									"value": ",",
-									"equals": true
+									"value": ","
 								},
 								{
 									"key": "domains",
-									"value": "gmail.com,yahoo.com,hotmail.com",
-									"equals": true
+									"value": "gmail.com,yahoo.com,hotmail.com"
 								},
 								{
 									"key": "campaigns",
-									"value": "Black Friday",
-									"equals": true
+									"value": "Black Friday"
 								},
 								{
 									"key": "templates",
-									"value": "summer-sale",
-									"equals": true
+									"value": "summer-sale"
 								},
 								{
 									"key": "sending_ips",
-									"value": "123.456.789.123",
-									"equals": true
+									"value": "123.456.789.123"
 								},
 								{
 									"key": "ip_pools",
-									"value": "Transactional",
-									"equals": true
+									"value": "Transactional"
 								},
 								{
 									"key": "sending_domains",
-									"value": "sales.sender.com,transactional.sender.com",
-									"equals": true
+									"value": "sales.sender.com,transactional.sender.com"
 								},
 								{
 									"key": "subaccounts",
-									"value": "123,125,127",
-									"equals": true
+									"value": "123,125,127"
 								},
 								{
 									"key": "metrics",
-									"value": "count_bounce,count_inband_bounce,count_outofband_bounce",
-									"equals": true
+									"value": "count_bounce,count_inband_bounce,count_outofband_bounce"
 								},
 								{
 									"key": "timezone",
-									"value": "America/New_York",
-									"equals": true
+									"value": "America/New_York"
 								},
 								{
 									"key": "limit",
-									"value": "5",
-									"equals": true
+									"value": "5"
 								}
 							]
 						},
@@ -1941,63 +1754,51 @@
 							"query": [
 								{
 									"key": "from",
-									"value": "2018-01-01T00:00",
-									"equals": true
+									"value": "2018-01-01T00:00"
 								},
 								{
 									"key": "to",
-									"value": "2018-12-31T23:59",
-									"equals": true
+									"value": "2018-12-31T23:59"
 								},
 								{
 									"key": "delimiter",
-									"value": ",",
-									"equals": true
+									"value": ","
 								},
 								{
 									"key": "domains",
-									"value": "gmail.com,yahoo.com,hotmail.com",
-									"equals": true
+									"value": "gmail.com,yahoo.com,hotmail.com"
 								},
 								{
 									"key": "campaigns",
-									"value": "Black Friday",
-									"equals": true
+									"value": "Black Friday"
 								},
 								{
 									"key": "templates",
-									"value": "summer-sale",
-									"equals": true
+									"value": "summer-sale"
 								},
 								{
 									"key": "sending_ips",
-									"value": "123.456.789.123",
-									"equals": true
+									"value": "123.456.789.123"
 								},
 								{
 									"key": "ip_pools",
-									"value": "Transactional",
-									"equals": true
+									"value": "Transactional"
 								},
 								{
 									"key": "sending_domains",
-									"value": "sales.sender.com,transactional.sender.com",
-									"equals": true
+									"value": "sales.sender.com,transactional.sender.com"
 								},
 								{
 									"key": "subaccounts",
-									"value": "123,125,127",
-									"equals": true
+									"value": "123,125,127"
 								},
 								{
 									"key": "timezone",
-									"value": "America/New_York",
-									"equals": true
+									"value": "America/New_York"
 								},
 								{
 									"key": "limit",
-									"value": "5",
-									"equals": true
+									"value": "5"
 								}
 							]
 						},
@@ -2042,63 +1843,51 @@
 							"query": [
 								{
 									"key": "from",
-									"value": "2018-01-01T00:00",
-									"equals": true
+									"value": "2018-01-01T00:00"
 								},
 								{
 									"key": "to",
-									"value": "2018-12-31T23:59",
-									"equals": true
+									"value": "2018-12-31T23:59"
 								},
 								{
 									"key": "delimiter",
-									"value": ",",
-									"equals": true
+									"value": ","
 								},
 								{
 									"key": "domains",
-									"value": "gmail.com,yahoo.com,hotmail.com",
-									"equals": true
+									"value": "gmail.com,yahoo.com,hotmail.com"
 								},
 								{
 									"key": "campaigns",
-									"value": "Black Friday",
-									"equals": true
+									"value": "Black Friday"
 								},
 								{
 									"key": "templates",
-									"value": "summer-sale",
-									"equals": true
+									"value": "summer-sale"
 								},
 								{
 									"key": "sending_ips",
-									"value": "123.456.789.123",
-									"equals": true
+									"value": "123.456.789.123"
 								},
 								{
 									"key": "ip_pools",
-									"value": "Transactional",
-									"equals": true
+									"value": "Transactional"
 								},
 								{
 									"key": "sending_domains",
-									"value": "sales.sender.com,transactional.sender.com",
-									"equals": true
+									"value": "sales.sender.com,transactional.sender.com"
 								},
 								{
 									"key": "subaccounts",
-									"value": "123,125,127",
-									"equals": true
+									"value": "123,125,127"
 								},
 								{
 									"key": "timezone",
-									"value": "America/New_York",
-									"equals": true
+									"value": "America/New_York"
 								},
 								{
 									"key": "limit",
-									"value": "5",
-									"equals": true
+									"value": "5"
 								}
 							]
 						},
@@ -2142,63 +1931,51 @@
 							"query": [
 								{
 									"key": "from",
-									"value": "2018-01-01T00:00",
-									"equals": true
+									"value": "2018-01-01T00:00"
 								},
 								{
 									"key": "to",
-									"value": "2018-12-31T23:59",
-									"equals": true
+									"value": "2018-12-31T23:59"
 								},
 								{
 									"key": "delimiter",
-									"value": ",",
-									"equals": true
+									"value": ","
 								},
 								{
 									"key": "domains",
-									"value": "gmail.com,yahoo.com,hotmail.com",
-									"equals": true
+									"value": "gmail.com,yahoo.com,hotmail.com"
 								},
 								{
 									"key": "campaigns",
-									"value": "Black Friday",
-									"equals": true
+									"value": "Black Friday"
 								},
 								{
 									"key": "templates",
-									"value": "summer-sale",
-									"equals": true
+									"value": "summer-sale"
 								},
 								{
 									"key": "sending_ips",
-									"value": "123.456.789.123",
-									"equals": true
+									"value": "123.456.789.123"
 								},
 								{
 									"key": "ip_pools",
-									"value": "Transactional",
-									"equals": true
+									"value": "Transactional"
 								},
 								{
 									"key": "sending_domains",
-									"value": "sales.sender.com,transactional.sender.com",
-									"equals": true
+									"value": "sales.sender.com,transactional.sender.com"
 								},
 								{
 									"key": "subaccounts",
-									"value": "123,125,127",
-									"equals": true
+									"value": "123,125,127"
 								},
 								{
 									"key": "timezone",
-									"value": "America/New_York",
-									"equals": true
+									"value": "America/New_York"
 								},
 								{
 									"key": "limit",
-									"value": "5",
-									"equals": true
+									"value": "5"
 								}
 							]
 						},
@@ -2243,63 +2020,51 @@
 							"query": [
 								{
 									"key": "from",
-									"value": "2018-01-01T00:00",
-									"equals": true
+									"value": "2018-01-01T00:00"
 								},
 								{
 									"key": "to",
-									"value": "2018-12-31T23:59",
-									"equals": true
+									"value": "2018-12-31T23:59"
 								},
 								{
 									"key": "delimiter",
-									"value": ",",
-									"equals": true
+									"value": ","
 								},
 								{
 									"key": "domains",
-									"value": "gmail.com,yahoo.com,hotmail.com",
-									"equals": true
+									"value": "gmail.com,yahoo.com,hotmail.com"
 								},
 								{
 									"key": "campaigns",
-									"value": "Black Friday",
-									"equals": true
+									"value": "Black Friday"
 								},
 								{
 									"key": "templates",
-									"value": "summer-sale",
-									"equals": true
+									"value": "summer-sale"
 								},
 								{
 									"key": "sending_ips",
-									"value": "123.456.789.123",
-									"equals": true
+									"value": "123.456.789.123"
 								},
 								{
 									"key": "ip_pools",
-									"value": "Transactional",
-									"equals": true
+									"value": "Transactional"
 								},
 								{
 									"key": "sending_domains",
-									"value": "sales.sender.com,transactional.sender.com",
-									"equals": true
+									"value": "sales.sender.com,transactional.sender.com"
 								},
 								{
 									"key": "subaccounts",
-									"value": "123,125,127",
-									"equals": true
+									"value": "123,125,127"
 								},
 								{
 									"key": "timezone",
-									"value": "America/New_York",
-									"equals": true
+									"value": "America/New_York"
 								},
 								{
 									"key": "limit",
-									"value": "5",
-									"equals": true
+									"value": "5"
 								}
 							]
 						},
@@ -2343,65 +2108,53 @@
 							"query": [
 								{
 									"key": "from",
-									"value": "2018-01-01T00:00",
-									"equals": true
+									"value": "2018-01-01T00:00"
 								},
 								{
 									"key": "to",
-									"value": "2018-12-31T23:59",
-									"equals": true
+									"value": "2018-12-31T23:59"
 								},
 								{
 									"key": "delimiter",
-									"value": ",",
-									"equals": true
+									"value": ","
 								},
 								{
 									"key": "timezone",
-									"value": "America/New_York",
-									"equals": true
+									"value": "America/New_York"
 								},
 								{
 									"key": "metrics",
-									"value": "count_clicked,count_raw_clicked",
-									"equals": true
+									"value": "count_clicked,count_raw_clicked"
 								},
 								{
 									"key": "campaigns",
-									"value": "Black Friday",
-									"equals": true
+									"value": "Black Friday"
 								},
 								{
 									"key": "templates",
-									"value": "summer-sale",
-									"equals": true
+									"value": "summer-sale"
 								},
 								{
 									"key": "sending_domains",
-									"value": "sales.sender.com,transactional.sender.com",
-									"equals": true
+									"value": "sales.sender.com,transactional.sender.com"
 								},
 								{
 									"key": "subaccounts",
-									"value": "123,125,127",
-									"equals": true
+									"value": "123,125,127"
 								},
 								{
 									"key": "sending_ips",
 									"value": "123.456.789.123",
-									"equals": true,
 									"disabled": true
 								},
 								{
 									"key": "ip_pools",
 									"value": "Transactional",
-									"equals": true,
 									"disabled": true
 								},
 								{
 									"key": "limit",
-									"value": "5",
-									"equals": true
+									"value": "5"
 								}
 							]
 						},
@@ -2445,75 +2198,61 @@
 							"query": [
 								{
 									"key": "from",
-									"value": "2018-01-01T00:00",
-									"equals": true
+									"value": "2018-01-01T00:00"
 								},
 								{
 									"key": "to",
-									"value": "2018-12-31T23:59",
-									"equals": true
+									"value": "2018-12-31T23:59"
 								},
 								{
 									"key": "delimiter",
-									"value": ",",
-									"equals": true
+									"value": ","
 								},
 								{
 									"key": "domains",
-									"value": "gmail.com,yahoo.com,hotmail.com",
-									"equals": true
+									"value": "gmail.com,yahoo.com,hotmail.com"
 								},
 								{
 									"key": "campaigns",
-									"value": "Black Friday",
-									"equals": true
+									"value": "Black Friday"
 								},
 								{
 									"key": "templates",
-									"value": "summer-sale",
-									"equals": true
+									"value": "summer-sale"
 								},
 								{
 									"key": "sending_ips",
-									"value": "123.456.789.123",
-									"equals": true
+									"value": "123.456.789.123"
 								},
 								{
 									"key": "ip_pools",
-									"value": "Transactional",
-									"equals": true
+									"value": "Transactional"
 								},
 								{
 									"key": "sending_domains",
-									"value": "sales.sender.com,transactional.sender.com",
-									"equals": true
+									"value": "sales.sender.com,transactional.sender.com"
 								},
 								{
 									"key": "bindings",
 									"value": "Confirmation",
-									"equals": true,
 									"disabled": true
 								},
 								{
 									"key": "binding_groups",
 									"value": "Transaction",
-									"equals": true,
 									"disabled": true
 								},
 								{
 									"key": "subaccounts",
-									"value": "123,125,127",
-									"equals": true
+									"value": "123,125,127"
 								},
 								{
 									"key": "timezone",
-									"value": "America/New_York",
-									"equals": true
+									"value": "America/New_York"
 								},
 								{
 									"key": "limit",
 									"value": "5",
-									"equals": true,
 									"disabled": true
 								}
 							]
@@ -2557,28 +2296,23 @@
 							"query": [
 								{
 									"key": "match",
-									"value": "test",
-									"equals": true
+									"value": "test"
 								},
 								{
 									"key": "limit",
-									"value": "5",
-									"equals": true
+									"value": "5"
 								},
 								{
 									"key": "from",
-									"value": "2018-01-01T00:00",
-									"equals": true
+									"value": "2018-01-01T00:00"
 								},
 								{
 									"key": "to",
-									"value": "2018-12-31T23:59",
-									"equals": true
+									"value": "2018-12-31T23:59"
 								},
 								{
 									"key": "timezone",
-									"value": "America/New_York",
-									"equals": true
+									"value": "America/New_York"
 								}
 							]
 						},
@@ -2622,28 +2356,23 @@
 								{
 									"key": "match",
 									"value": "35.163",
-									"equals": true,
 									"disabled": true
 								},
 								{
 									"key": "limit",
-									"value": "5",
-									"equals": true
+									"value": "5"
 								},
 								{
 									"key": "from",
-									"value": "2018-01-01T00:00",
-									"equals": true
+									"value": "2018-01-01T00:00"
 								},
 								{
 									"key": "to",
-									"value": "2018-12-31T23:59",
-									"equals": true
+									"value": "2018-12-31T23:59"
 								},
 								{
 									"key": "timezone",
-									"value": "America/New_York",
-									"equals": true
+									"value": "America/New_York"
 								}
 							]
 						},
@@ -2757,23 +2486,19 @@
 								},
 								{
 									"key": "limit",
-									"value": "5",
-									"equals": true
+									"value": "5"
 								},
 								{
 									"key": "from",
-									"value": "2018-01-01T00:00",
-									"equals": true
+									"value": "2018-01-01T00:00"
 								},
 								{
 									"key": "to",
-									"value": "2018-12-31T23:59",
-									"equals": true
+									"value": "2018-12-31T23:59"
 								},
 								{
 									"key": "timezone",
-									"value": "America/New_York",
-									"equals": true
+									"value": "America/New_York"
 								}
 							]
 						},
@@ -2853,8 +2578,7 @@
 							"query": [
 								{
 									"key": "events",
-									"value": "bounce",
-									"equals": true
+									"value": "bounce"
 								}
 							]
 						},
@@ -2896,78 +2620,63 @@
 							"query": [
 								{
 									"key": "bounce_classes",
-									"value": "1",
-									"equals": true
+									"value": "1"
 								},
 								{
 									"key": "campaign_ids",
-									"value": "Example Campaign Name",
-									"equals": true
+									"value": "Example Campaign Name"
 								},
 								{
 									"key": "delimiter",
-									"value": ",",
-									"equals": true
+									"value": ","
 								},
 								{
 									"key": "events",
-									"value": "delivery,injection,bounce,delay,policy_rejection,out_of_band,open,click,generation_failure,generation_rejection,spam_complaint,list_unsubscribe,link_unsubscribe",
-									"equals": true
+									"value": "delivery,injection,bounce,delay,policy_rejection,out_of_band,open,click,generation_failure,generation_rejection,spam_complaint,list_unsubscribe,link_unsubscribe"
 								},
 								{
 									"key": "friendly_froms",
-									"value": "sender@mail.example.com",
-									"equals": true
+									"value": "sender@mail.example.com"
 								},
 								{
 									"key": "from",
-									"value": "2018-01-01T00:00",
-									"equals": true
+									"value": "2018-01-01T00:00"
 								},
 								{
 									"key": "message_ids",
-									"value": "0e0d94b7-9085-4e3c-ab30-e3f2cd9c273e",
-									"equals": true
+									"value": "0e0d94b7-9085-4e3c-ab30-e3f2cd9c273e"
 								},
 								{
 									"key": "page",
-									"value": "25",
-									"equals": true
+									"value": "25"
 								},
 								{
 									"key": "per_page",
-									"value": "1000",
-									"equals": true
+									"value": "1000"
 								},
 								{
 									"key": "reason",
-									"value": "bounce",
-									"equals": true
+									"value": "bounce"
 								},
 								{
 									"key": "recipients",
-									"value": "recipient@example.com",
-									"equals": true
+									"value": "recipient@example.com"
 								},
 								{
 									"key": "template_ids",
-									"value": "templ-1234",
-									"equals": true
+									"value": "templ-1234"
 								},
 								{
 									"key": "timezone",
-									"value": "America/New_York",
-									"equals": true
+									"value": "America/New_York"
 								},
 								{
 									"key": "to",
-									"value": "2018-12-31T23:59",
-									"equals": true
+									"value": "2018-12-31T23:59"
 								},
 								{
 									"key": "transmission_ids",
-									"value": "65832150921904138",
-									"equals": true
+									"value": "65832150921904138"
 								}
 							]
 						},
@@ -3062,8 +2771,7 @@
 							"query": [
 								{
 									"key": "show_recipients",
-									"value": "true",
-									"equals": true
+									"value": "true"
 								}
 							]
 						},
@@ -3544,43 +3252,35 @@
 							"query": [
 								{
 									"key": "ownership_verified",
-									"value": "true",
-									"equals": true
+									"value": "true"
 								},
 								{
 									"key": "dkim_status",
-									"value": "valid",
-									"equals": true
+									"value": "valid"
 								},
 								{
 									"key": "cname_status",
-									"value": "valid",
-									"equals": true
+									"value": "valid"
 								},
 								{
 									"key": "mx_status",
-									"value": "unverified",
-									"equals": true
+									"value": "unverified"
 								},
 								{
 									"key": "abuse_at_status",
-									"value": "unverified",
-									"equals": true
+									"value": "unverified"
 								},
 								{
 									"key": "postmaster_at_status",
-									"value": "unverified",
-									"equals": true
+									"value": "unverified"
 								},
 								{
 									"key": "compliance_status",
-									"value": "valid",
-									"equals": true
+									"value": "valid"
 								},
 								{
 									"key": "is_default_bounce_domain",
-									"value": "false",
-									"equals": true
+									"value": "false"
 								}
 							]
 						},
@@ -4128,43 +3828,35 @@
 							"query": [
 								{
 									"key": "to",
-									"value": "2018-12-31T23:59:00-0000",
-									"equals": true
+									"value": "2018-12-31T23:59:00-0000"
 								},
 								{
 									"key": "from",
-									"value": "2018-01-01T23:59:00-0000",
-									"equals": true
+									"value": "2018-01-01T23:59:00-0000"
 								},
 								{
 									"key": "types",
-									"value": "transactional,non_transactional",
-									"equals": true
+									"value": "transactional,non_transactional"
 								},
 								{
 									"key": "domain",
-									"value": "example.com",
-									"equals": true
+									"value": "example.com"
 								},
 								{
 									"key": "per_page",
-									"value": "10000",
-									"equals": true
+									"value": "10000"
 								},
 								{
 									"key": "page",
-									"value": "1",
-									"equals": true
+									"value": "1"
 								},
 								{
 									"key": "sources",
-									"value": "Manually Added",
-									"equals": true
+									"value": "Manually Added"
 								},
 								{
 									"key": "description",
-									"value": "requested to not receive",
-									"equals": true
+									"value": "requested to not receive"
 								}
 							]
 						},
@@ -4351,7 +4043,7 @@
 							"raw": ""
 						},
 						"url": {
-							"raw": "https://api.sparkpost.com/api/v1/templates",
+							"raw": "https://api.sparkpost.com/api/v1/templates?",
 							"protocol": "https",
 							"host": [
 								"api",
@@ -4367,13 +4059,11 @@
 								{
 									"key": "draft",
 									"value": "true",
-									"equals": true,
 									"disabled": true
 								},
 								{
 									"key": "shared_with_subaccounts",
 									"value": "true",
-									"equals": true,
 									"disabled": true
 								}
 							]
@@ -4401,7 +4091,7 @@
 							"raw": ""
 						},
 						"url": {
-							"raw": "https://api.sparkpost.com/api/v1/templates/11714265276872",
+							"raw": "https://api.sparkpost.com/api/v1/templates/11714265276872?",
 							"protocol": "https",
 							"host": [
 								"api",
@@ -4418,7 +4108,6 @@
 								{
 									"key": "draft",
 									"value": "true",
-									"equals": true,
 									"disabled": true
 								}
 							]
@@ -4462,8 +4151,7 @@
 							"query": [
 								{
 									"key": "update_published",
-									"value": "true",
-									"equals": true
+									"value": "true"
 								}
 							]
 						},
@@ -4506,8 +4194,7 @@
 							"query": [
 								{
 									"key": "update_published",
-									"value": "false",
-									"equals": true
+									"value": "false"
 								}
 							]
 						},
@@ -4555,8 +4242,7 @@
 							"query": [
 								{
 									"key": "draft",
-									"value": "true",
-									"equals": true
+									"value": "true"
 								}
 							]
 						},
@@ -4876,8 +4562,7 @@
 							"query": [
 								{
 									"key": "num_rcpt_errors",
-									"value": "3",
-									"equals": true
+									"value": "3"
 								}
 							]
 						},
@@ -4923,8 +4608,7 @@
 							"query": [
 								{
 									"key": "num_rcpt_errors",
-									"value": "3",
-									"equals": true
+									"value": "3"
 								}
 							]
 						},
@@ -4970,8 +4654,7 @@
 							"query": [
 								{
 									"key": "num_rcpt_errors",
-									"value": "3",
-									"equals": true
+									"value": "3"
 								}
 							]
 						},
@@ -5017,8 +4700,7 @@
 							"query": [
 								{
 									"key": "num_rcpt_errors",
-									"value": "3",
-									"equals": true
+									"value": "3"
 								}
 							]
 						},
@@ -5064,8 +4746,7 @@
 							"query": [
 								{
 									"key": "num_rcpt_errors",
-									"value": "3",
-									"equals": true
+									"value": "3"
 								}
 							]
 						},
@@ -5137,7 +4818,7 @@
 							"raw": ""
 						},
 						"url": {
-							"raw": "https://api.sparkpost.com/api/v1/transmissions",
+							"raw": "https://api.sparkpost.com/api/v1/transmissions?",
 							"protocol": "https",
 							"host": [
 								"api",
@@ -5153,13 +4834,11 @@
 								{
 									"key": "draft",
 									"value": "true",
-									"equals": true,
 									"disabled": true
 								},
 								{
 									"key": "shared_with_subaccounts",
 									"value": "true",
-									"equals": true,
 									"disabled": true
 								}
 							]
@@ -5260,7 +4939,7 @@
 							"raw": ""
 						},
 						"url": {
-							"raw": "https://api.sparkpost.com/api/v1/webhooks/events/samples?events=bounce",
+							"raw": "https://api.sparkpost.com/api/v1/webhooks/events/samples?events=bounce,out_of_band",
 							"protocol": "https",
 							"host": [
 								"api",
@@ -5277,7 +4956,7 @@
 							"query": [
 								{
 									"key": "events",
-									"value": "bounce"
+									"value": "bounce,out_of_band"
 								}
 							]
 						},
@@ -5286,7 +4965,7 @@
 					"response": []
 				},
 				{
-					"name": "Create a Webhook",
+					"name": "Create a Webhook (No Auth, all events, http)",
 					"request": {
 						"method": "POST",
 						"header": [
@@ -5305,7 +4984,7 @@
 						],
 						"body": {
 							"mode": "raw",
-							"raw": "{\n  \"name\": \"Example webhook\",\n  \"target\": \"http://client.example.com/example-webhook\",\n  \"auth_type\": \"oauth2\",\n  \"auth_request_details\": {\n    \"url\": \"http://client.example.com/tokens\",\n    \"body\": {\n        \"client_id\": \"CLIENT123\",\n        \"client_secret\": \"9sdfj791d2bsbf\",\n        \"grant_type\": \"client_credentials\"\n    }\n  },\n  \"auth_token\": \"\",\n  \"events\": [\n    \"delivery\",\n    \"injection\",\n    \"open\",\n    \"click\"\n  ]\n}\n\n"
+							"raw": "{\n    \"name\": \"Example webhook\",\n    \"target\": \"http://client.example.com/example-webhook\",\n    \"events\": [\n        \"bounce\", \n        \"delivery\", \n        \"injection\", \n        \"sms_status\", \n        \"spam_complaint\", \n        \"out_of_band\", \n        \"policy_rejection\", \n        \"delay\", \n        \"click\", \n        \"open\", \n        \"initial_open\", \n        \"generation_failure\", \n        \"generation_rejection\", \n        \"list_unsubscribe\", \n        \"link_unsubscribe\", \n        \"relay_injection\", \n        \"relay_rejection\", \n        \"relay_delivery\", \n        \"relay_tempfail\", \n        \"relay_permfail\"\n    ]\n}"
 						},
 						"url": {
 							"raw": "https://api.sparkpost.com/api/v1/webhooks",
@@ -5321,7 +5000,87 @@
 								"webhooks"
 							]
 						},
-						"description": "Create a webhook by providing a **webhooks object** as the POST request body.  On creation, events will\nbegin to be pushed to the target URL specified in the POST request body.\n\nAs described in \"Webhooks Object Properties\", webhook creation entails a test POST request to the URL given as the _target_ value. If this request does not receive an HTTP 200 response, your request to the Webhook API will fail with HTTP 400, and the webhook will not be created. If created successfully, the webhook will begin to receive event data after 1 minute.\n\n"
+						"description": "Create a webhook by providing a **webhooks object** as the POST request body.  On creation, events will\nbegin to be pushed to the target URL specified in the POST request body.\n\nAs described in \"Webhooks Object Properties\", webhook creation entails a test POST request to the URL given as the _target_ value. If this request does not receive an HTTP 200 response, your request to the Webhook API will fail with HTTP 400, and the webhook will not be created. If created successfully, the webhook will begin to receive event data after 1 minute.\n\n## Webhooks Object Properties\n\n| Property          | Type   | Description | Required | Notes |\n|-------------------|--------|-------------|----------|-------|\n| name              | string | User-friendly name for webhook | yes | example: `Example webhook` |\n| target            | string | URL of the target to which to POST event batches | yes |  When a webhook is created or updated with a change to this property, a test POST request is sent to the given URL. The target URL must accept the connection and respond with HTTP 200; otherwise, your request to the Webhook API will fail with HTTP 400, and the requested change will not be applied.<br />example: `http://client.example.com/example-webhook` |\n| events            | array  | Array of event types this webhook will receive | yes | Use the Webhooks Events endpoint to list the available event types.<br />example: `[\"delivery\", \"injection\", \"open\", \"click\"]`|\n| active            | boolean | Describes status of the webhook | no | Defaults to true, when false the target will no longer receive batches |\n| custom_headers    | JSON   | Object of custom headers to be used during POST requests to target | no | example: `{\"x-api-key\" : \"abcd\"}` |\n| auth_type         | string | Type of authentication to be used during POST requests to target | no | examples: `none`, `basic`, `oauth2` |\n| auth_request_details | JSON | Object containing details needed to request authorization credentials, as necessary | no | example: `{ \"url\": \"https://oauth.myurl.com/tokens\", \"body\": { \"client_id\": \"<oauth client id>\", \"client_secret\": \"<oauth client secret>\" }}`|\n| auth_credentials         | JSON | Object containing credentials needed to make authorized POST requests to target | no | examples: `{ \"access_token\": \"<oauth token>\", expires_in: 3600 }`, `{ \"username\": \"basicauthuser\", \"password\": \"mypassword\" }` |\n| auth_token        | string | Authentication token to present in the `X-MessageSystems-Webhook-Token` header of POST requests to target | no | Use this token in your target application to confirm that data is coming from the Webhooks API. <br />example: `5ebe2294ecd0e0f08eab7690d2a6ee69`<br /><br /><span class=\"label label-danger\"><strong>Deprecated</strong></span> in favor of the `auth_type` field. |"
+					},
+					"response": []
+				},
+				{
+					"name": "Create a Webhook (Basic Auth, selected events, https)",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							},
+							{
+								"key": "Accept",
+								"value": "application/json"
+							},
+							{
+								"key": "Authorization",
+								"value": "{{API_KEY}}"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"name\": \"Example webhook\",\n    \"target\": \"https://client.example.com/example-webhook\",\n    \"custom_headers\": {\n        \"x-api-key\": \"abcd\"\n    },\n    \"events\": [\n        \"delivery\",\n        \"injection\",\n        \"open\",\n        \"click\"\n    ],\n    \"auth_type\": \"basic\",\n    \"auth_credentials\": {\n        \"username\": \"myusername\",\n        \"password\": \"mypassword\"\n    }\n}"
+						},
+						"url": {
+							"raw": "https://api.sparkpost.com/api/v1/webhooks",
+							"protocol": "https",
+							"host": [
+								"api",
+								"sparkpost",
+								"com"
+							],
+							"path": [
+								"api",
+								"v1",
+								"webhooks"
+							]
+						},
+						"description": "Create a webhook by providing a **webhooks object** as the POST request body.  On creation, events will\nbegin to be pushed to the target URL specified in the POST request body.\n\nAs described in \"Webhooks Object Properties\", webhook creation entails a test POST request to the URL given as the _target_ value. If this request does not receive an HTTP 200 response, your request to the Webhook API will fail with HTTP 400, and the webhook will not be created. If created successfully, the webhook will begin to receive event data after 1 minute.\n\n## Webhooks Object Properties\n\n| Property          | Type   | Description | Required | Notes |\n|-------------------|--------|-------------|----------|-------|\n| name              | string | User-friendly name for webhook | yes | example: `Example webhook` |\n| target            | string | URL of the target to which to POST event batches | yes |  When a webhook is created or updated with a change to this property, a test POST request is sent to the given URL. The target URL must accept the connection and respond with HTTP 200; otherwise, your request to the Webhook API will fail with HTTP 400, and the requested change will not be applied.<br />example: `http://client.example.com/example-webhook` |\n| events            | array  | Array of event types this webhook will receive | yes | Use the Webhooks Events endpoint to list the available event types.<br />example: `[\"delivery\", \"injection\", \"open\", \"click\"]`|\n| active            | boolean | Describes status of the webhook | no | Defaults to true, when false the target will no longer receive batches |\n| custom_headers    | JSON   | Object of custom headers to be used during POST requests to target | no | example: `{\"x-api-key\" : \"abcd\"}` |\n| auth_type         | string | Type of authentication to be used during POST requests to target | no | examples: `none`, `basic`, `oauth2` |\n| auth_request_details | JSON | Object containing details needed to request authorization credentials, as necessary | no | example: `{ \"url\": \"https://oauth.myurl.com/tokens\", \"body\": { \"client_id\": \"<oauth client id>\", \"client_secret\": \"<oauth client secret>\" }}`|\n| auth_credentials         | JSON | Object containing credentials needed to make authorized POST requests to target | no | examples: `{ \"access_token\": \"<oauth token>\", expires_in: 3600 }`, `{ \"username\": \"basicauthuser\", \"password\": \"mypassword\" }` |\n| auth_token        | string | Authentication token to present in the `X-MessageSystems-Webhook-Token` header of POST requests to target | no | Use this token in your target application to confirm that data is coming from the Webhooks API. <br />example: `5ebe2294ecd0e0f08eab7690d2a6ee69`<br /><br /><span class=\"label label-danger\"><strong>Deprecated</strong></span> in favor of the `auth_type` field. |"
+					},
+					"response": []
+				},
+				{
+					"name": "Create a Webhook (OAUTH2, selected events, https)",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							},
+							{
+								"key": "Accept",
+								"value": "application/json"
+							},
+							{
+								"key": "Authorization",
+								"value": "{{API_KEY}}"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n  \"name\": \"Example webhook\",\n  \"target\": \"https://client.example.com/example-webhook\",\n  \"custom_headers\": {\n    \"x-api-key\": \"abcd\"\n  },\n  \"auth_type\": \"oauth2\",\n  \"auth_request_details\": {\n    \"url\": \"http://client.example.com/tokens\",\n    \"body\": {\n      \"client_id\": \"CLIENT123\",\n      \"client_secret\": \"9sdfj791d2bsbf\",\n      \"grant_type\": \"client_credentials\"\n    }\n  },\n  \"events\": [\n    \"delivery\",\n    \"injection\",\n    \"open\",\n    \"click\"\n  ]\n}\n"
+						},
+						"url": {
+							"raw": "https://api.sparkpost.com/api/v1/webhooks",
+							"protocol": "https",
+							"host": [
+								"api",
+								"sparkpost",
+								"com"
+							],
+							"path": [
+								"api",
+								"v1",
+								"webhooks"
+							]
+						},
+						"description": "Create a webhook by providing a **webhooks object** as the POST request body.  On creation, events will\nbegin to be pushed to the target URL specified in the POST request body.\n\nAs described in \"Webhooks Object Properties\", webhook creation entails a test POST request to the URL given as the _target_ value. If this request does not receive an HTTP 200 response, your request to the Webhook API will fail with HTTP 400, and the webhook will not be created. If created successfully, the webhook will begin to receive event data after 1 minute.\n\n## Webhooks Object Properties\n\n| Property          | Type   | Description | Required | Notes |\n|-------------------|--------|-------------|----------|-------|\n| name              | string | User-friendly name for webhook | yes | example: `Example webhook` |\n| target            | string | URL of the target to which to POST event batches | yes |  When a webhook is created or updated with a change to this property, a test POST request is sent to the given URL. The target URL must accept the connection and respond with HTTP 200; otherwise, your request to the Webhook API will fail with HTTP 400, and the requested change will not be applied.<br />example: `http://client.example.com/example-webhook` |\n| events            | array  | Array of event types this webhook will receive | yes | Use the Webhooks Events endpoint to list the available event types.<br />example: `[\"delivery\", \"injection\", \"open\", \"click\"]`|\n| active            | boolean | Describes status of the webhook | no | Defaults to true, when false the target will no longer receive batches |\n| custom_headers    | JSON   | Object of custom headers to be used during POST requests to target | no | example: `{\"x-api-key\" : \"abcd\"}` |\n| auth_type         | string | Type of authentication to be used during POST requests to target | no | examples: `none`, `basic`, `oauth2` |\n| auth_request_details | JSON | Object containing details needed to request authorization credentials, as necessary | no | example: `{ \"url\": \"https://oauth.myurl.com/tokens\", \"body\": { \"client_id\": \"<oauth client id>\", \"client_secret\": \"<oauth client secret>\" }}`|\n| auth_credentials         | JSON | Object containing credentials needed to make authorized POST requests to target | no | examples: `{ \"access_token\": \"<oauth token>\", expires_in: 3600 }`, `{ \"username\": \"basicauthuser\", \"password\": \"mypassword\" }` |\n| auth_token        | string | Authentication token to present in the `X-MessageSystems-Webhook-Token` header of POST requests to target | no | Use this token in your target application to confirm that data is coming from the Webhooks API. <br />example: `5ebe2294ecd0e0f08eab7690d2a6ee69`<br /><br /><span class=\"label label-danger\"><strong>Deprecated</strong></span> in favor of the `auth_type` field. |"
 					},
 					"response": []
 				},
@@ -5344,7 +5103,7 @@
 							"raw": ""
 						},
 						"url": {
-							"raw": "https://api.sparkpost.com/api/v1/webhooks/12affc24-f183-11e3-9234-3c15c2c818c2?timezone=America/New_York",
+							"raw": "https://api.sparkpost.com/api/v1/webhooks/1aec8840-2c8d-11e8-b82e-bbe109e4e3a4?timezone=America/New_York",
 							"protocol": "https",
 							"host": [
 								"api",
@@ -5355,7 +5114,7 @@
 								"api",
 								"v1",
 								"webhooks",
-								"12affc24-f183-11e3-9234-3c15c2c818c2"
+								"1aec8840-2c8d-11e8-b82e-bbe109e4e3a4"
 							],
 							"query": [
 								{
@@ -5430,10 +5189,10 @@
 						],
 						"body": {
 							"mode": "raw",
-							"raw": "{\n  \"name\": \"Renamed webhook\",\n  \"events\": [\n    \"rejection\",\n    \"delay\"\n  ],\n  \"auth_type\": \"none\"\n}\n\n"
+							"raw": "{\n  \"name\": \"Renamed webhook\",\n  \"events\": [\n    \"generation_rejection\",\n    \"delay\"\n  ],\n  \"auth_type\": \"none\",\n  \"custom_headers\": {\n    \"x-api-key\": \"abcd\"\n  }\n}"
 						},
 						"url": {
-							"raw": "https://api.sparkpost.com/api/v1/webhooks/12affc24-f183-11e3-9234-3c15c2c818c2",
+							"raw": "https://api.sparkpost.com/api/v1/webhooks/26eb60d0-2d00-11e8-9280-6104068f60fa",
 							"protocol": "https",
 							"host": [
 								"api",
@@ -5444,7 +5203,7 @@
 								"api",
 								"v1",
 								"webhooks",
-								"12affc24-f183-11e3-9234-3c15c2c818c2"
+								"26eb60d0-2d00-11e8-9280-6104068f60fa"
 							]
 						},
 						"description": "Update a webhook's properties by specifying its id in the URI path and use a **webhooks object** as\nthe PUT request body.\n\nNote that batches currently queued for delivery to this webhook will not be affected by these\nmodifications.  For example, if you change the webhook's target URL, batches already queued for delivery will still be POSTed to the previous URL.\n\nAs described in \"Webhooks Object Properties\", a change to the _target_ value entails a test POST request to the URL given. If this request does not receive an HTTP 200 response, your request to the Webhooks API will fail with HTTP 400, and the webhook will not be modified.\n\n"
@@ -5466,7 +5225,7 @@
 							"raw": ""
 						},
 						"url": {
-							"raw": "https://api.sparkpost.com/api/v1/webhooks/12affc24-f183-11e3-9234-3c15c2c818c2",
+							"raw": "https://api.sparkpost.com/api/v1/webhooks/26eb60d0-2d00-11e8-9280-6104068f60fa",
 							"protocol": "https",
 							"host": [
 								"api",
@@ -5477,7 +5236,7 @@
 								"api",
 								"v1",
 								"webhooks",
-								"12affc24-f183-11e3-9234-3c15c2c818c2"
+								"26eb60d0-2d00-11e8-9280-6104068f60fa"
 							]
 						},
 						"description": "Delete a webhook from the system by specifying its id in the URI path.  The system will stop pushing data to the target URL after the batches currently queued to be\ndelivered are drained.\n\n"
@@ -5507,7 +5266,7 @@
 							"raw": "{\n    \"message\": {\n        \"msys\": {}\n    }\n}\n\n"
 						},
 						"url": {
-							"raw": "https://api.sparkpost.com/api/v1/webhooks/12affc24-f183-11e3-9234-3c15c2c818c2/validate",
+							"raw": "https://api.sparkpost.com/api/v1/webhooks/26eb60d0-2d00-11e8-9280-6104068f60fa/validate",
 							"protocol": "https",
 							"host": [
 								"api",
@@ -5518,7 +5277,7 @@
 								"api",
 								"v1",
 								"webhooks",
-								"12affc24-f183-11e3-9234-3c15c2c818c2",
+								"26eb60d0-2d00-11e8-9280-6104068f60fa",
 								"validate"
 							]
 						},
@@ -5545,7 +5304,7 @@
 							"raw": ""
 						},
 						"url": {
-							"raw": "https://api.sparkpost.com/api/v1/webhooks/12affc24-f183-11e3-9234-3c15c2c818c2/batch-status?limit=1000",
+							"raw": "https://api.sparkpost.com/api/v1/webhooks/d006deb0-2b62-11e7-8835-8b943b52aa83/batch-status?limit=1000",
 							"protocol": "https",
 							"host": [
 								"api",
@@ -5556,7 +5315,7 @@
 								"api",
 								"v1",
 								"webhooks",
-								"12affc24-f183-11e3-9234-3c15c2c818c2",
+								"d006deb0-2b62-11e7-8835-8b943b52aa83",
 								"batch-status"
 							],
 							"query": [
