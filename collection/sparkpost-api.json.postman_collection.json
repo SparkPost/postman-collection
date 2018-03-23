@@ -1,6 +1,6 @@
 {
 	"info": {
-		"_postman_id": "63a25a0c-3703-4fdc-b20d-acf431b3232e",
+		"_postman_id": "0bcf9543-e219-45c7-9ca8-d44601802110",
 		"name": "SparkPost API",
 		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
 	},
@@ -2257,7 +2257,7 @@
 								}
 							]
 						},
-						"description": "Provides aggregate count of deliveries grouped by the attempt number.\n\n`bindings` and `binding_groups` are SparkPost Enterprise only."
+						"description": "Provides aggregate count of deliveries grouped by the attempt number.\n\n`bindings` and `binding_groups` are SparkPost Enterprise only, and are deprecated in favor of `sending_ips` and `ip_pools`."
 					},
 					"response": []
 				},
@@ -2775,7 +2775,7 @@
 								}
 							]
 						},
-						"description": "Retrieve details about a specified recipient list by specifying its id in the URI path.  To\nretrieve the recipients contained in a list, the list must be specified and the **show_recipients** parameter must be set to true.\n\n**Note:** The \"return_path\" in the POST request body applies to SparkPost Elite only.\n\n"
+						"description": "Retrieve details about a specified recipient list by specifying its id in the URI path.  To\nretrieve the recipients contained in a list, the list must be specified and the **show_recipients** parameter must be set to true."
 					},
 					"response": []
 				},
@@ -3138,7 +3138,7 @@
 								"sending-domains"
 							]
 						},
-						"description": "Create a sending domain by providing a sending domain object as the POST request body.\n\nWe allow any given domain (including its subdomains) to only be used by a single customer account. Please see our support article for additional reasons a domain might not be approved for sending.\n\nSparkPost Enterprise accounts: To use a DKIM Signing Domain Identifier different to the Sending Domain, set the dkim.signing_domain field.\nSparkPost Enterprise accounts: In some configurations, Sending Domains will be set to verified automatically when they are created, and can be used to send messages immediately. In that case, there is no need to use the verify endpoint to verify Sending Domains. To find out if this applies to your SparkPost Enterprise service, please contact support support@sparkpostelite.com, or your TAM.\n"
+						"description": "Create a sending domain by providing a sending domain object as the POST request body.\n\nWe allow any given domain (including its subdomains) to only be used by a single customer account. Please see our support article for additional reasons a domain might not be approved for sending.\n\nSparkPost Enterprise accounts: To use a DKIM Signing Domain Identifier different to the Sending Domain, set the dkim.signing_domain field.\nSparkPost Enterprise accounts: In some configurations, Sending Domains will be set to verified automatically when they are created, and can be used to send messages immediately. In that case, there is no need to use the verify endpoint to verify Sending Domains. To find out if this applies to your SparkPost Enterprise service, please contact your TAM."
 					},
 					"response": []
 				},
@@ -3178,7 +3178,7 @@
 								"sending-domains"
 							]
 						},
-						"description": "Create a sending domain by providing a sending domain object as the POST request body.\n\nWe allow any given domain (including its subdomains) to only be used by a single customer account. Please see our support article for additional reasons a domain might not be approved for sending.\n\nSparkPost Enterprise accounts: To use a DKIM Signing Domain Identifier different to the Sending Domain, set the dkim.signing_domain field.\nSparkPost Enterprise accounts: In some configurations, Sending Domains will be set to verified automatically when they are created, and can be used to send messages immediately. In that case, there is no need to use the verify endpoint to verify Sending Domains. To find out if this applies to your SparkPost Enterprise service, please contact support support@sparkpostelite.com, or your TAM.\n"
+						"description": "Create a sending domain by providing a sending domain object as the POST request body.\n\nWe allow any given domain (including its subdomains) to only be used by a single customer account. Please see our support article for additional reasons a domain might not be approved for sending.\n\nSparkPost Enterprise accounts: To use a DKIM Signing Domain Identifier different to the Sending Domain, set the dkim.signing_domain field.\nSparkPost Enterprise accounts: In some configurations, Sending Domains will be set to verified automatically when they are created, and can be used to send messages immediately. In that case, there is no need to use the verify endpoint to verify Sending Domains. To find out if this applies to your SparkPost Enterprise service, please contact your TAM."
 					},
 					"response": []
 				},
@@ -3362,7 +3362,7 @@
 								"example1.com"
 							]
 						},
-						"description": "Update the attributes of an existing sending domain by specifying its domain name in the URI path and use a **sending domain object** as the PUT request body.\n\nIf a tracking domain is specified, it will replace any currently specified tracking domain.  If the supplied tracking domain is a blank string, it will clear any currently specified tracking domain. Note that if a tracking domain is not specified, any currently specified tracking domain will remain intact.\n\nIf a dkim object is provided in the update request, it must contain all relevant fields whether they are being changed or not.  The new dkim object will completely overwrite the existing one.\n\nTo remove the DKIM Signing Domain Identifier for a Sending Domain, use the empty string for the value of the dkim.signing_domain field. ( **Note**: dkim.signing_domain is only available in SparkPost Elite. )\n\n"
+						"description": "Update the attributes of an existing sending domain by specifying its domain name in the URI path and use a **sending domain object** as the PUT request body.\n\nIf a tracking domain is specified, it will replace any currently specified tracking domain.  If the supplied tracking domain is a blank string, it will clear any currently specified tracking domain. Note that if a tracking domain is not specified, any currently specified tracking domain will remain intact.\n\nIf a dkim object is provided in the update request, it must contain all relevant fields whether they are being changed or not.  The new dkim object will completely overwrite the existing one.\n\n**SparkPost Enterprise Accounts:** To remove the DKIM Signing Domain Identifier for a Sending Domain, use the empty string for the value of the dkim.signing_domain field."
 					},
 					"response": []
 				},
@@ -3465,7 +3465,10 @@
 								"value": "application/json"
 							}
 						],
-						"body": {},
+						"body": {
+							"mode": "raw",
+							"raw": ""
+						},
 						"url": {
 							"raw": "https://api.sparkpost.com/api/v1/sending-ips",
 							"protocol": "https",
@@ -3498,7 +3501,10 @@
 								"value": "application/json"
 							}
 						],
-						"body": {},
+						"body": {
+							"mode": "raw",
+							"raw": ""
+						},
 						"url": {
 							"raw": "https://api.sparkpost.com/api/v1/sending-ips/123.456.789.012",
 							"protocol": "https",
@@ -3579,7 +3585,10 @@
 								"value": "application/json"
 							}
 						],
-						"body": {},
+						"body": {
+							"mode": "raw",
+							"raw": ""
+						},
 						"url": {
 							"raw": "https://api.sparkpost.com/api/v1/subaccounts",
 							"protocol": "https",
@@ -3649,7 +3658,10 @@
 								"value": "application/json"
 							}
 						],
-						"body": {},
+						"body": {
+							"mode": "raw",
+							"raw": ""
+						},
 						"url": {
 							"raw": "https://api.sparkpost.com/api/v1/subaccounts/123",
 							"protocol": "https",
@@ -3811,7 +3823,10 @@
 								"value": "application/json"
 							}
 						],
-						"body": {},
+						"body": {
+							"mode": "raw",
+							"raw": ""
+						},
 						"url": {
 							"raw": "https://api.sparkpost.com/api/v1/suppression-list?to=2018-12-31T23:59:00-0000&from=2018-01-01T23:59:00-0000&types=transactional,non_transactional&domain=example.com&per_page=10000&page=1&sources=Manually Added&description=requested to not receive",
 							"protocol": "https",
