@@ -1,10 +1,155 @@
 {
 	"info": {
-		"_postman_id": "0bcf9543-e219-45c7-9ca8-d44601802110",
+		"_postman_id": "ad8a479e-ac44-4ce6-bc6b-4c95d57b64f9",
 		"name": "SparkPost API",
 		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
 	},
 	"item": [
+		{
+			"name": "A/B Testing [LABS]",
+			"description": "https://developers.sparkpost.com/api/ab-testing.html\n\n**Note: **[LABS] features may be changed / deprecated in future\n**Note: **This endpoint is available in SparkPost only\n\nAn A/B test is a method of comparing templates to see which one performs better. You provide a range of templates (2-10), a recipient list (less than 2,000 entries), a sample size, and a test duration to begin. When the test time has expired, the template with the best conversion rate wins. All remaining recipients will be sent the winning template. The A/B Testing API provides the means to create new tests, and view completed results.",
+			"item": [
+				{
+					"name": "Create an A/B Test",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							},
+							{
+								"key": "Accept",
+								"value": "application/json"
+							},
+							{
+								"key": "Authorization",
+								"value": "{{API_KEY}}"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n  \"duration_hours\": 1,\n  \"recipient_list\": \"unique_id_4_graduate_students_list\",\n  \"groups\": [\n    {\n      \"size\": 1,\n      \"template_id\": \"my-first-email\"\n    },\n    {\n      \"size\": 1,\n      \"template_id\": \"my-second-email\"\n    }\n  ]\n}"
+						},
+						"url": {
+							"raw": "https://api.sparkpost.com/api/labs/ab-testing",
+							"protocol": "https",
+							"host": [
+								"api",
+								"sparkpost",
+								"com"
+							],
+							"path": [
+								"api",
+								"labs",
+								"ab-testing"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "List A/B Tests",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "{{API_KEY}}"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": ""
+						},
+						"url": {
+							"raw": "https://api.sparkpost.com/api/labs/ab-testing?",
+							"protocol": "https",
+							"host": [
+								"api",
+								"sparkpost",
+								"com"
+							],
+							"path": [
+								"api",
+								"labs",
+								"ab-testing"
+							],
+							"query": [
+								{
+									"key": "completed",
+									"value": "true",
+									"disabled": true
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get an A/B Test",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "{{API_KEY}}"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": ""
+						},
+						"url": {
+							"raw": "https://api.sparkpost.com/api/labs/ab-testing/f23bd590-2ec6-11e8-9a59-6d86f7077de4?",
+							"protocol": "https",
+							"host": [
+								"api",
+								"sparkpost",
+								"com"
+							],
+							"path": [
+								"api",
+								"labs",
+								"ab-testing",
+								"f23bd590-2ec6-11e8-9a59-6d86f7077de4"
+							],
+							"query": [
+								{
+									"key": "completed",
+									"value": "true",
+									"disabled": true
+								}
+							]
+						},
+						"description": "Retrieves a specific A/B Test."
+					},
+					"response": []
+				}
+			],
+			"event": [
+				{
+					"listen": "prerequest",
+					"script": {
+						"id": "27139bfc-f851-43e2-a355-f732b77efe99",
+						"type": "text/javascript",
+						"exec": [
+							""
+						]
+					}
+				},
+				{
+					"listen": "test",
+					"script": {
+						"id": "77d956fc-0d95-4ced-81fe-e9cbd78c998e",
+						"type": "text/javascript",
+						"exec": [
+							""
+						]
+					}
+				}
+			]
+		},
 		{
 			"name": "Account Info",
 			"description": null,
