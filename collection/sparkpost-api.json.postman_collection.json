@@ -32,12 +32,9 @@
 							"raw": "{\n  \"duration_hours\": 1,\n  \"recipient_list\": \"unique_id_4_graduate_students_list\",\n  \"groups\": [\n    {\n      \"size\": 1,\n      \"template_id\": \"my-first-email\"\n    },\n    {\n      \"size\": 1,\n      \"template_id\": \"my-second-email\"\n    }\n  ]\n}"
 						},
 						"url": {
-							"raw": "https://api.sparkpost.com/api/labs/ab-testing",
-							"protocol": "https",
+							"raw": "{{BASE_URL}}/api/labs/ab-testing",
 							"host": [
-								"api",
-								"sparkpost",
-								"com"
+								"{{BASE_URL}}"
 							],
 							"path": [
 								"api",
@@ -63,24 +60,14 @@
 							"raw": ""
 						},
 						"url": {
-							"raw": "https://api.sparkpost.com/api/labs/ab-testing?",
-							"protocol": "https",
+							"raw": "{{BASE_URL}}/api/labs/ab-testing",
 							"host": [
-								"api",
-								"sparkpost",
-								"com"
+								"{{BASE_URL}}"
 							],
 							"path": [
 								"api",
 								"labs",
 								"ab-testing"
-							],
-							"query": [
-								{
-									"key": "completed",
-									"value": "true",
-									"disabled": true
-								}
 							]
 						}
 					},
@@ -101,25 +88,15 @@
 							"raw": ""
 						},
 						"url": {
-							"raw": "https://api.sparkpost.com/api/labs/ab-testing/f23bd590-2ec6-11e8-9a59-6d86f7077de4?",
-							"protocol": "https",
+							"raw": "{{BASE_URL}}/api/labs/ab-testing/f23bd590-2ec6-11e8-9a59-6d86f7077de4",
 							"host": [
-								"api",
-								"sparkpost",
-								"com"
+								"{{BASE_URL}}"
 							],
 							"path": [
 								"api",
 								"labs",
 								"ab-testing",
 								"f23bd590-2ec6-11e8-9a59-6d86f7077de4"
-							],
-							"query": [
-								{
-									"key": "completed",
-									"value": "true",
-									"disabled": true
-								}
 							]
 						},
 						"description": "Retrieves a specific A/B Test."
@@ -169,12 +146,9 @@
 							"raw": ""
 						},
 						"url": {
-							"raw": "https://api.sparkpost.com/api/v1/account",
-							"protocol": "https",
+							"raw": "{{BASE_URL}}/api/v1/account",
 							"host": [
-								"api",
-								"sparkpost",
-								"com"
+								"{{BASE_URL}}"
 							],
 							"path": [
 								"api",
@@ -205,12 +179,9 @@
 							"raw": "{\n  \"company_name\": \"Avocado Industries\",\n  \"options\": {\n    \"smtp_tracking_default\": true\n  }\n}"
 						},
 						"url": {
-							"raw": "https://api.sparkpost.com/api/v1/account?include=usage",
-							"protocol": "https",
+							"raw": "{{BASE_URL}}/api/v1/account?include=usage",
 							"host": [
-								"api",
-								"sparkpost",
-								"com"
+								"{{BASE_URL}}"
 							],
 							"path": [
 								"api",
@@ -257,12 +228,9 @@
 							"raw": "{\n    \"domain\": \"inbounddomain.example.com\"\n}\n"
 						},
 						"url": {
-							"raw": "https://api.sparkpost.com/api/v1/inbound-domains",
-							"protocol": "https",
+							"raw": "{{BASE_URL}}/api/v1/inbound-domains",
 							"host": [
-								"api",
-								"sparkpost",
-								"com"
+								"{{BASE_URL}}"
 							],
 							"path": [
 								"api",
@@ -293,12 +261,9 @@
 							"raw": ""
 						},
 						"url": {
-							"raw": "https://api.sparkpost.com/api/v1/inbound-domains",
-							"protocol": "https",
+							"raw": "{{BASE_URL}}/api/v1/inbound-domains",
 							"host": [
-								"api",
-								"sparkpost",
-								"com"
+								"{{BASE_URL}}"
 							],
 							"path": [
 								"api",
@@ -329,12 +294,9 @@
 							"raw": ""
 						},
 						"url": {
-							"raw": "https://api.sparkpost.com/api/v1/inbound-domains/inbounddomain.example.com",
-							"protocol": "https",
+							"raw": "{{BASE_URL}}/api/v1/inbound-domains/inbounddomain.example.com",
 							"host": [
-								"api",
-								"sparkpost",
-								"com"
+								"{{BASE_URL}}"
 							],
 							"path": [
 								"api",
@@ -366,12 +328,9 @@
 							"raw": ""
 						},
 						"url": {
-							"raw": "https://api.sparkpost.com/api/v1/inbound-domains/inbounddomain.example.com",
-							"protocol": "https",
+							"raw": "{{BASE_URL}}/api/v1/inbound-domains/inbounddomain.example.com",
 							"host": [
-								"api",
-								"sparkpost",
-								"com"
+								"{{BASE_URL}}"
 							],
 							"path": [
 								"api",
@@ -409,12 +368,9 @@
 							"raw": ""
 						},
 						"url": {
-							"raw": "https://api.sparkpost.com/api/v1/ip-pools",
-							"protocol": "https",
+							"raw": "{{BASE_URL}}/api/v1/ip-pools",
 							"host": [
-								"api",
-								"sparkpost",
-								"com"
+								"{{BASE_URL}}"
 							],
 							"path": [
 								"api",
@@ -448,12 +404,9 @@
 							"raw": "{\n  \"name\" : \"Warm up IP Pool\"\n}"
 						},
 						"url": {
-							"raw": "https://api.sparkpost.com/api/v1/ip-pools",
-							"protocol": "https",
+							"raw": "{{BASE_URL}}/api/v1/ip-pools",
 							"host": [
-								"api",
-								"sparkpost",
-								"com"
+								"{{BASE_URL}}"
 							],
 							"path": [
 								"api",
@@ -483,12 +436,9 @@
 							"raw": ""
 						},
 						"url": {
-							"raw": "https://api.sparkpost.com/api/v1/ip-pools/warm_up_ip_pool",
-							"protocol": "https",
+							"raw": "{{BASE_URL}}/api/v1/ip-pools/warm_up_ip_pool",
 							"host": [
-								"api",
-								"sparkpost",
-								"com"
+								"{{BASE_URL}}"
 							],
 							"path": [
 								"api",
@@ -523,12 +473,9 @@
 							"raw": "{\n  \"name\" : \"Updated Warm up IP Pool\"\n}"
 						},
 						"url": {
-							"raw": "https://api.sparkpost.com/api/v1/ip-pools/warm_up_ip_pool",
-							"protocol": "https",
+							"raw": "{{BASE_URL}}/api/v1/ip-pools/warm_up_ip_pool",
 							"host": [
-								"api",
-								"sparkpost",
-								"com"
+								"{{BASE_URL}}"
 							],
 							"path": [
 								"api",
@@ -563,12 +510,9 @@
 							"raw": ""
 						},
 						"url": {
-							"raw": "https://api.sparkpost.com/api/v1/ip-pools/warm_up_ip_pool",
-							"protocol": "https",
+							"raw": "{{BASE_URL}}/api/v1/ip-pools/warm_up_ip_pool",
 							"host": [
-								"api",
-								"sparkpost",
-								"com"
+								"{{BASE_URL}}"
 							],
 							"path": [
 								"api",
@@ -605,12 +549,9 @@
 							"raw": ""
 						},
 						"url": {
-							"raw": "https://api.sparkpost.com/api/v1/metrics/",
-							"protocol": "https",
+							"raw": "{{BASE_URL}}/api/v1/metrics/",
 							"host": [
-								"api",
-								"sparkpost",
-								"com"
+								"{{BASE_URL}}"
 							],
 							"path": [
 								"api",
@@ -642,12 +583,9 @@
 							"raw": ""
 						},
 						"url": {
-							"raw": "https://api.sparkpost.com/api/v1/metrics/deliverability?from=2018-01-01T00:00&to=2018-12-31T23:59&delimiter=,&domains=gmail.com,yahoo.com,hotmail.com&campaigns=Black Friday&templates=summer-sale&sending_ips=123.456.789.123&ip_pools=Transactional&sending_domains=sales.sender.com,transactional.sender.com&subaccounts=123,125,127&metrics=count_accepted,count_admin_bounce,count_block_bounce,count_bounce,count_clicked,count_delayed,count_delayed_first,count_delivered,count_delivered_first,count_delivered_subsequent,count_generation_failed,count_generation_rejection,count_hard_bounce,count_inband_bounce,count_initial_rendered,count_injected,count_outofband_bounce,count_policy_rejection,count_rejected,count_rendered,count_sent,count_soft_bounce,count_spam_complaint,count_targeted,count_undetermined_bounce,count_unique_clicked,count_unique_confirmed_opened,count_unique_initial_rendered,count_unique_rendered,total_delivery_time_first,total_delivery_time_subsequent,total_msg_volume&timezone=America/New_York&limit=5&order_by=count_injected",
-							"protocol": "https",
+							"raw": "{{BASE_URL}}/api/v1/metrics/deliverability?from=2018-01-01T00:00&to=2018-12-31T23:59&delimiter=,&domains=gmail.com,yahoo.com,hotmail.com&campaigns=Black Friday&templates=summer-sale&sending_ips=123.456.789.123&ip_pools=Transactional&sending_domains=sales.sender.com,transactional.sender.com&subaccounts=123,125,127&metrics=count_accepted,count_admin_bounce,count_block_bounce,count_bounce,count_clicked,count_delayed,count_delayed_first,count_delivered,count_delivered_first,count_delivered_subsequent,count_generation_failed,count_generation_rejection,count_hard_bounce,count_inband_bounce,count_initial_rendered,count_injected,count_outofband_bounce,count_policy_rejection,count_rejected,count_rendered,count_sent,count_soft_bounce,count_spam_complaint,count_targeted,count_undetermined_bounce,count_unique_clicked,count_unique_confirmed_opened,count_unique_initial_rendered,count_unique_rendered,total_delivery_time_first,total_delivery_time_subsequent,total_msg_volume&timezone=America/New_York&limit=5&order_by=count_injected",
 							"host": [
-								"api",
-								"sparkpost",
-								"com"
+								"{{BASE_URL}}"
 							],
 							"path": [
 								"api",
@@ -737,12 +675,9 @@
 							"raw": ""
 						},
 						"url": {
-							"raw": "https://api.sparkpost.com/api/v1/metrics/deliverability/domain?from=2018-01-01T00:00&to=2018-12-31T23:59&delimiter=,&domains=gmail.com,yahoo.com,hotmail.com&campaigns=Black Friday&templates=summer-sale&sending_ips=123.456.789.123&ip_pools=Transactional&sending_domains=sales.sender.com,transactional.sender.com&subaccounts=123,125,127&metrics=count_accepted,count_admin_bounce,count_block_bounce,count_bounce,count_clicked,count_delayed,count_delayed_first,count_delivered,count_delivered_first,count_delivered_subsequent,count_generation_failed,count_generation_rejection,count_hard_bounce,count_inband_bounce,count_initial_rendered,count_injected,count_outofband_bounce,count_policy_rejection,count_rejected,count_rendered,count_sent,count_soft_bounce,count_spam_complaint,count_targeted,count_undetermined_bounce,count_unique_clicked,count_unique_confirmed_opened,count_unique_initial_rendered,count_unique_rendered,total_delivery_time_first,total_delivery_time_subsequent,total_msg_volume&timezone=America/New_York&limit=5&order_by=count_injected",
-							"protocol": "https",
+							"raw": "{{BASE_URL}}/api/v1/metrics/deliverability/domain?from=2018-01-01T00:00&to=2018-12-31T23:59&delimiter=,&domains=gmail.com,yahoo.com,hotmail.com&campaigns=Black Friday&templates=summer-sale&sending_ips=123.456.789.123&ip_pools=Transactional&sending_domains=sales.sender.com,transactional.sender.com&subaccounts=123,125,127&metrics=count_accepted,count_admin_bounce,count_block_bounce,count_bounce,count_clicked,count_delayed,count_delayed_first,count_delivered,count_delivered_first,count_delivered_subsequent,count_generation_failed,count_generation_rejection,count_hard_bounce,count_inband_bounce,count_initial_rendered,count_injected,count_outofband_bounce,count_policy_rejection,count_rejected,count_rendered,count_sent,count_soft_bounce,count_spam_complaint,count_targeted,count_undetermined_bounce,count_unique_clicked,count_unique_confirmed_opened,count_unique_initial_rendered,count_unique_rendered,total_delivery_time_first,total_delivery_time_subsequent,total_msg_volume&timezone=America/New_York&limit=5&order_by=count_injected",
 							"host": [
-								"api",
-								"sparkpost",
-								"com"
+								"{{BASE_URL}}"
 							],
 							"path": [
 								"api",
@@ -833,12 +768,9 @@
 							"raw": ""
 						},
 						"url": {
-							"raw": "https://api.sparkpost.com/api/v1/metrics/deliverability/sending-ip?from=2018-01-01T00:00&to=2018-12-31T23:59&delimiter=,&domains=gmail.com,yahoo.com,hotmail.com&campaigns=Black Friday&templates=summer-sale&sending_ips=123.456.789.123&ip_pools=Transactional&sending_domains=sales.sender.com,transactional.sender.com&subaccounts=123,125,127&metrics=count_targeted&timezone=America/New_York&limit=5&order_by=count_injected",
-							"protocol": "https",
+							"raw": "{{BASE_URL}}/api/v1/metrics/deliverability/sending-ip?from=2018-01-01T00:00&to=2018-12-31T23:59&delimiter=,&domains=gmail.com,yahoo.com,hotmail.com&campaigns=Black Friday&templates=summer-sale&sending_ips=123.456.789.123&ip_pools=Transactional&sending_domains=sales.sender.com,transactional.sender.com&subaccounts=123,125,127&metrics=count_targeted&timezone=America/New_York&limit=5&order_by=count_injected",
 							"host": [
-								"api",
-								"sparkpost",
-								"com"
+								"{{BASE_URL}}"
 							],
 							"path": [
 								"api",
@@ -929,12 +861,9 @@
 							"raw": ""
 						},
 						"url": {
-							"raw": "https://api.sparkpost.com/api/v1/metrics/deliverability/ip-pool?from=2018-01-01T00:00&to=2018-12-31T23:59&delimiter=,&domains=gmail.com,yahoo.com,hotmail.com&campaigns=Black Friday&templates=summer-sale&sending_ips=123.456.789.123&ip_pools=Transactional&sending_domains=sales.sender.com,transactional.sender.com&subaccounts=123,125,127&metrics=count_targeted&timezone=America/New_York&limit=5&order_by=count_injected",
-							"protocol": "https",
+							"raw": "{{BASE_URL}}/api/v1/metrics/deliverability/ip-pool?from=2018-01-01T00:00&to=2018-12-31T23:59&delimiter=,&domains=gmail.com,yahoo.com,hotmail.com&campaigns=Black Friday&templates=summer-sale&sending_ips=123.456.789.123&ip_pools=Transactional&sending_domains=sales.sender.com,transactional.sender.com&subaccounts=123,125,127&metrics=count_targeted&timezone=America/New_York&limit=5&order_by=count_injected",
 							"host": [
-								"api",
-								"sparkpost",
-								"com"
+								"{{BASE_URL}}"
 							],
 							"path": [
 								"api",
@@ -1025,12 +954,9 @@
 							"raw": ""
 						},
 						"url": {
-							"raw": "https://api.sparkpost.com/api/v1/metrics/deliverability/sending-domain?from=2018-01-01T00:00&to=2018-12-31T23:59&delimiter=,&domains=gmail.com,yahoo.com,hotmail.com&campaigns=Black Friday&templates=summer-sale&sending_ips=123.456.789.123&ip_pools=Transactional&sending_domains=sales.sender.com,transactional.sender.com&subaccounts=123,125,127&metrics=count_targeted&timezone=America/New_York&limit=5&order_by=count_injected",
-							"protocol": "https",
+							"raw": "{{BASE_URL}}/api/v1/metrics/deliverability/sending-domain?from=2018-01-01T00:00&to=2018-12-31T23:59&delimiter=,&domains=gmail.com,yahoo.com,hotmail.com&campaigns=Black Friday&templates=summer-sale&sending_ips=123.456.789.123&ip_pools=Transactional&sending_domains=sales.sender.com,transactional.sender.com&subaccounts=123,125,127&metrics=count_targeted&timezone=America/New_York&limit=5&order_by=count_injected",
 							"host": [
-								"api",
-								"sparkpost",
-								"com"
+								"{{BASE_URL}}"
 							],
 							"path": [
 								"api",
@@ -1121,12 +1047,9 @@
 							"raw": ""
 						},
 						"url": {
-							"raw": "https://api.sparkpost.com/api/v1/metrics/deliverability/subaccount?from=2018-01-01T00:00&to=2018-12-31T23:59&delimiter=,&domains=gmail.com,yahoo.com,hotmail.com&campaigns=Black Friday&templates=summer-sale&sending_ips=123.456.789.123&ip_pools=Transactional&sending_domains=sales.sender.com,transactional.sender.com&subaccounts=123,125,127&metrics=count_targeted&timezone=America/New_York&limit=5&order_by=count_injected",
-							"protocol": "https",
+							"raw": "{{BASE_URL}}/api/v1/metrics/deliverability/subaccount?from=2018-01-01T00:00&to=2018-12-31T23:59&delimiter=,&domains=gmail.com,yahoo.com,hotmail.com&campaigns=Black Friday&templates=summer-sale&sending_ips=123.456.789.123&ip_pools=Transactional&sending_domains=sales.sender.com,transactional.sender.com&subaccounts=123,125,127&metrics=count_targeted&timezone=America/New_York&limit=5&order_by=count_injected",
 							"host": [
-								"api",
-								"sparkpost",
-								"com"
+								"{{BASE_URL}}"
 							],
 							"path": [
 								"api",
@@ -1217,12 +1140,9 @@
 							"raw": ""
 						},
 						"url": {
-							"raw": "https://api.sparkpost.com/api/v1/metrics/deliverability/campaign?from=2018-01-01T00:00&to=2018-12-31T23:59&delimiter=,&domains=gmail.com,yahoo.com,hotmail.com&campaigns=Black Friday&templates=summer-sale&sending_ips=123.456.789.123&ip_pools=Transactional&sending_domains=sales.sender.com,transactional.sender.com&subaccounts=123,125,127&metrics=count_targeted&timezone=America/New_York&limit=5&order_by=count_injected",
-							"protocol": "https",
+							"raw": "{{BASE_URL}}/api/v1/metrics/deliverability/campaign?from=2018-01-01T00:00&to=2018-12-31T23:59&delimiter=,&domains=gmail.com,yahoo.com,hotmail.com&campaigns=Black Friday&templates=summer-sale&sending_ips=123.456.789.123&ip_pools=Transactional&sending_domains=sales.sender.com,transactional.sender.com&subaccounts=123,125,127&metrics=count_targeted&timezone=America/New_York&limit=5&order_by=count_injected",
 							"host": [
-								"api",
-								"sparkpost",
-								"com"
+								"{{BASE_URL}}"
 							],
 							"path": [
 								"api",
@@ -1313,12 +1233,9 @@
 							"raw": ""
 						},
 						"url": {
-							"raw": "https://api.sparkpost.com/api/v1/metrics/deliverability/template?from=2018-01-01T00:00&to=2018-12-31T23:59&delimiter=,&domains=gmail.com,yahoo.com,hotmail.com&campaigns=Black Friday&templates=summer-sale&sending_ips=123.456.789.123&ip_pools=Transactional&sending_domains=sales.sender.com,transactional.sender.com&subaccounts=123,125,127&metrics=count_targeted&timezone=America/New_York&limit=5&order_by=count_injected",
-							"protocol": "https",
+							"raw": "{{BASE_URL}}/api/v1/metrics/deliverability/template?from=2018-01-01T00:00&to=2018-12-31T23:59&delimiter=,&domains=gmail.com,yahoo.com,hotmail.com&campaigns=Black Friday&templates=summer-sale&sending_ips=123.456.789.123&ip_pools=Transactional&sending_domains=sales.sender.com,transactional.sender.com&subaccounts=123,125,127&metrics=count_targeted&timezone=America/New_York&limit=5&order_by=count_injected",
 							"host": [
-								"api",
-								"sparkpost",
-								"com"
+								"{{BASE_URL}}"
 							],
 							"path": [
 								"api",
@@ -1409,12 +1326,9 @@
 							"raw": ""
 						},
 						"url": {
-							"raw": "https://api.sparkpost.com/api/v1/metrics/deliverability/watched-domain?from=2018-01-01T00:00&to=2018-12-31T23:59&delimiter=,&domains=gmail.com,yahoo.com,hotmail.com&campaigns=Black Friday&templates=summer-sale&sending_ips=123.456.789.123&ip_pools=Transactional&sending_domains=sales.sender.com,transactional.sender.com&subaccounts=123,125,127&metrics=count_targeted&timezone=America/New_York&limit=5&order_by=count_injected",
-							"protocol": "https",
+							"raw": "{{BASE_URL}}/api/v1/metrics/deliverability/watched-domain?from=2018-01-01T00:00&to=2018-12-31T23:59&delimiter=,&domains=gmail.com,yahoo.com,hotmail.com&campaigns=Black Friday&templates=summer-sale&sending_ips=123.456.789.123&ip_pools=Transactional&sending_domains=sales.sender.com,transactional.sender.com&subaccounts=123,125,127&metrics=count_targeted&timezone=America/New_York&limit=5&order_by=count_injected",
 							"host": [
-								"api",
-								"sparkpost",
-								"com"
+								"{{BASE_URL}}"
 							],
 							"path": [
 								"api",
@@ -1505,12 +1419,9 @@
 							"raw": ""
 						},
 						"url": {
-							"raw": "https://api.sparkpost.com/api/v1/metrics/deliverability/time-series?from=2018-01-01T00:00&to=2018-12-31T23:59&delimiter=,&domains=gmail.com,yahoo.com,hotmail.com&campaigns=Black Friday&templates=summer-sale&sending_ips=123.456.789.123&ip_pools=Transactional&sending_domains=sales.sender.com,transactional.sender.com&subaccounts=123,125,127&precision=day&metrics=count_targeted&timezone=America/New_York&limit=5&order_by=count_injected",
-							"protocol": "https",
+							"raw": "{{BASE_URL}}/api/v1/metrics/deliverability/time-series?from=2018-01-01T00:00&to=2018-12-31T23:59&delimiter=,&domains=gmail.com,yahoo.com,hotmail.com&campaigns=Black Friday&templates=summer-sale&sending_ips=123.456.789.123&ip_pools=Transactional&sending_domains=sales.sender.com,transactional.sender.com&subaccounts=123,125,127&precision=day&metrics=count_targeted&timezone=America/New_York&limit=5&order_by=count_injected",
 							"host": [
-								"api",
-								"sparkpost",
-								"com"
+								"{{BASE_URL}}"
 							],
 							"path": [
 								"api",
@@ -1605,12 +1516,9 @@
 							"raw": ""
 						},
 						"url": {
-							"raw": "https://api.sparkpost.com/api/v1/metrics/deliverability/bounce-reason?from=2018-01-01T00:00&to=2018-12-31T23:59&delimiter=,&domains=gmail.com,yahoo.com,hotmail.com&campaigns=Black Friday&templates=summer-sale&sending_ips=123.456.789.123&ip_pools=Transactional&sending_domains=sales.sender.com,transactional.sender.com&subaccounts=123,125,127&metrics=count_bounce,count_inband_bounce,count_outofband_bounce&timezone=America/New_York&limit=5",
-							"protocol": "https",
+							"raw": "{{BASE_URL}}/api/v1/metrics/deliverability/bounce-reason?from=2018-01-01T00:00&to=2018-12-31T23:59&delimiter=,&domains=gmail.com,yahoo.com,hotmail.com&campaigns=Black Friday&templates=summer-sale&sending_ips=123.456.789.123&ip_pools=Transactional&sending_domains=sales.sender.com,transactional.sender.com&subaccounts=123,125,127&metrics=count_bounce,count_inband_bounce,count_outofband_bounce&timezone=America/New_York&limit=5",
 							"host": [
-								"api",
-								"sparkpost",
-								"com"
+								"{{BASE_URL}}"
 							],
 							"path": [
 								"api",
@@ -1697,12 +1605,9 @@
 							"raw": ""
 						},
 						"url": {
-							"raw": "https://api.sparkpost.com/api/v1/metrics/deliverability/bounce-reason/domain?from=2018-01-01T00:00&to=2018-12-31T23:59&delimiter=,&domains=gmail.com,yahoo.com,hotmail.com&campaigns=Black Friday&templates=summer-sale&sending_ips=123.456.789.123&ip_pools=Transactional&sending_domains=sales.sender.com,transactional.sender.com&subaccounts=123,125,127&metrics=count_bounce,count_inband_bounce,count_outofband_bounce&timezone=America/New_York&limit=5",
-							"protocol": "https",
+							"raw": "{{BASE_URL}}/api/v1/metrics/deliverability/bounce-reason/domain?from=2018-01-01T00:00&to=2018-12-31T23:59&delimiter=,&domains=gmail.com,yahoo.com,hotmail.com&campaigns=Black Friday&templates=summer-sale&sending_ips=123.456.789.123&ip_pools=Transactional&sending_domains=sales.sender.com,transactional.sender.com&subaccounts=123,125,127&metrics=count_bounce,count_inband_bounce,count_outofband_bounce&timezone=America/New_York&limit=5",
 							"host": [
-								"api",
-								"sparkpost",
-								"com"
+								"{{BASE_URL}}"
 							],
 							"path": [
 								"api",
@@ -1790,12 +1695,9 @@
 							"raw": ""
 						},
 						"url": {
-							"raw": "https://api.sparkpost.com/api/v1/metrics/deliverability/bounce-classification?from=2018-01-01T00:00&to=2018-12-31T23:59&delimiter=,&domains=gmail.com,yahoo.com,hotmail.com&campaigns=Black Friday&templates=summer-sale&sending_ips=123.456.789.123&ip_pools=Transactional&sending_domains=sales.sender.com,transactional.sender.com&subaccounts=123,125,127&metrics=count_bounce,count_inband_bounce,count_outofband_bounce&timezone=America/New_York&limit=5",
-							"protocol": "https",
+							"raw": "{{BASE_URL}}/api/v1/metrics/deliverability/bounce-classification?from=2018-01-01T00:00&to=2018-12-31T23:59&delimiter=,&domains=gmail.com,yahoo.com,hotmail.com&campaigns=Black Friday&templates=summer-sale&sending_ips=123.456.789.123&ip_pools=Transactional&sending_domains=sales.sender.com,transactional.sender.com&subaccounts=123,125,127&metrics=count_bounce,count_inband_bounce,count_outofband_bounce&timezone=America/New_York&limit=5",
 							"host": [
-								"api",
-								"sparkpost",
-								"com"
+								"{{BASE_URL}}"
 							],
 							"path": [
 								"api",
@@ -1882,12 +1784,9 @@
 							"raw": ""
 						},
 						"url": {
-							"raw": "https://api.sparkpost.com/api/v1/metrics/deliverability/rejection-reason?from=2018-01-01T00:00&to=2018-12-31T23:59&delimiter=,&domains=gmail.com,yahoo.com,hotmail.com&campaigns=Black Friday&templates=summer-sale&sending_ips=123.456.789.123&ip_pools=Transactional&sending_domains=sales.sender.com,transactional.sender.com&subaccounts=123,125,127&timezone=America/New_York&limit=5",
-							"protocol": "https",
+							"raw": "{{BASE_URL}}/api/v1/metrics/deliverability/rejection-reason?from=2018-01-01T00:00&to=2018-12-31T23:59&delimiter=,&domains=gmail.com,yahoo.com,hotmail.com&campaigns=Black Friday&templates=summer-sale&sending_ips=123.456.789.123&ip_pools=Transactional&sending_domains=sales.sender.com,transactional.sender.com&subaccounts=123,125,127&timezone=America/New_York&limit=5",
 							"host": [
-								"api",
-								"sparkpost",
-								"com"
+								"{{BASE_URL}}"
 							],
 							"path": [
 								"api",
@@ -1970,12 +1869,9 @@
 							"raw": ""
 						},
 						"url": {
-							"raw": "https://api.sparkpost.com/api/v1/metrics/deliverability/rejection-reason/domain?from=2018-01-01T00:00&to=2018-12-31T23:59&delimiter=,&domains=gmail.com,yahoo.com,hotmail.com&campaigns=Black Friday&templates=summer-sale&sending_ips=123.456.789.123&ip_pools=Transactional&sending_domains=sales.sender.com,transactional.sender.com&subaccounts=123,125,127&timezone=America/New_York&limit=5",
-							"protocol": "https",
+							"raw": "{{BASE_URL}}/api/v1/metrics/deliverability/rejection-reason/domain?from=2018-01-01T00:00&to=2018-12-31T23:59&delimiter=,&domains=gmail.com,yahoo.com,hotmail.com&campaigns=Black Friday&templates=summer-sale&sending_ips=123.456.789.123&ip_pools=Transactional&sending_domains=sales.sender.com,transactional.sender.com&subaccounts=123,125,127&timezone=America/New_York&limit=5",
 							"host": [
-								"api",
-								"sparkpost",
-								"com"
+								"{{BASE_URL}}"
 							],
 							"path": [
 								"api",
@@ -2059,12 +1955,9 @@
 							"raw": ""
 						},
 						"url": {
-							"raw": "https://api.sparkpost.com/api/v1/metrics/deliverability/delay-reason?from=2018-01-01T00:00&to=2018-12-31T23:59&delimiter=,&domains=gmail.com,yahoo.com,hotmail.com&campaigns=Black Friday&templates=summer-sale&sending_ips=123.456.789.123&ip_pools=Transactional&sending_domains=sales.sender.com,transactional.sender.com&subaccounts=123,125,127&timezone=America/New_York&limit=5",
-							"protocol": "https",
+							"raw": "{{BASE_URL}}/api/v1/metrics/deliverability/delay-reason?from=2018-01-01T00:00&to=2018-12-31T23:59&delimiter=,&domains=gmail.com,yahoo.com,hotmail.com&campaigns=Black Friday&templates=summer-sale&sending_ips=123.456.789.123&ip_pools=Transactional&sending_domains=sales.sender.com,transactional.sender.com&subaccounts=123,125,127&timezone=America/New_York&limit=5",
 							"host": [
-								"api",
-								"sparkpost",
-								"com"
+								"{{BASE_URL}}"
 							],
 							"path": [
 								"api",
@@ -2147,12 +2040,9 @@
 							"raw": ""
 						},
 						"url": {
-							"raw": "https://api.sparkpost.com/api/v1/metrics/deliverability/delay-reason/domain?from=2018-01-01T00:00&to=2018-12-31T23:59&delimiter=,&domains=gmail.com,yahoo.com,hotmail.com&campaigns=Black Friday&templates=summer-sale&sending_ips=123.456.789.123&ip_pools=Transactional&sending_domains=sales.sender.com,transactional.sender.com&subaccounts=123,125,127&timezone=America/New_York&limit=5",
-							"protocol": "https",
+							"raw": "{{BASE_URL}}/api/v1/metrics/deliverability/delay-reason/domain?from=2018-01-01T00:00&to=2018-12-31T23:59&delimiter=,&domains=gmail.com,yahoo.com,hotmail.com&campaigns=Black Friday&templates=summer-sale&sending_ips=123.456.789.123&ip_pools=Transactional&sending_domains=sales.sender.com,transactional.sender.com&subaccounts=123,125,127&timezone=America/New_York&limit=5",
 							"host": [
-								"api",
-								"sparkpost",
-								"com"
+								"{{BASE_URL}}"
 							],
 							"path": [
 								"api",
@@ -2236,12 +2126,9 @@
 							"raw": ""
 						},
 						"url": {
-							"raw": "https://api.sparkpost.com/api/v1/metrics/deliverability/link-name?from=2018-01-01T00:00&to=2018-12-31T23:59&delimiter=,&timezone=America/New_York&metrics=count_clicked,count_raw_clicked&campaigns=Black Friday&templates=summer-sale&sending_domains=sales.sender.com,transactional.sender.com&subaccounts=123,125,127&limit=5",
-							"protocol": "https",
+							"raw": "{{BASE_URL}}/api/v1/metrics/deliverability/link-name?from=2018-01-01T00:00&to=2018-12-31T23:59&delimiter=,&timezone=America/New_York&metrics=count_clicked,count_raw_clicked&campaigns=Black Friday&templates=summer-sale&sending_domains=sales.sender.com,transactional.sender.com&subaccounts=123,125,127&limit=5",
 							"host": [
-								"api",
-								"sparkpost",
-								"com"
+								"{{BASE_URL}}"
 							],
 							"path": [
 								"api",
@@ -2288,16 +2175,6 @@
 									"value": "123,125,127"
 								},
 								{
-									"key": "sending_ips",
-									"value": "123.456.789.123",
-									"disabled": true
-								},
-								{
-									"key": "ip_pools",
-									"value": "Transactional",
-									"disabled": true
-								},
-								{
 									"key": "limit",
 									"value": "5"
 								}
@@ -2326,12 +2203,9 @@
 							"raw": ""
 						},
 						"url": {
-							"raw": "https://api.sparkpost.com/api/v1/metrics/deliverability/attempt?from=2018-01-01T00:00&to=2018-12-31T23:59&delimiter=,&domains=gmail.com,yahoo.com,hotmail.com&campaigns=Black Friday&templates=summer-sale&sending_ips=123.456.789.123&ip_pools=Transactional&sending_domains=sales.sender.com,transactional.sender.com&subaccounts=123,125,127&timezone=America/New_York",
-							"protocol": "https",
+							"raw": "{{BASE_URL}}/api/v1/metrics/deliverability/attempt?from=2018-01-01T00:00&to=2018-12-31T23:59&delimiter=,&domains=gmail.com,yahoo.com,hotmail.com&campaigns=Black Friday&templates=summer-sale&sending_ips=123.456.789.123&ip_pools=Transactional&sending_domains=sales.sender.com,transactional.sender.com&subaccounts=123,125,127&timezone=America/New_York",
 							"host": [
-								"api",
-								"sparkpost",
-								"com"
+								"{{BASE_URL}}"
 							],
 							"path": [
 								"api",
@@ -2378,27 +2252,12 @@
 									"value": "sales.sender.com,transactional.sender.com"
 								},
 								{
-									"key": "bindings",
-									"value": "Confirmation",
-									"disabled": true
-								},
-								{
-									"key": "binding_groups",
-									"value": "Transaction",
-									"disabled": true
-								},
-								{
 									"key": "subaccounts",
 									"value": "123,125,127"
 								},
 								{
 									"key": "timezone",
 									"value": "America/New_York"
-								},
-								{
-									"key": "limit",
-									"value": "5",
-									"disabled": true
 								}
 							]
 						},
@@ -2425,12 +2284,9 @@
 							"raw": ""
 						},
 						"url": {
-							"raw": "https://api.sparkpost.com/api/v1/metrics/ip-pools?match=test&limit=5&from=2018-01-01T00:00&to=2018-12-31T23:59&timezone=America/New_York",
-							"protocol": "https",
+							"raw": "{{BASE_URL}}/api/v1/metrics/ip-pools?match=test&limit=5&from=2018-01-01T00:00&to=2018-12-31T23:59&timezone=America/New_York",
 							"host": [
-								"api",
-								"sparkpost",
-								"com"
+								"{{BASE_URL}}"
 							],
 							"path": [
 								"api",
@@ -2484,12 +2340,9 @@
 							"raw": ""
 						},
 						"url": {
-							"raw": "https://api.sparkpost.com/api/v1/metrics/sending-ips?limit=5&from=2018-01-01T00:00&to=2018-12-31T23:59&timezone=America/New_York",
-							"protocol": "https",
+							"raw": "{{BASE_URL}}/api/v1/metrics/sending-ips?limit=5&from=2018-01-01T00:00&to=2018-12-31T23:59&timezone=America/New_York",
 							"host": [
-								"api",
-								"sparkpost",
-								"com"
+								"{{BASE_URL}}"
 							],
 							"path": [
 								"api",
@@ -2498,11 +2351,6 @@
 								"sending-ips"
 							],
 							"query": [
-								{
-									"key": "match",
-									"value": "35.163",
-									"disabled": true
-								},
 								{
 									"key": "limit",
 									"value": "5"
@@ -2544,12 +2392,9 @@
 							"raw": ""
 						},
 						"url": {
-							"raw": "https://api.sparkpost.com/api/v1/metrics/campaigns?limit=5&from=2018-01-01T00:00&to=2018-12-31T23:59&timezone=America/New_York",
-							"protocol": "https",
+							"raw": "{{BASE_URL}}/api/v1/metrics/campaigns?limit=5&from=2018-01-01T00:00&to=2018-12-31T23:59&timezone=America/New_York",
 							"host": [
-								"api",
-								"sparkpost",
-								"com"
+								"{{BASE_URL}}"
 							],
 							"path": [
 								"api",
@@ -2559,30 +2404,20 @@
 							],
 							"query": [
 								{
-									"key": "match",
-									"value": "example",
-									"type": "text",
-									"disabled": true
-								},
-								{
 									"key": "limit",
-									"value": "5",
-									"type": "text"
+									"value": "5"
 								},
 								{
 									"key": "from",
-									"value": "2018-01-01T00:00",
-									"type": "text"
+									"value": "2018-01-01T00:00"
 								},
 								{
 									"key": "to",
-									"value": "2018-12-31T23:59",
-									"type": "text"
+									"value": "2018-12-31T23:59"
 								},
 								{
 									"key": "timezone",
-									"value": "America/New_York",
-									"type": "text"
+									"value": "America/New_York"
 								}
 							]
 						},
@@ -2609,12 +2444,9 @@
 							"raw": ""
 						},
 						"url": {
-							"raw": "https://api.sparkpost.com/api/v1/metrics/domains?limit=5&from=2018-01-01T00:00&to=2018-12-31T23:59&timezone=America/New_York",
-							"protocol": "https",
+							"raw": "{{BASE_URL}}/api/v1/metrics/domains?limit=5&from=2018-01-01T00:00&to=2018-12-31T23:59&timezone=America/New_York",
 							"host": [
-								"api",
-								"sparkpost",
-								"com"
+								"{{BASE_URL}}"
 							],
 							"path": [
 								"api",
@@ -2623,12 +2455,6 @@
 								"domains"
 							],
 							"query": [
-								{
-									"key": "match",
-									"value": "",
-									"type": "text",
-									"disabled": true
-								},
 								{
 									"key": "limit",
 									"value": "5"
@@ -2672,12 +2498,9 @@
 							"raw": ""
 						},
 						"url": {
-							"raw": "https://api.sparkpost.com/api/v1/message-events/events/documentation",
-							"protocol": "https",
+							"raw": "{{BASE_URL}}/api/v1/message-events/events/documentation",
 							"host": [
-								"api",
-								"sparkpost",
-								"com"
+								"{{BASE_URL}}"
 							],
 							"path": [
 								"api",
@@ -2706,12 +2529,9 @@
 							"raw": ""
 						},
 						"url": {
-							"raw": "https://api.sparkpost.com/api/v1/message-events/events/samples?events=bounce",
-							"protocol": "https",
+							"raw": "{{BASE_URL}}/api/v1/message-events/events/samples?events=bounce",
 							"host": [
-								"api",
-								"sparkpost",
-								"com"
+								"{{BASE_URL}}"
 							],
 							"path": [
 								"api",
@@ -2750,12 +2570,9 @@
 							"raw": ""
 						},
 						"url": {
-							"raw": "https://api.sparkpost.com/api/v1/message-events?bounce_classes=1&campaign_ids=Example Campaign Name&delimiter=,&events=delivery,injection,bounce,delay,policy_rejection,out_of_band,open,click,generation_failure,generation_rejection,spam_complaint,list_unsubscribe,link_unsubscribe&friendly_froms=sender@mail.example.com&from=2018-01-01T00:00&message_ids=0e0d94b7-9085-4e3c-ab30-e3f2cd9c273e&page=25&per_page=1000&reason=bounce&recipients=recipient@example.com&template_ids=templ-1234&timezone=America/New_York&to=2018-12-31T23:59&transmission_ids=65832150921904138",
-							"protocol": "https",
+							"raw": "{{BASE_URL}}/api/v1/message-events?bounce_classes=1&campaign_ids=Example Campaign Name&delimiter=,&events=delivery,injection,bounce,delay,policy_rejection,out_of_band,open,click,generation_failure,generation_rejection,spam_complaint,list_unsubscribe,link_unsubscribe&friendly_froms=sender@mail.example.com&from=2018-01-01T00:00&message_ids=0e0d94b7-9085-4e3c-ab30-e3f2cd9c273e&page=25&per_page=1000&reason=bounce&recipients=recipient@example.com&template_ids=templ-1234&timezone=America/New_York&to=2018-12-31T23:59&transmission_ids=65832150921904138",
 							"host": [
-								"api",
-								"sparkpost",
-								"com"
+								"{{BASE_URL}}"
 							],
 							"path": [
 								"api",
@@ -2858,12 +2675,9 @@
 							"raw": "{\n  \"id\": \"unique_id_4_graduate_students_list\",\n  \"name\": \"graduate_students\",\n  \"description\": \"An email list of graduate students at UMBC\",\n  \"attributes\": {\n      \"internal_id\": 112,\n      \"list_group_id\": 12321\n  },\n  \"recipients\": [\n      {\n          \"return_path\": \"return-path-wilmaflin@tstone.com\",\n          \"address\": {\n              \"email\": \"wilmaflin@yahoo.com\",\n              \"name\": \"Wilma\"\n          },\n          \"metadata\": {\n              \"place\": \"Bedrock\"\n          },\n          \"substitution_data\": {\n              \"subrcptkey\": \"subrcptvalue\"\n          },\n          \"tags\": [\n              \"greeting\",\n              \"prehistoric\",\n              \"fred\",\n              \"flintstone\"\n          ]\n      },\n      {\n          \"return_path\": \"return-path-abc@tstone.com\",\n          \"address\": {\n              \"email\": \"abc@flintstone.com\",\n              \"name\": \"ABC\"\n          },\n          \"metadata\": {\n              \"place\": \"MD\"\n          },\n          \"tags\": [\n              \"driver\",\n              \"computer science\",\n              \"fred\",\n              \"flintstone\"\n          ]\n      },\n      {\n          \"return_path\": \"return-path-def@tstone.com\",\n           \"address\": {\n              \"email\": \"fred.jones@flintstone.com\",\n              \"name\": \"Grad Student Office\",\n              \"header_to\": \"grad-student-office@flintstone.com\"\n          },\n          \"tags\": [\n              \"driver\",\n              \"computer science\",\n              \"fred\",\n              \"flintstone\"\n          ]\n      }\n  ]\n}\n"
 						},
 						"url": {
-							"raw": "https://api.sparkpost.com/api/v1/recipient-lists?num_rcpt_errors=3",
-							"protocol": "https",
+							"raw": "{{BASE_URL}}/api/v1/recipient-lists?num_rcpt_errors=3",
 							"host": [
-								"api",
-								"sparkpost",
-								"com"
+								"{{BASE_URL}}"
 							],
 							"path": [
 								"api",
@@ -2900,12 +2714,9 @@
 							"raw": ""
 						},
 						"url": {
-							"raw": "https://api.sparkpost.com/api/v1/recipient-lists/unique_id_4_graduate_students_list?show_recipients=true",
-							"protocol": "https",
+							"raw": "{{BASE_URL}}/api/v1/recipient-lists/unique_id_4_graduate_students_list?show_recipients=true",
 							"host": [
-								"api",
-								"sparkpost",
-								"com"
+								"{{BASE_URL}}"
 							],
 							"path": [
 								"api",
@@ -2943,12 +2754,9 @@
 							"raw": ""
 						},
 						"url": {
-							"raw": "https://api.sparkpost.com/api/v1/recipient-lists",
-							"protocol": "https",
+							"raw": "{{BASE_URL}}/api/v1/recipient-lists",
 							"host": [
-								"api",
-								"sparkpost",
-								"com"
+								"{{BASE_URL}}"
 							],
 							"path": [
 								"api",
@@ -2983,12 +2791,9 @@
 							"raw": "  {\n      \"name\": \"updated_graduate_students\",\n      \"description\": \"An email list of graduate students at UMBC\",\n      \"attributes\": {\n          \"internal_id\": 112,\n          \"list_group_id\": 12321\n      },\n      \"recipients\": [\n          {\n              \"address\": {\n                  \"email\": \"wilmaflin@yahoo.com\",\n                  \"name\": \"Wilma\"\n              },\n              \"metadata\": {\n                  \"place\": \"Bedrock\"\n              },\n              \"substitution_data\": {\n                  \"subrcptkey\": \"subrcptvalue\"\n              },\n              \"tags\": [\n                  \"greeting\",\n                  \"prehistoric\",\n                  \"fred\",\n                  \"flintstone\"\n              ]\n          },\n          {\n              \"address\": {\n                  \"email\": \"fred.jones@flintstone.com\",\n                  \"name\": \"Grad Student Office\",\n                  \"header_to\": \"grad-student-office@flintstone.com\"\n              },\n              \"tags\": [\n                  \"driver\",\n                  \"computer science\",\n                  \"fred\",\n                  \"flintstone\"\n              ]\n          }\n      ]\n  }\n"
 						},
 						"url": {
-							"raw": "https://api.sparkpost.com/api/v1/recipient-lists/unique_id_4_graduate_students_list?num_rcpt_errors=3",
-							"protocol": "https",
+							"raw": "{{BASE_URL}}/api/v1/recipient-lists/unique_id_4_graduate_students_list?num_rcpt_errors=3",
 							"host": [
-								"api",
-								"sparkpost",
-								"com"
+								"{{BASE_URL}}"
 							],
 							"path": [
 								"api",
@@ -3026,12 +2831,9 @@
 							"raw": ""
 						},
 						"url": {
-							"raw": "https://api.sparkpost.com/api/v1/recipient-lists/unique_id_4_graduate_students_list",
-							"protocol": "https",
+							"raw": "{{BASE_URL}}/api/v1/recipient-lists/unique_id_4_graduate_students_list",
 							"host": [
-								"api",
-								"sparkpost",
-								"com"
+								"{{BASE_URL}}"
 							],
 							"path": [
 								"api",
@@ -3073,12 +2875,9 @@
 							"raw": "{\n  \"name\": \"Replies Webhook\",\n  \"target\": \"https://webhooks.customer.example/replies\",\n  \"auth_token\": \"\",\n  \"match\":\n    {\n      \"protocol\": \"SMTP\",\n      \"domain\": \"inbounddomain.example.com\"\n    }\n}\n"
 						},
 						"url": {
-							"raw": "https://api.sparkpost.com/api/v1/relay-webhooks",
-							"protocol": "https",
+							"raw": "{{BASE_URL}}/api/v1/relay-webhooks",
 							"host": [
-								"api",
-								"sparkpost",
-								"com"
+								"{{BASE_URL}}"
 							],
 							"path": [
 								"api",
@@ -3109,12 +2908,9 @@
 							"raw": ""
 						},
 						"url": {
-							"raw": "https://api.sparkpost.com/api/v1/relay-webhooks",
-							"protocol": "https",
+							"raw": "{{BASE_URL}}/api/v1/relay-webhooks",
 							"host": [
-								"api",
-								"sparkpost",
-								"com"
+								"{{BASE_URL}}"
 							],
 							"path": [
 								"api",
@@ -3145,12 +2941,9 @@
 							"raw": ""
 						},
 						"url": {
-							"raw": "https://api.sparkpost.com/api/v1/relay-webhooks/12013026328707075",
-							"protocol": "https",
+							"raw": "{{BASE_URL}}/api/v1/relay-webhooks/12013026328707075",
 							"host": [
-								"api",
-								"sparkpost",
-								"com"
+								"{{BASE_URL}}"
 							],
 							"path": [
 								"api",
@@ -3186,12 +2979,9 @@
 							"raw": "{\n  \"name\": \"New Replies Webhook\",\n  \"target\": \"https://webhook.customer.example/replies\"\n}\n"
 						},
 						"url": {
-							"raw": "https://api.sparkpost.com/api/v1/relay-webhooks/12013026328707075",
-							"protocol": "https",
+							"raw": "{{BASE_URL}}/api/v1/relay-webhooks/12013026328707075",
 							"host": [
-								"api",
-								"sparkpost",
-								"com"
+								"{{BASE_URL}}"
 							],
 							"path": [
 								"api",
@@ -3223,12 +3013,9 @@
 							"raw": ""
 						},
 						"url": {
-							"raw": "https://api.sparkpost.com/api/v1/relay-webhooks/12013026328707075",
-							"protocol": "https",
+							"raw": "{{BASE_URL}}/api/v1/relay-webhooks/12013026328707075",
 							"host": [
-								"api",
-								"sparkpost",
-								"com"
+								"{{BASE_URL}}"
 							],
 							"path": [
 								"api",
@@ -3270,12 +3057,9 @@
 							"raw": "{\n  \"domain\": \"example1.com\",\n  \"tracking_domain\": \"click.example1.com\",\n  \"generate_dkim\": true,\n  \"shared_with_subaccounts\": false\n}"
 						},
 						"url": {
-							"raw": "https://api.sparkpost.com/api/v1/sending-domains",
-							"protocol": "https",
+							"raw": "{{BASE_URL}}/api/v1/sending-domains",
 							"host": [
-								"api",
-								"sparkpost",
-								"com"
+								"{{BASE_URL}}"
 							],
 							"path": [
 								"api",
@@ -3310,12 +3094,9 @@
 							"raw": "{\n    \"domain\" : \"example1.com\",\n    \"dkim\": {\n      \"private\" : \"<<your DKIM private key here>>\",\n        \"public\" : \"<<your DKIM public key here>>\",\n        \"selector\" : \"brisbane\",\n        \"headers\" : \"from:to:subject:date\"\n    }\n}\n"
 						},
 						"url": {
-							"raw": "https://api.sparkpost.com/api/v1/sending-domains",
-							"protocol": "https",
+							"raw": "{{BASE_URL}}/api/v1/sending-domains",
 							"host": [
-								"api",
-								"sparkpost",
-								"com"
+								"{{BASE_URL}}"
 							],
 							"path": [
 								"api",
@@ -3346,12 +3127,9 @@
 							"raw": ""
 						},
 						"url": {
-							"raw": "https://api.sparkpost.com/api/v1/sending-domains",
-							"protocol": "https",
+							"raw": "{{BASE_URL}}/api/v1/sending-domains",
 							"host": [
-								"api",
-								"sparkpost",
-								"com"
+								"{{BASE_URL}}"
 							],
 							"path": [
 								"api",
@@ -3382,12 +3160,9 @@
 							"raw": ""
 						},
 						"url": {
-							"raw": "https://api.sparkpost.com/api/v1/sending-domains?ownership_verified=true&dkim_status=valid&cname_status=valid&mx_status=unverified&abuse_at_status=unverified&postmaster_at_status=unverified&compliance_status=valid&is_default_bounce_domain=false",
-							"protocol": "https",
+							"raw": "{{BASE_URL}}/api/v1/sending-domains?ownership_verified=true&dkim_status=valid&cname_status=valid&mx_status=unverified&abuse_at_status=unverified&postmaster_at_status=unverified&compliance_status=valid&is_default_bounce_domain=false",
 							"host": [
-								"api",
-								"sparkpost",
-								"com"
+								"{{BASE_URL}}"
 							],
 							"path": [
 								"api",
@@ -3452,12 +3227,9 @@
 							"raw": ""
 						},
 						"url": {
-							"raw": "https://api.sparkpost.com/api/v1/sending-domains/example1.com",
-							"protocol": "https",
+							"raw": "{{BASE_URL}}/api/v1/sending-domains/example1.com",
 							"host": [
-								"api",
-								"sparkpost",
-								"com"
+								"{{BASE_URL}}"
 							],
 							"path": [
 								"api",
@@ -3493,12 +3265,9 @@
 							"raw": "{\n    \"tracking_domain\": \"click.example1.com\",\n    \"dkim\" : {\n      \"private\" : \"MIICXgIBAAKBgQC+W6scd3XWwvC/hPRksfDYFi3ztgyS9OSqnnjtNQeDdTSD1DRx/xFar2wjmzxp2+SnJ5pspaF77VZveN3P/HVmXZVghr3asoV9WBx/uW1nDIUxU35L4juXiTwsMAbgMyh3NqIKTNKyMDy4P8vpEhtH1iv/BrwMdBjHDVCycB8WnwIDAQABAoGBAITb3BCRPBi5lGhHdn+1RgC7cjUQEbSb4eFHm+ULRwQ0UIPWHwiVWtptZ09usHq989fKp1g/PfcNzm8c78uTS6gCxfECweFCRK6EdO6cCCr1cfWvmBdSjzYhODUdQeyWZi2ozqd0FhGWoV4VHseh4iLj36DzleTLtOZj3FhAo1WJAkEA68T+KkGeDyWwvttYtuSiQCCTrXYAWTQnkIUxduCp7Ap6tVeIDn3TaXTj74UbEgaNgLhjG4bX//fdeDW6PaK9YwJBAM6xJmwHLPMgwNVjiz3u/6fhY3kaZTWcxtMkXCjh1QE82KzDwqyrCg7EFjTtFysSHCAZxXZMcivGl4TZLHnydJUCQQCx16+M+mAatuiCnvxlQUMuMiSTNK6Amzm45u9v53nlZeY3weYMYFdHdfe1pebMiwrT7MI9clKebz6svYJVmdtXAkApDAc8VuR3WB7TgdRKNWdyGJGfoD1PO1ZE4iinOcoKV+IT1UCY99Kkgg6C7j62n/8T5OpRBvd5eBPpHxP1F9BNAkEA5Nf2VO9lcTetksHdIeKK+F7sio6UZn0Rv7iUo3ALrN1D1cGfWIh/Y1g==\",\n        \"public\" : \"MIGfMA0GCSqGSIb3DQEBAQUAA4GNADCBiQKBgQC+W6scd3XWwvC/hPRksfDYFi3ztgyS9OSqnnjtNQeDdTSD1DRx/xFar2wjmzxp2+SnJ5pspaF77VZveN3P/HVmXZVghr3asoV9WBx/uW1nDIUxU35L4juXiTwsMAbgMyh3NqIKTNKyMDy4P8vpEhtH1iv/BrwMdBjHDVCycB8WnwIDAQAB\",\n        \"selector\" : \"hello_selector\",\n        \"headers\" : \"from:to:subject:date\"\n    }\n}\n"
 						},
 						"url": {
-							"raw": "https://api.sparkpost.com/api/v1/sending-domains/example1.com",
-							"protocol": "https",
+							"raw": "{{BASE_URL}}/api/v1/sending-domains/example1.com",
 							"host": [
-								"api",
-								"sparkpost",
-								"com"
+								"{{BASE_URL}}"
 							],
 							"path": [
 								"api",
@@ -3530,12 +3299,9 @@
 							"raw": ""
 						},
 						"url": {
-							"raw": "https://api.sparkpost.com/api/v1/sending-domains/example1.com",
-							"protocol": "https",
+							"raw": "{{BASE_URL}}/api/v1/sending-domains/example1.com",
 							"host": [
-								"api",
-								"sparkpost",
-								"com"
+								"{{BASE_URL}}"
 							],
 							"path": [
 								"api",
@@ -3571,12 +3337,9 @@
 							"raw": "{\n  \"dkim_verify\": true\n}"
 						},
 						"url": {
-							"raw": "https://api.sparkpost.com/api/v1/sending-domains/example.com/verify",
-							"protocol": "https",
+							"raw": "{{BASE_URL}}/api/v1/sending-domains/example.com/verify",
 							"host": [
-								"api",
-								"sparkpost",
-								"com"
+								"{{BASE_URL}}"
 							],
 							"path": [
 								"api",
@@ -3615,12 +3378,9 @@
 							"raw": ""
 						},
 						"url": {
-							"raw": "https://api.sparkpost.com/api/v1/sending-ips",
-							"protocol": "https",
+							"raw": "{{BASE_URL}}/api/v1/sending-ips",
 							"host": [
-								"api",
-								"sparkpost",
-								"com"
+								"{{BASE_URL}}"
 							],
 							"path": [
 								"api",
@@ -3651,12 +3411,9 @@
 							"raw": ""
 						},
 						"url": {
-							"raw": "https://api.sparkpost.com/api/v1/sending-ips/123.456.789.012",
-							"protocol": "https",
+							"raw": "{{BASE_URL}}/api/v1/sending-ips/123.456.789.012",
 							"host": [
-								"api",
-								"sparkpost",
-								"com"
+								"{{BASE_URL}}"
 							],
 							"path": [
 								"api",
@@ -3692,12 +3449,9 @@
 							"raw": "{\n    \"ip_pool\": \"too_cool_for_pool\"\n}"
 						},
 						"url": {
-							"raw": "https://api.sparkpost.com/api/v1/sending-ips/123.456.789.012",
-							"protocol": "https",
+							"raw": "{{BASE_URL}}/api/v1/sending-ips/123.456.789.012",
 							"host": [
-								"api",
-								"sparkpost",
-								"com"
+								"{{BASE_URL}}"
 							],
 							"path": [
 								"api",
@@ -3735,12 +3489,9 @@
 							"raw": ""
 						},
 						"url": {
-							"raw": "https://api.sparkpost.com/api/v1/subaccounts",
-							"protocol": "https",
+							"raw": "{{BASE_URL}}/api/v1/subaccounts",
 							"host": [
-								"api",
-								"sparkpost",
-								"com"
+								"{{BASE_URL}}"
 							],
 							"path": [
 								"api",
@@ -3771,12 +3522,9 @@
 							"raw": ""
 						},
 						"url": {
-							"raw": "https://api.sparkpost.com/api/v1/subaccounts/summary",
-							"protocol": "https",
+							"raw": "{{BASE_URL}}/api/v1/subaccounts/summary",
 							"host": [
-								"api",
-								"sparkpost",
-								"com"
+								"{{BASE_URL}}"
 							],
 							"path": [
 								"api",
@@ -3808,12 +3556,9 @@
 							"raw": ""
 						},
 						"url": {
-							"raw": "https://api.sparkpost.com/api/v1/subaccounts/123",
-							"protocol": "https",
+							"raw": "{{BASE_URL}}/api/v1/subaccounts/123",
 							"host": [
-								"api",
-								"sparkpost",
-								"com"
+								"{{BASE_URL}}"
 							],
 							"path": [
 								"api",
@@ -3849,12 +3594,9 @@
 							"raw": "{\n  \"name\": \"Sparkle Ponies\",\n  \"key_label\": \"API Key for Sparkle Ponies Subaccount\",\n  \"key_grants\": [\n    \"smtp/inject\",\n    \"sending_domains/manage\",\n    \"message_events/view\",\n    \"suppression_lists/manage\",\n    \"tracking_domains/view\",\n    \"tracking_domains/manage\",\n    \"webhooks/modify\",\n    \"webhooks/view\"\n  ],\n  \"key_valid_ips\": [],\n  \"ip_pool\": \"\"\n}"
 						},
 						"url": {
-							"raw": "https://api.sparkpost.com/api/v1/subaccounts",
-							"protocol": "https",
+							"raw": "{{BASE_URL}}/api/v1/subaccounts",
 							"host": [
-								"api",
-								"sparkpost",
-								"com"
+								"{{BASE_URL}}"
 							],
 							"path": [
 								"api",
@@ -3889,12 +3631,9 @@
 							"raw": "{\n  \"name\": \"Hey Joe! Garage and Parts\",\n  \"status\": \"suspended\"\n}\n"
 						},
 						"url": {
-							"raw": "https://api.sparkpost.com/api/v1/subaccounts/11252",
-							"protocol": "https",
+							"raw": "{{BASE_URL}}/api/v1/subaccounts/11252",
 							"host": [
-								"api",
-								"sparkpost",
-								"com"
+								"{{BASE_URL}}"
 							],
 							"path": [
 								"api",
@@ -3936,12 +3675,9 @@
 							"raw": "{\n  \"recipients\": [\n    {\n      \"recipient\": \"rcpt_1@example.com\",\n      \"type\": \"transactional\",\n      \"description\": \"User requested to not receive any transactional emails.\"\n    },\n    {\n      \"recipient\": \"rcpt_2@example.com\",\n      \"type\": \"non_transactional\",\n      \"description\": \"User requested to not receive any non-transactional emails.\"\n    }\n  ]\n}\n"
 						},
 						"url": {
-							"raw": "https://api.sparkpost.com/api/v1/suppression-list/",
-							"protocol": "https",
+							"raw": "{{BASE_URL}}/api/v1/suppression-list/",
 							"host": [
-								"api",
-								"sparkpost",
-								"com"
+								"{{BASE_URL}}"
 							],
 							"path": [
 								"api",
@@ -3973,12 +3709,9 @@
 							"raw": ""
 						},
 						"url": {
-							"raw": "https://api.sparkpost.com/api/v1/suppression-list?to=2018-12-31T23:59:00-0000&from=2018-01-01T23:59:00-0000&types=transactional,non_transactional&domain=example.com&per_page=10000&page=1&sources=Manually Added&description=requested to not receive",
-							"protocol": "https",
+							"raw": "{{BASE_URL}}/api/v1/suppression-list?to=2018-12-31T23:59:00-0000&from=2018-01-01T23:59:00-0000&types=transactional,non_transactional&domain=example.com&per_page=10000&page=1&sources=Manually Added&description=requested to not receive",
 							"host": [
-								"api",
-								"sparkpost",
-								"com"
+								"{{BASE_URL}}"
 							],
 							"path": [
 								"api",
@@ -4043,12 +3776,9 @@
 							"raw": ""
 						},
 						"url": {
-							"raw": "https://api.sparkpost.com/api/v1/suppression-list/rcpt_1@example.com",
-							"protocol": "https",
+							"raw": "{{BASE_URL}}/api/v1/suppression-list/rcpt_1@example.com",
 							"host": [
-								"api",
-								"sparkpost",
-								"com"
+								"{{BASE_URL}}"
 							],
 							"path": [
 								"api",
@@ -4080,12 +3810,9 @@
 							"raw": ""
 						},
 						"url": {
-							"raw": "https://api.sparkpost.com/api/v1/suppression-list/rcpt_1@example.com",
-							"protocol": "https",
+							"raw": "{{BASE_URL}}/api/v1/suppression-list/rcpt_1@example.com",
 							"host": [
-								"api",
-								"sparkpost",
-								"com"
+								"{{BASE_URL}}"
 							],
 							"path": [
 								"api",
@@ -4127,12 +3854,9 @@
 							"raw": "{\n  \"id\": \"summer_sale\",\n  \"name\": \"Summer Sale!\",\n  \"published\": true,\n  \"description\": \"Template for a Summer Sale!\",\n  \"shared_with_subaccounts\": false,\n  \"options\": {\n    \"open_tracking\": false,\n    \"click_tracking\": true\n  },\n  \"content\": {\n    \"from\": {\n      \"email\": \"marketing@bounces.company.example\",\n      \"name\": \"Example Company Marketing\"\n    },\n    \"subject\": \"Summer deals for \",\n    \"reply_to\": \"Summer deals <summer_deals@company.example>\",\n    \"text\": \"Check out these deals !\",\n    \"html\": \"<b>Check out these deals !</b>\",\n    \"headers\": {\n      \"X-Customer-Campaign-ID\": \"Summer2014\"\n    }\n  }\n}"
 						},
 						"url": {
-							"raw": "https://api.sparkpost.com/api/v1/templates",
-							"protocol": "https",
+							"raw": "{{BASE_URL}}/api/v1/templates",
 							"host": [
-								"api",
-								"sparkpost",
-								"com"
+								"{{BASE_URL}}"
 							],
 							"path": [
 								"api",
@@ -4167,12 +3891,9 @@
 							"raw": "{\n  \"id\" : \"another_summer_sale\",\n  \"name\" : \"Summer Sale!\",\n  \"published\" : true,\n\n  \"options\": {\n    \"open_tracking\" : false,\n    \"click_tracking\" : true\n  },\n\n  \"content\": {\n    \"email_rfc822\" : \"Content-Type: text/plain\\nFrom: Example Company Marketing <marketing@bounces.company.example>\\nReply-To:Summer deals <summer_deals@company.example>\\nX-Customer-Campaign-ID: Summer2014\\nSubject: Summer deals for {{name}}\\n\\nCheck out these deals {{name}}!\"\n  }\n}\n"
 						},
 						"url": {
-							"raw": "https://api.sparkpost.com/api/v1/templates",
-							"protocol": "https",
+							"raw": "{{BASE_URL}}/api/v1/templates",
 							"host": [
-								"api",
-								"sparkpost",
-								"com"
+								"{{BASE_URL}}"
 							],
 							"path": [
 								"api",
@@ -4203,29 +3924,14 @@
 							"raw": ""
 						},
 						"url": {
-							"raw": "https://api.sparkpost.com/api/v1/templates?",
-							"protocol": "https",
+							"raw": "{{BASE_URL}}/api/v1/templates?",
 							"host": [
-								"api",
-								"sparkpost",
-								"com"
+								"{{BASE_URL}}"
 							],
 							"path": [
 								"api",
 								"v1",
 								"templates"
-							],
-							"query": [
-								{
-									"key": "draft",
-									"value": "true",
-									"disabled": true
-								},
-								{
-									"key": "shared_with_subaccounts",
-									"value": "true",
-									"disabled": true
-								}
 							]
 						},
 						"description": "Lists the most recent version of each template in your account. Each template object in the list will have the following fields:\n\n- id: Unique template ID\n\n- name: Template name\n\n- published: Published state of the template (true = published, false = draft)\n\n- description: Template description\n\n- last_update_time: The time the template was last updated.\n\n- has_draft: flag indicating whether the template has a draft version.\n\n- has_published: flag indicating whether the template has a published version.\n\nAdditional, templates owned by the Master subaccount will have the following field:\n\n- shared_with_subaccounts: Whether the template is shared with subaccounts."
@@ -4251,25 +3957,15 @@
 							"raw": ""
 						},
 						"url": {
-							"raw": "https://api.sparkpost.com/api/v1/templates/11714265276872?",
-							"protocol": "https",
+							"raw": "{{BASE_URL}}/api/v1/templates/11714265276872?",
 							"host": [
-								"api",
-								"sparkpost",
-								"com"
+								"{{BASE_URL}}"
 							],
 							"path": [
 								"api",
 								"v1",
 								"templates",
 								"11714265276872"
-							],
-							"query": [
-								{
-									"key": "draft",
-									"value": "true",
-									"disabled": true
-								}
 							]
 						},
 						"description": "Retrieve a single template by specifying its ID in the URI path. By default, the most recently\nupdated version is returned. Use the **draft** query parameter to specify a draft or published\ntemplate.\n\n\nThe result will include a \"last_update_time\" field. The \"last_update_time\" is the time the template was last updated, for both draft and published versions.\n\nIf the template was used for message generation, the result will also include a \"last_use\" field. The \"last_use\" time represents the last time any version of this template was used (draft or published).\n\n\n"
@@ -4295,12 +3991,9 @@
 							"raw": "{\n  \"options\": {\n    \"open_tracking\": true\n  },\n  \"name\": \"A new name!\",\n  \"shared_with_subaccounts\": true,\n  \"content\": {\n    \"from\": {\n      \"email\": \"marketing@bounces.company.example\",\n      \"name\": \"Example Company Marketing\"\n    },\n    \"subject\": \"Updated Summer deals for \",\n    \"reply_to\": \"Summer deals <summer_deals@company.example>\",\n    \"text\": \"Updated: Check out these deals !\",\n    \"html\": \"<b>Updated: Check out these deals !</b>\"\n  }\n}\n"
 						},
 						"url": {
-							"raw": "https://api.sparkpost.com/api/v1/templates/another_summer_sale?update_published=true",
-							"protocol": "https",
+							"raw": "{{BASE_URL}}/api/v1/templates/another_summer_sale?update_published=true",
 							"host": [
-								"api",
-								"sparkpost",
-								"com"
+								"{{BASE_URL}}"
 							],
 							"path": [
 								"api",
@@ -4338,12 +4031,9 @@
 							"raw": "{\n  \"published\": true\n}"
 						},
 						"url": {
-							"raw": "https://api.sparkpost.com/api/v1/templates/another_summer_sale?update_published=false",
-							"protocol": "https",
+							"raw": "{{BASE_URL}}/api/v1/templates/another_summer_sale?update_published=false",
 							"host": [
-								"api",
-								"sparkpost",
-								"com"
+								"{{BASE_URL}}"
 							],
 							"path": [
 								"api",
@@ -4385,12 +4075,9 @@
 							"raw": "{\n  \"substitution_data\" : {\n    \"name\" : \"Natalie\",\n    \"age\" : 35,\n    \"member\" : true\n  }\n}\n"
 						},
 						"url": {
-							"raw": "https://api.sparkpost.com/api/v1/templates/another_summer_sale/preview?draft=true",
-							"protocol": "https",
+							"raw": "{{BASE_URL}}/api/v1/templates/another_summer_sale/preview?draft=true",
 							"host": [
-								"api",
-								"sparkpost",
-								"com"
+								"{{BASE_URL}}"
 							],
 							"path": [
 								"api",
@@ -4429,12 +4116,9 @@
 							"raw": ""
 						},
 						"url": {
-							"raw": "https://api.sparkpost.com/api/v1/templates/another_summer_sale",
-							"protocol": "https",
+							"raw": "{{BASE_URL}}/api/v1/templates/another_summer_sale",
 							"host": [
-								"api",
-								"sparkpost",
-								"com"
+								"{{BASE_URL}}"
 							],
 							"path": [
 								"api",
@@ -4476,12 +4160,9 @@
 							"raw": "{\n  \"domain\": \"example.domain.com\",\n  \"secure\": false,\n  \"default\": false\n}"
 						},
 						"url": {
-							"raw": "https://api.sparkpost.com/api/v1/tracking-domains",
-							"protocol": "https",
+							"raw": "{{BASE_URL}}/api/v1/tracking-domains",
 							"host": [
-								"api",
-								"sparkpost",
-								"com"
+								"{{BASE_URL}}"
 							],
 							"path": [
 								"api",
@@ -4512,12 +4193,9 @@
 							"raw": ""
 						},
 						"url": {
-							"raw": "https://api.sparkpost.com/api/v1/tracking-domains",
-							"protocol": "https",
+							"raw": "{{BASE_URL}}/api/v1/tracking-domains",
 							"host": [
-								"api",
-								"sparkpost",
-								"com"
+								"{{BASE_URL}}"
 							],
 							"path": [
 								"api",
@@ -4548,12 +4226,9 @@
 							"raw": ""
 						},
 						"url": {
-							"raw": "https://api.sparkpost.com/api/v1/tracking-domains/example.domain.com",
-							"protocol": "https",
+							"raw": "{{BASE_URL}}/api/v1/tracking-domains/example.domain.com",
 							"host": [
-								"api",
-								"sparkpost",
-								"com"
+								"{{BASE_URL}}"
 							],
 							"path": [
 								"api",
@@ -4585,12 +4260,9 @@
 							"raw": "{\n    \"secure\"  : true,\n    \"default\" : true\n}\n"
 						},
 						"url": {
-							"raw": "https://api.sparkpost.com/api/v1/tracking-domains/example.domain.com",
-							"protocol": "https",
+							"raw": "{{BASE_URL}}/api/v1/tracking-domains/example.domain.com",
 							"host": [
-								"api",
-								"sparkpost",
-								"com"
+								"{{BASE_URL}}"
 							],
 							"path": [
 								"api",
@@ -4622,12 +4294,9 @@
 							"raw": ""
 						},
 						"url": {
-							"raw": "https://api.sparkpost.com/api/v1/tracking-domains/example.domain.com",
-							"protocol": "https",
+							"raw": "{{BASE_URL}}/api/v1/tracking-domains/example.domain.com",
 							"host": [
-								"api",
-								"sparkpost",
-								"com"
+								"{{BASE_URL}}"
 							],
 							"path": [
 								"api",
@@ -4659,12 +4328,9 @@
 							"raw": ""
 						},
 						"url": {
-							"raw": "https://api.sparkpost.com/api/v1/tracking-domains/example.domain.com/verify",
-							"protocol": "https",
+							"raw": "{{BASE_URL}}/api/v1/tracking-domains/example.domain.com/verify",
 							"host": [
-								"api",
-								"sparkpost",
-								"com"
+								"{{BASE_URL}}"
 							],
 							"path": [
 								"api",
@@ -4707,12 +4373,9 @@
 							"raw": "{\n  \"campaign_id\": \"postman_inline_both_example\",\n  \"recipients\": [\n    {\n      \"address\": \"wilma@example.sink.sparkpostmail.com\"\n    }\n  ],\n  \"content\": {\n    \"from\": {\n      \"email\": \"marketing@example.sink.sparkpostmail.com\",\n      \"name\": \"Example Company\"\n    },\n\n    \"subject\": \"SparkPost inline template example\",\n    \"html\": \"<html><body>Here is your inline html, {{first_name or 'you great person'}}!<br></body></html>\",\n    \"text\": \"Here is your plain text, {{first_name or 'you great person'}}!\"\n  }\n}"
 						},
 						"url": {
-							"raw": "https://api.sparkpost.com/api/v1/transmissions?num_rcpt_errors=3",
-							"protocol": "https",
+							"raw": "{{BASE_URL}}/api/v1/transmissions?num_rcpt_errors=3",
 							"host": [
-								"api",
-								"sparkpost",
-								"com"
+								"{{BASE_URL}}"
 							],
 							"path": [
 								"api",
@@ -4753,12 +4416,9 @@
 							"raw": "{\n  \"options\": {\n    \"open_tracking\": true,\n    \"click_tracking\": true,\n    \"transactional\": false,\n    \"sandbox\": false,\n    \"inline_css\": false\n  },\n  \"description\": \"Christmas Campaign Email\",\n  \"campaign_id\": \"christmas_campaign\",\n  \"metadata\": {\n    \"user_type\": \"students\",\n    \"education_level\": \"college\"\n  },\n  \"substitution_data\": {\n    \"sender\": \"Big Store Team\",\n    \"holiday_name\": \"Christmas\"\n  },\n  \"recipients\": [\n    {\n      \"address\": {\n        \"email\": \"wilma@example.sink.sparkpostmail.com\",\n        \"name\": \"Wilma Flintstone\"\n      },\n      \"tags\": [\n        \"greeting\",\n        \"prehistoric\",\n        \"fred\",\n        \"flintstone\"\n      ],\n      \"metadata\": {\n        \"age\": \"24\",\n        \"place\": \"Bedrock\"\n      },\n      \"substitution_data\": {\n        \"first_name\": \"Wilma\",\n        \"customer_type\": \"Platinum\",\n        \"year\": \"Freshman\"\n      }\n    },\n    {\n      \"address\": {\n        \"email\": \"abc@example.sink.sparkpostmail.com\",\n        \"name\": \"Fred Flintstone\"\n      },\n      \"tags\": [\n        \"greeting\",\n        \"prehistoric\",\n        \"fred\",\n        \"flintstone\"\n      ],\n      \"metadata\": {\n        \"age\": \"33\",\n        \"place\": \"NY\"\n      },\n      \"substitution_data\": {\n        \"first_name\": \"Fred\",\n        \"customer_type\": \"Silver\",\n        \"year\": \"Senior\"\n      }\n    }\n  ],\n  \"content\": {\n    \"email_rfc822\": \"Content-Type: text/plain\\nFrom: Example Company Marketing <marketing@bounces.company.example>\\nReply-To:Summer deals <summer_deals@company.example>\\nX-Customer-Campaign-ID: Summer2014\\nSubject: Summer deals for {{name}}\\n\\nCheck out these deals {{name}}!\"\n  }\n}"
 						},
 						"url": {
-							"raw": "https://api.sparkpost.com/api/v1/transmissions?num_rcpt_errors=3",
-							"protocol": "https",
+							"raw": "{{BASE_URL}}/api/v1/transmissions?num_rcpt_errors=3",
 							"host": [
-								"api",
-								"sparkpost",
-								"com"
+								"{{BASE_URL}}"
 							],
 							"path": [
 								"api",
@@ -4799,12 +4459,9 @@
 							"raw": "{\n  \"campaign_id\": \"postman_template_example\",\n  \"recipients\": [\n    {\n      \"address\": \"wilma@example.sink.sparkpostmail.com\"\n    }\n  ],\n  \"content\": {\n    \"template_id\": \"summer_sale\"\n  }\n}\n"
 						},
 						"url": {
-							"raw": "https://api.sparkpost.com/api/v1/transmissions?num_rcpt_errors=3",
-							"protocol": "https",
+							"raw": "{{BASE_URL}}/api/v1/transmissions?num_rcpt_errors=3",
 							"host": [
-								"api",
-								"sparkpost",
-								"com"
+								"{{BASE_URL}}"
 							],
 							"path": [
 								"api",
@@ -4845,12 +4502,9 @@
 							"raw": "{\n  \"campaign_id\": \"postman_metadata_example\",\n  \"recipients\": [\n    {\n      \"address\": \"wilma@example.sink.sparkpostmail.com\",\n      \"metadata\": {\n        \"unique_id\": 424242\n      },\n      \"substitution_data\": {\n        \"first_name\": \"Wilma\"\n      }\n    }\n  ],\n  \"content\": {\n    \"template_id\": \"summer_sale\"\n  }\n}\n"
 						},
 						"url": {
-							"raw": "https://api.sparkpost.com/api/v1/transmissions?num_rcpt_errors=3",
-							"protocol": "https",
+							"raw": "{{BASE_URL}}/api/v1/transmissions?num_rcpt_errors=3",
 							"host": [
-								"api",
-								"sparkpost",
-								"com"
+								"{{BASE_URL}}"
 							],
 							"path": [
 								"api",
@@ -4891,12 +4545,9 @@
 							"raw": "{\n  \"campaign_id\": \"postman_metadata_example\",\n  \"options\": {\n    \"start_time\": \"2018-03-31T08:00:00-00:00\",\n    \"open_tracking\": true,\n    \"click_tracking\": true\n  },\n  \"recipients\": [\n    {\n      \"address\": \"wilma@example.sink.sparkpostmail.com\",\n      \"metadata\": {\n        \"unique_id\": 424242\n      },\n      \"substitution_data\": {\n        \"first_name\": \"Wilma\"\n      }\n    }\n  ],\n  \"content\": {\n    \"template_id\": \"summer_sale\"\n  }\n}\n"
 						},
 						"url": {
-							"raw": "https://api.sparkpost.com/api/v1/transmissions?num_rcpt_errors=3",
-							"protocol": "https",
+							"raw": "{{BASE_URL}}/api/v1/transmissions?num_rcpt_errors=3",
 							"host": [
-								"api",
-								"sparkpost",
-								"com"
+								"{{BASE_URL}}"
 							],
 							"path": [
 								"api",
@@ -4933,12 +4584,9 @@
 							"raw": ""
 						},
 						"url": {
-							"raw": "https://api.sparkpost.com/api/v1/transmissions/66806922810419717",
-							"protocol": "https",
+							"raw": "{{BASE_URL}}/api/v1/transmissions/66806922810419717",
 							"host": [
-								"api",
-								"sparkpost",
-								"com"
+								"{{BASE_URL}}"
 							],
 							"path": [
 								"api",
@@ -4978,29 +4626,14 @@
 							"raw": ""
 						},
 						"url": {
-							"raw": "https://api.sparkpost.com/api/v1/transmissions?",
-							"protocol": "https",
+							"raw": "{{BASE_URL}}/api/v1/transmissions?",
 							"host": [
-								"api",
-								"sparkpost",
-								"com"
+								"{{BASE_URL}}"
 							],
 							"path": [
 								"api",
 								"v1",
 								"transmissions"
-							],
-							"query": [
-								{
-									"key": "draft",
-									"value": "true",
-									"disabled": true
-								},
-								{
-									"key": "shared_with_subaccounts",
-									"value": "true",
-									"disabled": true
-								}
 							]
 						},
 						"description": "List an array of live transmission summary objects.  A transmission summary object contains `id`, `state`, `template_id`, `campaign_id` and `description` fields. \n\nBy default, the list includes transmissions for all campaigns and templates.  Use the `template_id` parameter to filter by template and `campaign_id` to filter by campaign. The summary for transmissions using an inline template will include `\"template_id\": \"inline\"`.  Transmissions using inline templates cannot be filtered with `template_id`.\n\n**Note**: Only multi-recipient transmissions that have been submitted or completed within the last 24 hours are returned.</div>\n\n**Note**: Only scheduled transmissions are returned by this endpoint. Immediate transmissions cannot be retrieved.</div>\n\nParameters\n+ campaign_id (optional, string,`thanksgiving`) ... ID of the campaign used by the transmissions\n+ template_id (optional, string, `thanksgiving-template`) ... ID of the template used by the transmissions"
@@ -5026,12 +4659,9 @@
 							"raw": ""
 						},
 						"url": {
-							"raw": "https://api.sparkpost.com/api/v1/transmissions/66806922810419717",
-							"protocol": "https",
+							"raw": "{{BASE_URL}}/api/v1/transmissions/66806922810419717",
 							"host": [
-								"api",
-								"sparkpost",
-								"com"
+								"{{BASE_URL}}"
 							],
 							"path": [
 								"api",
@@ -5065,12 +4695,9 @@
 							"raw": ""
 						},
 						"url": {
-							"raw": "https://api.sparkpost.com/api/v1/webhooks/events/documentation",
-							"protocol": "https",
+							"raw": "{{BASE_URL}}/api/v1/webhooks/events/documentation",
 							"host": [
-								"api",
-								"sparkpost",
-								"com"
+								"{{BASE_URL}}"
 							],
 							"path": [
 								"api",
@@ -5099,12 +4726,9 @@
 							"raw": ""
 						},
 						"url": {
-							"raw": "https://api.sparkpost.com/api/v1/webhooks/events/samples?events=bounce,out_of_band",
-							"protocol": "https",
+							"raw": "{{BASE_URL}}/api/v1/webhooks/events/samples?events=bounce,out_of_band",
 							"host": [
-								"api",
-								"sparkpost",
-								"com"
+								"{{BASE_URL}}"
 							],
 							"path": [
 								"api",
@@ -5147,12 +4771,9 @@
 							"raw": "{\n    \"name\": \"Example webhook\",\n    \"target\": \"http://client.example.com/example-webhook\",\n    \"events\": [\n        \"bounce\", \n        \"delivery\", \n        \"injection\", \n        \"sms_status\", \n        \"spam_complaint\", \n        \"out_of_band\", \n        \"policy_rejection\", \n        \"delay\", \n        \"click\", \n        \"open\", \n        \"initial_open\", \n        \"generation_failure\", \n        \"generation_rejection\", \n        \"list_unsubscribe\", \n        \"link_unsubscribe\", \n        \"relay_injection\", \n        \"relay_rejection\", \n        \"relay_delivery\", \n        \"relay_tempfail\", \n        \"relay_permfail\"\n    ]\n}"
 						},
 						"url": {
-							"raw": "https://api.sparkpost.com/api/v1/webhooks",
-							"protocol": "https",
+							"raw": "{{BASE_URL}}/api/v1/webhooks",
 							"host": [
-								"api",
-								"sparkpost",
-								"com"
+								"{{BASE_URL}}"
 							],
 							"path": [
 								"api",
@@ -5187,12 +4808,9 @@
 							"raw": "{\n    \"name\": \"Example webhook\",\n    \"target\": \"https://client.example.com/example-webhook\",\n    \"custom_headers\": {\n        \"x-api-key\": \"abcd\"\n    },\n    \"events\": [\n        \"delivery\",\n        \"injection\",\n        \"open\",\n        \"click\"\n    ],\n    \"auth_type\": \"basic\",\n    \"auth_credentials\": {\n        \"username\": \"myusername\",\n        \"password\": \"mypassword\"\n    }\n}"
 						},
 						"url": {
-							"raw": "https://api.sparkpost.com/api/v1/webhooks",
-							"protocol": "https",
+							"raw": "{{BASE_URL}}/api/v1/webhooks",
 							"host": [
-								"api",
-								"sparkpost",
-								"com"
+								"{{BASE_URL}}"
 							],
 							"path": [
 								"api",
@@ -5227,12 +4845,9 @@
 							"raw": "{\n  \"name\": \"Example webhook\",\n  \"target\": \"https://client.example.com/example-webhook\",\n  \"custom_headers\": {\n    \"x-api-key\": \"abcd\"\n  },\n  \"auth_type\": \"oauth2\",\n  \"auth_request_details\": {\n    \"url\": \"http://client.example.com/tokens\",\n    \"body\": {\n      \"client_id\": \"CLIENT123\",\n      \"client_secret\": \"9sdfj791d2bsbf\",\n      \"grant_type\": \"client_credentials\"\n    }\n  },\n  \"events\": [\n    \"delivery\",\n    \"injection\",\n    \"open\",\n    \"click\"\n  ]\n}\n"
 						},
 						"url": {
-							"raw": "https://api.sparkpost.com/api/v1/webhooks",
-							"protocol": "https",
+							"raw": "{{BASE_URL}}/api/v1/webhooks",
 							"host": [
-								"api",
-								"sparkpost",
-								"com"
+								"{{BASE_URL}}"
 							],
 							"path": [
 								"api",
@@ -5263,12 +4878,9 @@
 							"raw": ""
 						},
 						"url": {
-							"raw": "https://api.sparkpost.com/api/v1/webhooks/1aec8840-2c8d-11e8-b82e-bbe109e4e3a4?timezone=America/New_York",
-							"protocol": "https",
+							"raw": "{{BASE_URL}}/api/v1/webhooks/1aec8840-2c8d-11e8-b82e-bbe109e4e3a4?timezone=America/New_York",
 							"host": [
-								"api",
-								"sparkpost",
-								"com"
+								"{{BASE_URL}}"
 							],
 							"path": [
 								"api",
@@ -5306,12 +4918,9 @@
 							"raw": ""
 						},
 						"url": {
-							"raw": "https://api.sparkpost.com/api/v1/webhooks?timezone=America/New_York",
-							"protocol": "https",
+							"raw": "{{BASE_URL}}/api/v1/webhooks?timezone=America/New_York",
 							"host": [
-								"api",
-								"sparkpost",
-								"com"
+								"{{BASE_URL}}"
 							],
 							"path": [
 								"api",
@@ -5352,12 +4961,9 @@
 							"raw": "{\n  \"name\": \"Renamed webhook\",\n  \"events\": [\n    \"generation_rejection\",\n    \"delay\"\n  ],\n  \"auth_type\": \"none\",\n  \"custom_headers\": {\n    \"x-api-key\": \"abcd\"\n  }\n}"
 						},
 						"url": {
-							"raw": "https://api.sparkpost.com/api/v1/webhooks/26eb60d0-2d00-11e8-9280-6104068f60fa",
-							"protocol": "https",
+							"raw": "{{BASE_URL}}/api/v1/webhooks/26eb60d0-2d00-11e8-9280-6104068f60fa",
 							"host": [
-								"api",
-								"sparkpost",
-								"com"
+								"{{BASE_URL}}"
 							],
 							"path": [
 								"api",
@@ -5385,12 +4991,9 @@
 							"raw": ""
 						},
 						"url": {
-							"raw": "https://api.sparkpost.com/api/v1/webhooks/26eb60d0-2d00-11e8-9280-6104068f60fa",
-							"protocol": "https",
+							"raw": "{{BASE_URL}}/api/v1/webhooks/26eb60d0-2d00-11e8-9280-6104068f60fa",
 							"host": [
-								"api",
-								"sparkpost",
-								"com"
+								"{{BASE_URL}}"
 							],
 							"path": [
 								"api",
@@ -5426,12 +5029,9 @@
 							"raw": "{\n    \"message\": {\n        \"msys\": {}\n    }\n}\n\n"
 						},
 						"url": {
-							"raw": "https://api.sparkpost.com/api/v1/webhooks/26eb60d0-2d00-11e8-9280-6104068f60fa/validate",
-							"protocol": "https",
+							"raw": "{{BASE_URL}}/api/v1/webhooks/26eb60d0-2d00-11e8-9280-6104068f60fa/validate",
 							"host": [
-								"api",
-								"sparkpost",
-								"com"
+								"{{BASE_URL}}"
 							],
 							"path": [
 								"api",
@@ -5464,12 +5064,9 @@
 							"raw": ""
 						},
 						"url": {
-							"raw": "https://api.sparkpost.com/api/v1/webhooks/d006deb0-2b62-11e7-8835-8b943b52aa83/batch-status?limit=1000",
-							"protocol": "https",
+							"raw": "{{BASE_URL}}/api/v1/webhooks/d006deb0-2b62-11e7-8835-8b943b52aa83/batch-status?limit=1000",
 							"host": [
-								"api",
-								"sparkpost",
-								"com"
+								"{{BASE_URL}}"
 							],
 							"path": [
 								"api",
@@ -5490,6 +5087,37 @@
 					"response": []
 				}
 			]
+		}
+	],
+	"event": [
+		{
+			"listen": "prerequest",
+			"script": {
+				"id": "ca897972-fe2d-4794-aeef-0976afa8972a",
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		},
+		{
+			"listen": "test",
+			"script": {
+				"id": "cb74e447-0a37-45c5-bfd5-b71ea0307e61",
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		}
+	],
+	"variable": [
+		{
+			"id": "0e142ef3-fb02-410e-a51d-a2eeec386f89",
+			"key": "BASE_URL",
+			"value": "https://api.sparkpost.com",
+			"type": "string",
+			"description": ""
 		}
 	]
 }
