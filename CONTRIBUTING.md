@@ -19,7 +19,7 @@ propose changes to this document in a pull request.
 1. Clone your fork
 1. Import the JSON file into Postman, choosing to "replace" any existing collection of the same name
 1. Make and test your changes
-1. When you are ready, export your changes from Postman back to the repo JSON file
+1. When you are ready, export your changes from Postman back to the repo JSON file, selecting file version 2.1
 1. Compare the differences using a file-compare utility, to ensure no unexpected changes and no private API key info present
 1. Please follow the pull request submission steps in the next section
 
@@ -35,5 +35,4 @@ To contribute to sparkpost-api-postman-collection:
 To publish a new release:
 
 1. Update the [ChangeLog](CHANGELOG.md)
-1. Internal SparkPost team follows [these steps](https://confluence.int.messagesystems.com/display/ENG/SparkPost+Public+Postman+Collection)
-1. Ensure SparkPost [documentation](https://github.com/SparkPost/sparkpost-api-documentation) refers to URL of updated version
+1. Internal SparkPost team releases and publishes, ensuring SparkPost [documentation](https://github.com/SparkPost/sparkpost-api-documentation) refers to URL of updated version
