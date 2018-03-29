@@ -11,7 +11,7 @@ More information about the API can be found on [developers.sparkpost.com/api](ht
 
 To use the latest published version, click the following button to import the SparkPost API as a collection:
 
-[![Run in Postman](https://s3.amazonaws.com/postman-static/run-button.png)](https://www.getpostman.com/run-collection/81ee1dd2790d7952b76a)
+[![Run in Postman](https://s3.amazonaws.com/postman-static/run-button.png)](https://app.getpostman.com/run-collection/5d9ae743a661a15d64bb)
 
 You can also download the collection file from this repo, then import directly into Postman.
 

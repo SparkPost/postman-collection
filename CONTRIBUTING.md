@@ -11,7 +11,7 @@ propose changes to this document in a pull request.
 
 * Before logging an issue, please [search existing issues](https://github.com/SparkPost/sparkpost-api-postman-collection/issues?q=is%3Aissue+is%3Aopen) first.
 
-* You can create an issue [here](https://github.com/SparkPost/sparkpost-api-postman-collection/issues/new).  Please include the version number (as per [the changeLog](CHANGELOG.md) and as much detail as possible in your report.
+* You can create an issue [here](https://github.com/SparkPost/sparkpost-api-postman-collection/issues/new).  Please include the version number, as per [the changeLog](CHANGELOG.md) and as much detail as possible in your report.
 
 ## Local Development and Testing
 
@@ -19,16 +19,15 @@ propose changes to this document in a pull request.
 1. Clone your fork
 1. Import the JSON file into Postman, choosing to "replace" any existing collection of the same name
 1. Make and test your changes
-1. When you are ready, export your changes from Postman back to a new JSON file
+1. When you are ready, export your changes from Postman back to the repo JSON file
 1. Compare the differences using a file-compare utility, to ensure no unexpected changes and no private API key info present
-1. Copy your new version to the repo file
 1. Please follow the pull request submission steps in the next section
 
 ## Contribution Steps
 
 To contribute to sparkpost-api-postman-collection:
 
-1. Create a new branch named after the issue you’ll be fixing (include the issue number as the branch name, example: Issue in GH is #8 then the branch name should be ISSUE-8))
+1. Create a new branch named after the issue you’ll be fixing, and include the issue number as the branch name, example: Issue in GH is #8 then the branch name should be ISSUE-8
 1. Submit a new Pull Request applying your feature/fix branch to the `master` branch
 
 ### Releasing
