@@ -2853,7 +2853,7 @@
 			"description": "https://developers.sparkpost.com/api/#/reference/relay-webhooks",
 			"item": [
 				{
-					"name": "Create a Relay Webhook",
+					"name": "Create a Relay Webhook (No Auth)",
 					"request": {
 						"method": "POST",
 						"header": [
@@ -2872,7 +2872,44 @@
 						],
 						"body": {
 							"mode": "raw",
-							"raw": "{\n  \"name\": \"Replies Webhook\",\n  \"target\": \"https://webhooks.customer.example/replies\",\n  \"auth_token\": \"\",\n  \"match\":\n    {\n      \"protocol\": \"SMTP\",\n      \"domain\": \"inbounddomain.example.com\"\n    }\n}\n"
+							"raw": "{\n  \"name\": \"Replies Webhook\",\n  \"target\": \"https://webhooks.customer.example/replies\",\n  \"match\":\n    {\n      \"protocol\": \"SMTP\",\n      \"domain\": \"inbounddomain.example.com\"\n    }\n}\n"
+						},
+						"url": {
+							"raw": "{{BASE_URL}}/api/v1/relay-webhooks",
+							"host": [
+								"{{BASE_URL}}"
+							],
+							"path": [
+								"api",
+								"v1",
+								"relay-webhooks"
+							]
+						},
+						"description": "Create a relay webhook by providing a **relay webhooks object** as the POST request body.\n\n"
+					},
+					"response": []
+				},
+				{
+					"name": "Create a Relay Webhook (OAUTH2)",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							},
+							{
+								"key": "Accept",
+								"value": "application/json"
+							},
+							{
+								"key": "Authorization",
+								"value": "{{API_KEY}}"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n  \"name\": \"Replies Webhook\",\n  \"target\": \"https://webhooks.customer.example/replies\",\n  \"auth_type\": \"oauth2\",\n  \"auth_request_details\": \n    {\n      \"url\": \"http://client.example.com/tokens\",\n      \"body\": \n        {\n          \"client_id\": \"CLIENT123\",\n          \"client_secret\": \"9sdfj791d2bsbf\"\n        }\n    },\n  \"auth_token\": \"\",\n  \"match\":\n    {\n      \"protocol\": \"SMTP\",\n      \"domain\": \"inbounddomain.example.com\"\n    }\n}\n"
 						},
 						"url": {
 							"raw": "{{BASE_URL}}/api/v1/relay-webhooks",
@@ -2976,7 +3013,7 @@
 						],
 						"body": {
 							"mode": "raw",
-							"raw": "{\n  \"name\": \"New Replies Webhook\",\n  \"target\": \"https://webhook.customer.example/replies\"\n}\n"
+							"raw": "{\n  \"name\": \"New Replies Webhook\",\n  \"target\": \"https://webhook.customer.example/replies\",\n  \"auth_type\": \"none\"\n}\n"
 						},
 						"url": {
 							"raw": "{{BASE_URL}}/api/v1/relay-webhooks/12013026328707075",
