@@ -2872,7 +2872,7 @@
 						],
 						"body": {
 							"mode": "raw",
-							"raw": "{\n  \"name\": \"Replies Webhook\",\n  \"target\": \"https://webhooks.customer.example/replies\",\n  \"match\":\n    {\n      \"protocol\": \"SMTP\",\n      \"domain\": \"inbounddomain.example.com\"\n    }\n}\n"
+							"raw": "{\n  \"name\": \"Replies Webhook\",\n  \"target\": \"https://webhooks.customer.example/replies\",\n  \"auth_token\": \"\",\n  \"match\":\n    {\n      \"protocol\": \"SMTP\",\n      \"domain\": \"inbounddomain.example.com\"\n    }\n}\n"
 						},
 						"url": {
 							"raw": "{{BASE_URL}}/api/v1/relay-webhooks",
@@ -2922,7 +2922,7 @@
 								"relay-webhooks"
 							]
 						},
-						"description": "Create a relay webhook by providing a **relay webhooks object** as the POST request body.\n\n"
+						"description": "Create a relay webhook with OAUTH2 by providing a **relay webhooks object** as the POST request body.\n\n"
 					},
 					"response": []
 				},
