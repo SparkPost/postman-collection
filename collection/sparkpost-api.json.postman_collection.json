@@ -202,6 +202,45 @@
 			]
 		},
 		{
+			"name": "Usage",
+			"description": "https://developers.sparkpost.com/api/usage/\n\nRetrieve customer usage metrics across all SparkPost products, including current and historical data organized by product category.",
+			"item": [
+				{
+					"name": "Retrieve Usage",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "{{API_KEY}}"
+							},
+							{
+								"key": "Accept",
+								"value": "application/json"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": ""
+						},
+						"url": {
+							"raw": "{{BASE_URL}}/api/v1/usage",
+							"host": [
+								"{{BASE_URL}}"
+							],
+							"path": [
+								"api",
+								"v1",
+								"usage"
+							]
+						},
+						"description": "Retrieve customer usage metrics across all SparkPost products.\n\nReturns `messaging` and `recipient_validation` objects, each with `day` and `month` usage windows (start/end timestamps and counts) and a `last_usage_date`.\n\n"
+					},
+					"response": []
+				}
+			]
+		},
+		{
 			"name": "Inbound Domains",
 			"description": "https://developers.sparkpost.com/api/#/reference/inbound-domains",
 			"item": [
@@ -1401,6 +1440,293 @@
 					"response": []
 				},
 				{
+					"name": "Deliverability Metrics by Subject Campaign",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "{{API_KEY}}"
+							},
+							{
+								"key": "Accept",
+								"value": "application/json"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": ""
+						},
+						"url": {
+							"raw": "{{BASE_URL}}/api/v1/metrics/deliverability/subject-campaign?from=2026-01-01T00:00&to=2026-12-31T23:59&delimiter=,&domains=gmail.com,yahoo.com,hotmail.com&campaigns=Black Friday&templates=summer-sale&sending_ips=123.456.789.123&ip_pools=Transactional&sending_domains=sales.sender.com,transactional.sender.com&subaccounts=123,125,127&metrics=count_targeted&timezone=America/New_York&limit=5&order_by=count_injected",
+							"host": [
+								"{{BASE_URL}}"
+							],
+							"path": [
+								"api",
+								"v1",
+								"metrics",
+								"deliverability",
+								"subject-campaign"
+							],
+							"query": [
+								{
+									"key": "from",
+									"value": "2026-01-01T00:00"
+								},
+								{
+									"key": "to",
+									"value": "2026-12-31T23:59"
+								},
+								{
+									"key": "delimiter",
+									"value": ","
+								},
+								{
+									"key": "domains",
+									"value": "gmail.com,yahoo.com,hotmail.com"
+								},
+								{
+									"key": "campaigns",
+									"value": "Black Friday"
+								},
+								{
+									"key": "templates",
+									"value": "summer-sale"
+								},
+								{
+									"key": "sending_ips",
+									"value": "123.456.789.123"
+								},
+								{
+									"key": "ip_pools",
+									"value": "Transactional"
+								},
+								{
+									"key": "sending_domains",
+									"value": "sales.sender.com,transactional.sender.com"
+								},
+								{
+									"key": "subaccounts",
+									"value": "123,125,127"
+								},
+								{
+									"key": "metrics",
+									"value": "count_targeted"
+								},
+								{
+									"key": "timezone",
+									"value": "America/New_York"
+								},
+								{
+									"key": "limit",
+									"value": "5"
+								},
+								{
+									"key": "order_by",
+									"value": "count_injected"
+								}
+							]
+						},
+						"description": "Deliverability metrics grouped by subject campaign.\n\n"
+					},
+					"response": []
+				},
+				{
+					"name": "Deliverability Metrics by Mailbox Provider",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "{{API_KEY}}"
+							},
+							{
+								"key": "Accept",
+								"value": "application/json"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": ""
+						},
+						"url": {
+							"raw": "{{BASE_URL}}/api/v1/metrics/deliverability/mailbox-provider?from=2026-01-01T00:00&to=2026-12-31T23:59&delimiter=,&domains=gmail.com,yahoo.com,hotmail.com&campaigns=Black Friday&templates=summer-sale&sending_ips=123.456.789.123&ip_pools=Transactional&sending_domains=sales.sender.com,transactional.sender.com&subaccounts=123,125,127&metrics=count_targeted&timezone=America/New_York&limit=5&order_by=count_injected&mailbox_providers=Gmail,Hotmail",
+							"host": [
+								"{{BASE_URL}}"
+							],
+							"path": [
+								"api",
+								"v1",
+								"metrics",
+								"deliverability",
+								"mailbox-provider"
+							],
+							"query": [
+								{
+									"key": "from",
+									"value": "2026-01-01T00:00"
+								},
+								{
+									"key": "to",
+									"value": "2026-12-31T23:59"
+								},
+								{
+									"key": "delimiter",
+									"value": ","
+								},
+								{
+									"key": "domains",
+									"value": "gmail.com,yahoo.com,hotmail.com"
+								},
+								{
+									"key": "campaigns",
+									"value": "Black Friday"
+								},
+								{
+									"key": "templates",
+									"value": "summer-sale"
+								},
+								{
+									"key": "sending_ips",
+									"value": "123.456.789.123"
+								},
+								{
+									"key": "ip_pools",
+									"value": "Transactional"
+								},
+								{
+									"key": "sending_domains",
+									"value": "sales.sender.com,transactional.sender.com"
+								},
+								{
+									"key": "subaccounts",
+									"value": "123,125,127"
+								},
+								{
+									"key": "metrics",
+									"value": "count_targeted"
+								},
+								{
+									"key": "timezone",
+									"value": "America/New_York"
+								},
+								{
+									"key": "limit",
+									"value": "5"
+								},
+								{
+									"key": "order_by",
+									"value": "count_injected"
+								},
+								{
+									"key": "mailbox_providers",
+									"value": "Gmail,Hotmail"
+								}
+							]
+						},
+						"description": "Deliverability metrics grouped by mailbox provider (e.g. Gmail, Hotmail).\n\n"
+					},
+					"response": []
+				},
+				{
+					"name": "Deliverability Metrics by Mailbox Provider Region",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "{{API_KEY}}"
+							},
+							{
+								"key": "Accept",
+								"value": "application/json"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": ""
+						},
+						"url": {
+							"raw": "{{BASE_URL}}/api/v1/metrics/deliverability/mailbox-provider-region?from=2026-01-01T00:00&to=2026-12-31T23:59&delimiter=,&domains=gmail.com,yahoo.com,hotmail.com&campaigns=Black Friday&templates=summer-sale&sending_ips=123.456.789.123&ip_pools=Transactional&sending_domains=sales.sender.com,transactional.sender.com&subaccounts=123,125,127&metrics=count_targeted&timezone=America/New_York&limit=5&order_by=count_injected&mailbox_provider_regions=Global,Europe-Sweden",
+							"host": [
+								"{{BASE_URL}}"
+							],
+							"path": [
+								"api",
+								"v1",
+								"metrics",
+								"deliverability",
+								"mailbox-provider-region"
+							],
+							"query": [
+								{
+									"key": "from",
+									"value": "2026-01-01T00:00"
+								},
+								{
+									"key": "to",
+									"value": "2026-12-31T23:59"
+								},
+								{
+									"key": "delimiter",
+									"value": ","
+								},
+								{
+									"key": "domains",
+									"value": "gmail.com,yahoo.com,hotmail.com"
+								},
+								{
+									"key": "campaigns",
+									"value": "Black Friday"
+								},
+								{
+									"key": "templates",
+									"value": "summer-sale"
+								},
+								{
+									"key": "sending_ips",
+									"value": "123.456.789.123"
+								},
+								{
+									"key": "ip_pools",
+									"value": "Transactional"
+								},
+								{
+									"key": "sending_domains",
+									"value": "sales.sender.com,transactional.sender.com"
+								},
+								{
+									"key": "subaccounts",
+									"value": "123,125,127"
+								},
+								{
+									"key": "metrics",
+									"value": "count_targeted"
+								},
+								{
+									"key": "timezone",
+									"value": "America/New_York"
+								},
+								{
+									"key": "limit",
+									"value": "5"
+								},
+								{
+									"key": "order_by",
+									"value": "count_injected"
+								},
+								{
+									"key": "mailbox_provider_regions",
+									"value": "Global,Europe-Sweden"
+								}
+							]
+						},
+						"description": "Deliverability metrics grouped by mailbox provider region.\n\n"
+					},
+					"response": []
+				},
+				{
 					"name": "Time-Series Metrics",
 					"request": {
 						"method": "GET",
@@ -2476,6 +2802,313 @@
 						"description": "Returns a list of domains that the Metrics API contains data on.\n\n"
 					},
 					"response": []
+				},
+				{
+					"name": "Mailbox Providers List",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "{{API_KEY}}"
+							},
+							{
+								"key": "Accept",
+								"value": "application/json"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": ""
+						},
+						"url": {
+							"raw": "{{BASE_URL}}/api/v1/metrics/mailbox-providers?limit=5&from=2026-01-01T00:00&to=2026-12-31T23:59&timezone=America/New_York&match=Gmail",
+							"host": [
+								"{{BASE_URL}}"
+							],
+							"path": [
+								"api",
+								"v1",
+								"metrics",
+								"mailbox-providers"
+							],
+							"query": [
+								{
+									"key": "limit",
+									"value": "5"
+								},
+								{
+									"key": "from",
+									"value": "2026-01-01T00:00"
+								},
+								{
+									"key": "to",
+									"value": "2026-12-31T23:59"
+								},
+								{
+									"key": "timezone",
+									"value": "America/New_York"
+								},
+								{
+									"key": "match",
+									"value": "Gmail"
+								}
+							]
+						},
+						"description": "List mailbox providers that have received messages, for use in filtering metrics endpoints.\n\n"
+					},
+					"response": []
+				},
+				{
+					"name": "Mailbox Provider Regions List",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "{{API_KEY}}"
+							},
+							{
+								"key": "Accept",
+								"value": "application/json"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": ""
+						},
+						"url": {
+							"raw": "{{BASE_URL}}/api/v1/metrics/mailbox-provider-regions?limit=5&from=2026-01-01T00:00&to=2026-12-31T23:59&timezone=America/New_York&match=Europe",
+							"host": [
+								"{{BASE_URL}}"
+							],
+							"path": [
+								"api",
+								"v1",
+								"metrics",
+								"mailbox-provider-regions"
+							],
+							"query": [
+								{
+									"key": "limit",
+									"value": "5"
+								},
+								{
+									"key": "from",
+									"value": "2026-01-01T00:00"
+								},
+								{
+									"key": "to",
+									"value": "2026-12-31T23:59"
+								},
+								{
+									"key": "timezone",
+									"value": "America/New_York"
+								},
+								{
+									"key": "match",
+									"value": "Europe"
+								}
+							]
+						},
+						"description": "List mailbox provider regions that have received messages, for use in filtering metrics endpoints.\n\n"
+					},
+					"response": []
+				},
+				{
+					"name": "Subject Campaigns List",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "{{API_KEY}}"
+							},
+							{
+								"key": "Accept",
+								"value": "application/json"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": ""
+						},
+						"url": {
+							"raw": "{{BASE_URL}}/api/v1/metrics/subject-campaigns?limit=5&from=2026-01-01T00:00&to=2026-12-31T23:59&timezone=America/New_York",
+							"host": [
+								"{{BASE_URL}}"
+							],
+							"path": [
+								"api",
+								"v1",
+								"metrics",
+								"subject-campaigns"
+							],
+							"query": [
+								{
+									"key": "limit",
+									"value": "5"
+								},
+								{
+									"key": "from",
+									"value": "2026-01-01T00:00"
+								},
+								{
+									"key": "to",
+									"value": "2026-12-31T23:59"
+								},
+								{
+									"key": "timezone",
+									"value": "America/New_York"
+								}
+							]
+						},
+						"description": "List subject campaigns that have sent messages, for use in filtering metrics endpoints.\n\n"
+					},
+					"response": []
+				},
+				{
+					"name": "Templates List",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "{{API_KEY}}"
+							},
+							{
+								"key": "Accept",
+								"value": "application/json"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": ""
+						},
+						"url": {
+							"raw": "{{BASE_URL}}/api/v1/metrics/templates?limit=5&from=2026-01-01T00:00&to=2026-12-31T23:59&timezone=America/New_York&match=welcome",
+							"host": [
+								"{{BASE_URL}}"
+							],
+							"path": [
+								"api",
+								"v1",
+								"metrics",
+								"templates"
+							],
+							"query": [
+								{
+									"key": "limit",
+									"value": "5"
+								},
+								{
+									"key": "from",
+									"value": "2026-01-01T00:00"
+								},
+								{
+									"key": "to",
+									"value": "2026-12-31T23:59"
+								},
+								{
+									"key": "timezone",
+									"value": "America/New_York"
+								},
+								{
+									"key": "match",
+									"value": "welcome"
+								}
+							]
+						},
+						"description": "List templates that have been used in messages, for use in filtering metrics endpoints.\n\n"
+					},
+					"response": []
+				},
+				{
+					"name": "Sending Domains List",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "{{API_KEY}}"
+							},
+							{
+								"key": "Accept",
+								"value": "application/json"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": ""
+						},
+						"url": {
+							"raw": "{{BASE_URL}}/api/v1/metrics/sending-domains?limit=5&from=2026-01-01T00:00&to=2026-12-31T23:59&timezone=America/New_York",
+							"host": [
+								"{{BASE_URL}}"
+							],
+							"path": [
+								"api",
+								"v1",
+								"metrics",
+								"sending-domains"
+							],
+							"query": [
+								{
+									"key": "limit",
+									"value": "5"
+								},
+								{
+									"key": "from",
+									"value": "2026-01-01T00:00"
+								},
+								{
+									"key": "to",
+									"value": "2026-12-31T23:59"
+								},
+								{
+									"key": "timezone",
+									"value": "America/New_York"
+								}
+							]
+						},
+						"description": "List sending domains that have sent messages, for use in filtering metrics endpoints.\n\n"
+					},
+					"response": []
+				},
+				{
+					"name": "Advanced Query JSON Schema",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "{{API_KEY}}"
+							},
+							{
+								"key": "Accept",
+								"value": "application/json"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": ""
+						},
+						"url": {
+							"raw": "{{BASE_URL}}/api/v1/metrics/deliverability/query-filters-schema",
+							"host": [
+								"{{BASE_URL}}"
+							],
+							"path": [
+								"api",
+								"v1",
+								"metrics",
+								"deliverability",
+								"query-filters-schema"
+							]
+						},
+						"description": "Retrieve the JSON schema for validating advanced query filter structures used in metrics endpoints.\n\n"
+					},
+					"response": []
 				}
 			]
 		},
@@ -3389,6 +4022,233 @@
 						"description": "\nThe verify resource operates differently depending on the provided request fields:\n  * Including the fields `dkim_verify`, `cname_verify`, and/or `spf_verify` in the request initiates a check against the associated DNS record type for the specified sending domain.\n  * Including the fields `postmaster_at_verify` and/or `abuse_at_verify` in the request results in an email sent to the specified sending domain's postmaster@ and/or abuse@ mailbox where a verification link can be clicked.\n  * Including the fields `verification_mailbox_verify` and `verification_mailbox` in the request results in an email sent to the specified mailbox where a verification link can be clicked.\n  * For `postmaster_at_verify`, `abuse_at_verify` and `verification_mailbox_verify` ownership verification, if the request is made a 2nd time another email will be sent with a new verification link. If the link in the previously sent message is subsequently clicked it will not verify domain ownership. However, if the link in the most recent email is clicked it will verify domain ownership. \n  * Including the fields `verification_mailbox_token` and/or `postmaster_at_token` and/or `abuse_at_token` in the request initiates a check of the provided token(s) against the stored token(s) for the specified sending domain.\n"
 					},
 					"response": []
+				},
+				{
+					"name": "List DKIM Keys",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "{{API_KEY}}"
+							},
+							{
+								"key": "Accept",
+								"value": "application/json"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": ""
+						},
+						"url": {
+							"raw": "{{BASE_URL}}/api/v1/sending-domains/example1.com/dkim-keys",
+							"host": [
+								"{{BASE_URL}}"
+							],
+							"path": [
+								"api",
+								"v1",
+								"sending-domains",
+								"example1.com",
+								"dkim-keys"
+							]
+						},
+						"description": "List all DKIM keys for a sending domain. The default key appears first.\n\n"
+					},
+					"response": []
+				},
+				{
+					"name": "Create a DKIM Key",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							},
+							{
+								"key": "Accept",
+								"value": "application/json"
+							},
+							{
+								"key": "Authorization",
+								"value": "{{API_KEY}}"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n  \"id\": \"my-dkim-key\",\n  \"signing_domain\": \"example1.com\",\n  \"headers\": \"from:to:subject:date\",\n  \"dkim_key_length\": 2048\n}"
+						},
+						"url": {
+							"raw": "{{BASE_URL}}/api/v1/sending-domains/example1.com/dkim-keys",
+							"host": [
+								"{{BASE_URL}}"
+							],
+							"path": [
+								"api",
+								"v1",
+								"sending-domains",
+								"example1.com",
+								"dkim-keys"
+							]
+						},
+						"description": "Create a new DKIM key for a sending domain. SparkPost auto-generates the key pair when `private`, `public`, and `selector` are omitted.\n\nTo supply your own key pair, provide `private`, `public`, and `selector` together.\n\n- `id` (required): unique identifier, 1-64 chars, alphanumeric plus hyphen/underscore\n- `signing_domain`: domain used in the DKIM signature; defaults to the sending domain\n- `headers`: colon-separated headers to sign (default: `from:to:subject:date`)\n- `dkim_key_length`: key length in bits for auto-generation, 1024-4096 (default: 1024)\n\n"
+					},
+					"response": []
+				},
+				{
+					"name": "Retrieve a DKIM Key",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "{{API_KEY}}"
+							},
+							{
+								"key": "Accept",
+								"value": "application/json"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": ""
+						},
+						"url": {
+							"raw": "{{BASE_URL}}/api/v1/sending-domains/example1.com/dkim-keys/my-dkim-key",
+							"host": [
+								"{{BASE_URL}}"
+							],
+							"path": [
+								"api",
+								"v1",
+								"sending-domains",
+								"example1.com",
+								"dkim-keys",
+								"my-dkim-key"
+							]
+						},
+						"description": "Retrieve a specific DKIM key by ID. Use `default` as the key ID to retrieve the primary DKIM key.\n\n"
+					},
+					"response": []
+				},
+				{
+					"name": "Update a DKIM Key",
+					"request": {
+						"method": "PUT",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							},
+							{
+								"key": "Accept",
+								"value": "application/json"
+							},
+							{
+								"key": "Authorization",
+								"value": "{{API_KEY}}"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n  \"headers\": \"from:to:subject:date:reply-to\"\n}"
+						},
+						"url": {
+							"raw": "{{BASE_URL}}/api/v1/sending-domains/example1.com/dkim-keys/my-dkim-key",
+							"host": [
+								"{{BASE_URL}}"
+							],
+							"path": [
+								"api",
+								"v1",
+								"sending-domains",
+								"example1.com",
+								"dkim-keys",
+								"my-dkim-key"
+							]
+						},
+						"description": "Update an existing DKIM key. To rotate the key pair, supply `private`, `public`, and `selector` together.\n\n"
+					},
+					"response": []
+				},
+				{
+					"name": "Delete a DKIM Key",
+					"request": {
+						"method": "DELETE",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "{{API_KEY}}"
+							},
+							{
+								"key": "Accept",
+								"value": "application/json"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": ""
+						},
+						"url": {
+							"raw": "{{BASE_URL}}/api/v1/sending-domains/example1.com/dkim-keys/my-dkim-key",
+							"host": [
+								"{{BASE_URL}}"
+							],
+							"path": [
+								"api",
+								"v1",
+								"sending-domains",
+								"example1.com",
+								"dkim-keys",
+								"my-dkim-key"
+							]
+						},
+						"description": "Delete a DKIM key from a sending domain. Returns 204 on success.\n\n"
+					},
+					"response": []
+				},
+				{
+					"name": "Verify a DKIM Key",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							},
+							{
+								"key": "Accept",
+								"value": "application/json"
+							},
+							{
+								"key": "Authorization",
+								"value": "{{API_KEY}}"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{}"
+						},
+						"url": {
+							"raw": "{{BASE_URL}}/api/v1/sending-domains/example1.com/dkim-keys/my-dkim-key/verify",
+							"host": [
+								"{{BASE_URL}}"
+							],
+							"path": [
+								"api",
+								"v1",
+								"sending-domains",
+								"example1.com",
+								"dkim-keys",
+								"my-dkim-key",
+								"verify"
+							]
+						},
+						"description": "Trigger verification of a DKIM key. Returns the key's `dkim_status` and DNS details.\n\n"
+					},
+					"response": []
 				}
 			]
 		},
@@ -3723,7 +4583,45 @@
 								""
 							]
 						},
-						"description": "Bulk insert or update entries in the customer-specific exclusion list by providing a JSON object, with a \"recipients\" key containing an array of recipients to insert or update, as the PUT request body. Maximum size of the JSON object is 50mb. At a minimum, each recipient must have a valid \"email\" address and at least one of the following keys: \"transactional\" or \"non_transactional\". The optional \"description\" key can be used to include an explanation of what type of message should be suppressed.\n\nIf the recipient entry was added to the list by Compliance, it cannot be updated.\n\nIf an email address is duplicated in a single request, only the first instance will be processed.\n\n"
+						"description": "Bulk insert or update entries in the customer-specific exclusion list by providing a JSON object, with a \"recipients\" key containing an array of recipients to insert or update, as the PUT request body. Maximum size of the JSON object is 50mb. At a minimum, each recipient must have a valid \"email\" address and at least one of the following keys: \"transactional\" or \"non_transactional\". The optional \"description\" key can be used to include an explanation of what type of message should be suppressed.\n\nIf the recipient entry was added to the list by Compliance, it cannot be updated.\n\nIf an email address is duplicated in a single request, only the first instance will be processed.\n\n\nThe optional `list_id` field on each recipient scopes the suppression to a specific mailing list (RFC 2919 compliant identifier). Omit `list_id` for an account-level suppression.\n\n"
+					},
+					"response": []
+				},
+				{
+					"name": "Create or Update a Suppression",
+					"request": {
+						"method": "PUT",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							},
+							{
+								"key": "Accept",
+								"value": "application/json"
+							},
+							{
+								"key": "Authorization",
+								"value": "{{API_KEY}}"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n  \"type\": \"transactional\",\n  \"description\": \"User requested to not receive any transactional emails.\",\n  \"list_id\": \"newsletter-weekly.example1.com\"\n}"
+						},
+						"url": {
+							"raw": "{{BASE_URL}}/api/v1/suppression-list/rcpt_1@example.com",
+							"host": [
+								"{{BASE_URL}}"
+							],
+							"path": [
+								"api",
+								"v1",
+								"suppression-list",
+								"rcpt_1@example.com"
+							]
+						},
+						"description": "Create or update a suppression for a single recipient. The email address is specified in the URI path.\n\nRequires `type` (`transactional` or `non_transactional`). The optional `description` field explains the reason. The optional `list_id` field scopes the suppression to a specific mailing list (RFC 2919 compliant identifier); omit for an account-level suppression.\n\n"
 					},
 					"response": []
 				},
@@ -3824,7 +4722,41 @@
 								"rcpt_1@example.com"
 							]
 						},
-						"description": "Retrieve the suppression status for a specific recipient by specifying the recipient’s email address in the URI path.\n\nIf the recipient is not in the customer-specific exclusion list, an HTTP status of 404 is returned. If the recipient is in the list, an HTTP status of 200 is returned with the full suppression status in the response body.\n\nIn addition to the list entry attributes, the response body also includes \"created\" and \"updated\" timestamps.\n\n"
+						"description": "Retrieve the suppression status for a specific recipient by specifying the recipient\u2019s email address in the URI path.\n\nIf the recipient is not in the customer-specific exclusion list, an HTTP status of 404 is returned. If the recipient is in the list, an HTTP status of 200 is returned with the full suppression status in the response body.\n\nIn addition to the list entry attributes, the response body also includes \"created\" and \"updated\" timestamps.\n\n"
+					},
+					"response": []
+				},
+				{
+					"name": "Retrieve Summary",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "{{API_KEY}}"
+							},
+							{
+								"key": "Accept",
+								"value": "application/json"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": ""
+						},
+						"url": {
+							"raw": "{{BASE_URL}}/api/v1/suppression-list/summary",
+							"host": [
+								"{{BASE_URL}}"
+							],
+							"path": [
+								"api",
+								"v1",
+								"suppression-list",
+								"summary"
+							]
+						},
+						"description": "Retrieve a summary of suppression list entries including total count and breakdown by source: `compliance`, `manually_added`, `unsubscribe_link`, `bounce_rule`, `list_unsubscribe`, `spam_complaint`, and `total`.\n\n"
 					},
 					"response": []
 				},
@@ -3858,7 +4790,7 @@
 								"rcpt_1@example.com"
 							]
 						},
-						"description": "Delete a recipient from the list by specifying the recipient's email address in the URI path.\n\nIf the recipient is not in the customer-specific exclusion list, an HTTP status of 404 is returned. If the recipient is in the list, an HTTP status of 204 is returned indicating a successful deletion.\n\n"
+						"description": "Delete a recipient from the list by specifying the recipient's email address in the URI path.\n\nIf the recipient is not in the customer-specific exclusion list, an HTTP status of 404 is returned. If the recipient is in the list, an HTTP status of 204 is returned indicating a successful deletion.\n\n\nThe optional `list_id` query parameter controls deletion scope:\n- **Omit** `list_id`: deletes all entries (account-level and all list-specific)\n- **`list_id=<value>`**: deletes only the suppression for that specific mailing list\n- **`list_id=`** (empty string): deletes only the account-level suppression\n\n"
 					},
 					"response": []
 				}
@@ -4380,6 +5312,86 @@
 						"description": "Initiate a check against the CNAME DNS record for the specified tracking domain. The domain's `status` object is returned on success.\n\n"
 					},
 					"response": []
+				},
+				{
+					"name": "Check Certificate Eligibility",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							},
+							{
+								"key": "Accept",
+								"value": "application/json"
+							},
+							{
+								"key": "Authorization",
+								"value": "{{API_KEY}}"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{}"
+						},
+						"url": {
+							"raw": "{{BASE_URL}}/api/v1/tracking-domains/example.domain.com/certificate/check",
+							"host": [
+								"{{BASE_URL}}"
+							],
+							"path": [
+								"api",
+								"v1",
+								"tracking-domains",
+								"example.domain.com",
+								"certificate",
+								"check"
+							]
+						},
+						"description": "Check whether a tracking domain is eligible for a managed TLS certificate via Let's Encrypt. Read-only \u2014 can be performed on unverified domains without modifying any configuration.\n\nReturns `supportsManagedCertificate` (boolean).\n\n"
+					},
+					"response": []
+				},
+				{
+					"name": "Enable Managed Certificate",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							},
+							{
+								"key": "Accept",
+								"value": "application/json"
+							},
+							{
+								"key": "Authorization",
+								"value": "{{API_KEY}}"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{}"
+						},
+						"url": {
+							"raw": "{{BASE_URL}}/api/v1/tracking-domains/example.domain.com/certificate/enable",
+							"host": [
+								"{{BASE_URL}}"
+							],
+							"path": [
+								"api",
+								"v1",
+								"tracking-domains",
+								"example.domain.com",
+								"certificate",
+								"enable"
+							]
+						},
+						"description": "Initiate managed TLS certificate issuance via Let's Encrypt for a tracking domain.\n\nRequirements:\n- Domain must be verified\n- Domain must point to the V2 endpoint (`v2.spgo.io` or `eu.v2.spgo.io`)\n\nOn success, `secure` is automatically set to `true`, `port` to `443`, and `uses_managed_certificate` to `true`. Certificates renew automatically on expiry.\n\n"
+					},
+					"response": []
 				}
 			]
 		},
@@ -4462,7 +5474,7 @@
 					"response": []
 				},
 				{
-					"name": "Create a Transmission (stored template, inline recipients)",
+					"name": "Create a Transmission (stored template, inline recips, override)",
 					"request": {
 						"method": "POST",
 						"header": [
@@ -4481,7 +5493,7 @@
 						],
 						"body": {
 							"mode": "raw",
-							"raw": "{\n  \"campaign_id\": \"postman_template_example\",\n  \"recipients\": [\n    {\n      \"address\": \"wilma@example.sink.sparkpostmail.com\"\n    }\n  ],\n  \"content\": {\n    \"template_id\": \"summer_sale\"\n  }\n}\n"
+							"raw": "{\n  \"campaign_id\": \"postman_template_example\",\n  \"recipients\": [\n    {\n      \"address\": \"wilma@example.sink.sparkpostmail.com\"\n    }\n  ],\n  \"content\": {\n    \"template_id\": \"summer_sale\"\n  },\n  \"override\": {\n    \"from\": {\n      \"name\": \"Example Company\",\n      \"email\": \"marketing@example.sink.sparkpostmail.com\"\n    },\n    \"reply_to\": \"Example Support <support@example.sink.sparkpostmail.com>\",\n    \"list_id\": \"<newsletter@example.sink.sparkpostmail.com>\"\n  }\n}"
 						},
 						"url": {
 							"raw": "{{BASE_URL}}/api/v1/transmissions",
@@ -4494,7 +5506,7 @@
 								"transmissions"
 							]
 						},
-						"description": "You can create a transmission in a number of ways.\n\n**Note**: Sending limits apply to SparkPost accounts only. When a transmission is created, the number of messages in the transmission is compared to the sending limit of your account. If the transmission will cause you to exceed your sending limit, the entire transmission results in an error and no messages are sent.  Note that no messages will be sent for the given transmission, regardless of the number of messages that caused you to exceed your sending limit. In this case, the Transmission API will return an HTTP 420 error code with an error detailing whether you would exceed your hourly, daily, or sandbox sending limit.</div>\n\n#### Using Inline Email Part Content\n\nCreate a transmission using inline email part content.\n\n#### Using Inline RFC822 Content\n\nCreate a transmission using inline RFC822 content. Content headers are not generated for transmissions providing RFC822 content. They are expected to be provided as headers contained in the RFC822 content.\n\n#### Using a Stored Recipients List\n\nCreate a transmission using a stored recipients list by specifying the `list_id` in the `recipients` attribute.\n\n#### Using a Stored Template\n\nCreate a transmission using a stored template by specifying the `template_id` in the `content` attribute.  The `use_draft_template` field is optional and indicates whether to use a draft version or the published version of the template when generating messages.\n\n#### Scheduling Transmissions\n\nCreate a scheduled transmission to be generated and sent at a future time by specifying `start_time` in the `options` attribute.\n\nScheduling a transmission that specifies a stored template will use the LATEST version of the template available at the time of scheduled generation.  The use of published versus draft versions follows the same logic in all transmission requests, whether scheduled or immediate generation. When `use_draft_template` is not specified (or set to false), the latest published version of the specified stored template is used. If `use_draft_template` is set to `true`, the latest draft version is used in the transmission instead.\n\nOnce message generation has been initiated, all messages in the transmission will use the template selected at the start of the generation. If a template update is made during the generation of a transmission that uses that template, the template update will succeed but the transmission will continue to use the version that was selected at the start of the generation."
+						"description": "Create a transmission using a stored template with inline recipients.\n\nThe `override` object is optional \u2014 omit it to send the template as-is. When provided, it overrides content-block values set in the stored template (e.g. `from`, `reply_to`, `list_id`).\n\n**Note:** The `override` block does not support `substitution_data`.\n\n"
 					},
 					"response": []
 				},
@@ -4618,14 +5630,6 @@
 							{
 								"key": "Accept",
 								"value": "application/json"
-							},
-							{
-								"key": "campaign_id",
-								"value": "postman_metadata_example"
-							},
-							{
-								"key": "template_id",
-								"value": "summer_sale"
 							}
 						],
 						"body": {
@@ -4633,7 +5637,7 @@
 							"raw": ""
 						},
 						"url": {
-							"raw": "{{BASE_URL}}/api/v1/transmissions?",
+							"raw": "{{BASE_URL}}/api/v1/transmissions?campaign_id=postman_metadata_example&template_id=summer_sale",
 							"host": [
 								"{{BASE_URL}}"
 							],
@@ -4641,6 +5645,18 @@
 								"api",
 								"v1",
 								"transmissions"
+							],
+							"query": [
+								{
+									"key": "campaign_id",
+									"value": "postman_metadata_example",
+									"description": "Filter by campaign ID"
+								},
+								{
+									"key": "template_id",
+									"value": "summer_sale",
+									"description": "Filter by template ID"
+								}
 							]
 						},
 						"description": "List an array of live transmission summary objects.  A transmission summary object contains `id`, `state`, `template_id`, `campaign_id` and `description` fields. \n\nBy default, the list includes transmissions for all campaigns and templates.  Use the `template_id` parameter to filter by template and `campaign_id` to filter by campaign. The summary for transmissions using an inline template will include `\"template_id\": \"inline\"`.  Transmissions using inline templates cannot be filtered with `template_id`.\n\n**Note**: Only multi-recipient transmissions that have been submitted or completed within the last 24 hours are returned.</div>\n\n**Note**: Only scheduled transmissions are returned by this endpoint. Immediate transmissions cannot be retrieved.</div>\n\nParameters\n+ campaign_id (optional, string,`thanksgiving`) ... ID of the campaign used by the transmissions\n+ template_id (optional, string, `thanksgiving-template`) ... ID of the template used by the transmissions"
@@ -4678,6 +5694,46 @@
 							]
 						},
 						"description": "Delete a transmission by specifying its ID in the URI path.\n\nOnly transmissions which are scheduled for future generation may be deleted.\n\nScheduled transmissions cannot be deleted if the transmission is within 10 minutes of the scheduled generation time.\n\n\n"
+					},
+					"response": []
+				},
+				{
+					"name": "Delete Scheduled Transmissions By Campaign ID",
+					"request": {
+						"method": "DELETE",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "{{API_KEY}}"
+							},
+							{
+								"key": "Accept",
+								"value": "application/json"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": ""
+						},
+						"url": {
+							"raw": "{{BASE_URL}}/api/v1/transmissions?campaign_id=postman_metadata_example",
+							"host": [
+								"{{BASE_URL}}"
+							],
+							"path": [
+								"api",
+								"v1",
+								"transmissions"
+							],
+							"query": [
+								{
+									"key": "campaign_id",
+									"value": "postman_metadata_example",
+									"description": "ID of the campaign whose scheduled transmissions should be deleted"
+								}
+							]
+						},
+						"description": "Delete all scheduled transmissions for a given campaign ID. Runs as a background process.\n\n**Note:** Only transmissions that have not yet started generating messages can be deleted.\n\n"
 					},
 					"response": []
 				}
