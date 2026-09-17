@@ -5740,6 +5740,397 @@
 			]
 		},
 		{
+			"name": "Users",
+			"description": "https://developers.sparkpost.com/api/users/",
+			"item": [
+				{
+					"name": "List all Users",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "{{API_KEY}}"
+							},
+							{
+								"key": "Accept",
+								"value": "application/json"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": ""
+						},
+						"url": {
+							"raw": "{{BASE_URL}}/api/v1/users",
+							"host": [
+								"{{BASE_URL}}"
+							],
+							"path": [
+								"api",
+								"v1",
+								"users"
+							]
+						},
+						"description": "Returns the users on your account.\n\nEach user is scoped either to the account or to one or more subaccounts. An account-scoped user has an `access_level`; a subaccount-scoped user has none, and holds a role on each subaccount instead.\n\n#### Roles\n\nThe `access_level` field sets a user's role. The primary-account roles are:\n\n| Role | Description |\n| ---- | ----------- |\n| `admin` | Full access to the account, including user and billing management. Cannot be set through the API. |\n| `developer` | Access to sending and configuration APIs, without account administration. |\n| `reporting` | Read-only access to reporting and analytics. |\n| `templates` | Access limited to managing templates. |\n| `custom` | A role whose permissions are defined by the `access_policies` you supply. |\n\nSubaccount-scoped users take `subaccount_reporting` or `subaccount_developer` instead.\n\n#### Access policies\n\nA user with the `custom` role gets exactly the policies listed in `access_policies`, and nothing else. The field is only valid when `access_level` is `custom`. Valid values are `alerts/full`, `api_keys/full`, `ab_testing/full`, `domains/full`, `events/read`, `ip_pools/full`, `recipient_lists/full`, `recipient_validation/full`, `seeds/full`, `signals_analytics/full`, `subaccounts/full`, `suppressions/full`, `templates/full`, `users/full` and `webhooks/full`."
+					},
+					"response": []
+				},
+				{
+					"name": "Retrieve a User",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "{{API_KEY}}"
+							},
+							{
+								"key": "Accept",
+								"value": "application/json"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": ""
+						},
+						"url": {
+							"raw": "{{BASE_URL}}/api/v1/users/grace",
+							"host": [
+								"{{BASE_URL}}"
+							],
+							"path": [
+								"api",
+								"v1",
+								"users",
+								"grace"
+							]
+						},
+						"description": "Returns one user by username, along with the `created` and `updated` timestamps and the `subaccounts` the user can reach.\n\n#### Path Parameters\n\n| Field    | Required | Type   | Description                             |\n| -------- | -------- | ------ | --------------------------------------- |\n| username | yes      | string | The username of the user to retrieve.   |"
+					},
+					"response": []
+				},
+				{
+					"name": "Invite a User",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							},
+							{
+								"key": "Accept",
+								"value": "application/json"
+							},
+							{
+								"key": "Authorization",
+								"value": "{{API_KEY}}"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n  \"email\": \"newuser@example.com\",\n  \"access_level\": \"reporting\"\n}"
+						},
+						"url": {
+							"raw": "{{BASE_URL}}/api/v1/users/invite",
+							"host": [
+								"{{BASE_URL}}"
+							],
+							"path": [
+								"api",
+								"v1",
+								"users",
+								"invite"
+							]
+						},
+						"description": "Creates an invitation and emails a registration link to the address you supply. The invitee follows the link, sets their own password, and takes the role named in `access_level`.\n\nSend `access_level` to invite a primary-account user, or `subaccounts` to invite a subaccount-scoped one. A `subaccounts` invite does not need a top-level `access_level`.\n\nThe response contains the invite `id`, used to list and revoke the invitation. Invitations expire after three days.\n\n#### Request Body Attributes\n\n| Field           | Required | Type   | Description                                                      | Notes                                                                                     |\n| --------------- | -------- | ------ | ---------------------------------------------------------------- | ----------------------------------------------------------------------------------------- |\n| email           | yes      | string | Email address of the person to invite                            | Maximum 512 characters                                                                     |\n| access_level    | no       | string | The primary-account role to assign                               | Required unless `subaccounts` is supplied. `admin` cannot be set through the API           |\n| access_policies | no       | Array  | The access policies to grant                                     | Only valid when `access_level` is `custom`                                                 |\n| subaccounts     | no       | Array  | Invite the user with access to one or more subaccounts instead of the primary account | Between 1 and 25 entries, each `{ \"subaccount_id\": number, \"access_level\": string }` |\n\n#### Roles\n\nThe `access_level` field sets a user's role. The primary-account roles are:\n\n| Role | Description |\n| ---- | ----------- |\n| `admin` | Full access to the account, including user and billing management. Cannot be set through the API. |\n| `developer` | Access to sending and configuration APIs, without account administration. |\n| `reporting` | Read-only access to reporting and analytics. |\n| `templates` | Access limited to managing templates. |\n| `custom` | A role whose permissions are defined by the `access_policies` you supply. |\n\nSubaccount-scoped users take `subaccount_reporting` or `subaccount_developer` instead.\n\n#### Access policies\n\nA user with the `custom` role gets exactly the policies listed in `access_policies`, and nothing else. The field is only valid when `access_level` is `custom`. Valid values are `alerts/full`, `api_keys/full`, `ab_testing/full`, `domains/full`, `events/read`, `ip_pools/full`, `recipient_lists/full`, `recipient_validation/full`, `seeds/full`, `signals_analytics/full`, `subaccounts/full`, `suppressions/full`, `templates/full`, `users/full` and `webhooks/full`."
+					},
+					"response": []
+				},
+				{
+					"name": "Invite a User (subaccount access)",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							},
+							{
+								"key": "Accept",
+								"value": "application/json"
+							},
+							{
+								"key": "Authorization",
+								"value": "{{API_KEY}}"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n  \"email\": \"joe@example.com\",\n  \"subaccounts\": [\n    {\n      \"subaccount_id\": 123,\n      \"access_level\": \"subaccount_reporting\"\n    }\n  ]\n}"
+						},
+						"url": {
+							"raw": "{{BASE_URL}}/api/v1/users/invite",
+							"host": [
+								"{{BASE_URL}}"
+							],
+							"path": [
+								"api",
+								"v1",
+								"users",
+								"invite"
+							]
+						},
+						"description": "Invites a subaccount-scoped user. Each entry in `subaccounts` grants access to one subaccount at the given access level, which is one of `subaccount_reporting` or `subaccount_developer`. A subaccount invite takes no top-level `access_level`."
+					},
+					"response": []
+				},
+				{
+					"name": "List Pending Invites",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "{{API_KEY}}"
+							},
+							{
+								"key": "Accept",
+								"value": "application/json"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": ""
+						},
+						"url": {
+							"raw": "{{BASE_URL}}/api/v1/users/pending-invites",
+							"host": [
+								"{{BASE_URL}}"
+							],
+							"path": [
+								"api",
+								"v1",
+								"users",
+								"pending-invites"
+							]
+						},
+						"description": "Returns the invitations on your account that nobody has accepted yet. Expired invitations do not appear."
+					},
+					"response": []
+				},
+				{
+					"name": "Revoke a Pending Invite",
+					"request": {
+						"method": "DELETE",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "{{API_KEY}}"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": ""
+						},
+						"url": {
+							"raw": "{{BASE_URL}}/api/v1/users/pending-invites/3f2504e0-4f89-41d3-9a0c-0305e82c3301",
+							"host": [
+								"{{BASE_URL}}"
+							],
+							"path": [
+								"api",
+								"v1",
+								"users",
+								"pending-invites",
+								"3f2504e0-4f89-41d3-9a0c-0305e82c3301"
+							]
+						},
+						"description": "Revokes a pending invitation. Its registration link stops working immediately.\n\n#### Path Parameters\n\n| Field | Required | Type   | Description                                     |\n| ----- | -------- | ------ | ----------------------------------------------- |\n| id    | yes      | string | The invite ID, from List Pending Invites.       |"
+					},
+					"response": []
+				},
+				{
+					"name": "Update a User's Role",
+					"request": {
+						"method": "PUT",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							},
+							{
+								"key": "Accept",
+								"value": "application/json"
+							},
+							{
+								"key": "Authorization",
+								"value": "{{API_KEY}}"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n  \"access_level\": \"developer\"\n}"
+						},
+						"url": {
+							"raw": "{{BASE_URL}}/api/v1/users/grace",
+							"host": [
+								"{{BASE_URL}}"
+							],
+							"path": [
+								"api",
+								"v1",
+								"users",
+								"grace"
+							]
+						},
+						"description": "Changes a user's role on the account. API keys may only modify `access_level` and `access_policies`, and cannot change the access level of the last admin user on the account.\n\n#### Request Body Attributes\n\n| Field           | Required | Type   | Description                    | Notes                                                            |\n| --------------- | -------- | ------ | ------------------------------ | ---------------------------------------------------------------- |\n| access_level    | no       | string | The primary-account role to assign | `admin` cannot be set through the API                        |\n| access_policies | no       | Array  | The access policies to grant   | Only valid when `access_level` is `custom`                       |\n\n#### Roles\n\nThe `access_level` field sets a user's role. The primary-account roles are:\n\n| Role | Description |\n| ---- | ----------- |\n| `admin` | Full access to the account, including user and billing management. Cannot be set through the API. |\n| `developer` | Access to sending and configuration APIs, without account administration. |\n| `reporting` | Read-only access to reporting and analytics. |\n| `templates` | Access limited to managing templates. |\n| `custom` | A role whose permissions are defined by the `access_policies` you supply. |\n\nSubaccount-scoped users take `subaccount_reporting` or `subaccount_developer` instead.\n\n#### Access policies\n\nA user with the `custom` role gets exactly the policies listed in `access_policies`, and nothing else. The field is only valid when `access_level` is `custom`. Valid values are `alerts/full`, `api_keys/full`, `ab_testing/full`, `domains/full`, `events/read`, `ip_pools/full`, `recipient_lists/full`, `recipient_validation/full`, `seeds/full`, `signals_analytics/full`, `subaccounts/full`, `suppressions/full`, `templates/full`, `users/full` and `webhooks/full`."
+					},
+					"response": []
+				},
+				{
+					"name": "Update a User's Role (custom access policies)",
+					"request": {
+						"method": "PUT",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							},
+							{
+								"key": "Accept",
+								"value": "application/json"
+							},
+							{
+								"key": "Authorization",
+								"value": "{{API_KEY}}"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n  \"access_level\": \"custom\",\n  \"access_policies\": [\n    \"templates/full\",\n    \"events/read\",\n    \"signals_analytics/full\"\n  ]\n}"
+						},
+						"url": {
+							"raw": "{{BASE_URL}}/api/v1/users/katherine",
+							"host": [
+								"{{BASE_URL}}"
+							],
+							"path": [
+								"api",
+								"v1",
+								"users",
+								"katherine"
+							]
+						},
+						"description": "Assigns the `custom` role, whose permissions are exactly the `access_policies` supplied."
+					},
+					"response": []
+				},
+				{
+					"name": "Delete a User",
+					"request": {
+						"method": "DELETE",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "{{API_KEY}}"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": ""
+						},
+						"url": {
+							"raw": "{{BASE_URL}}/api/v1/users/grace",
+							"host": [
+								"{{BASE_URL}}"
+							],
+							"path": [
+								"api",
+								"v1",
+								"users",
+								"grace"
+							]
+						},
+						"description": "Deletes a user from your account. The last admin user on the account, and the user making the request, cannot be deleted.\n\n#### Path Parameters\n\n| Field    | Required | Type   | Description                          |\n| -------- | -------- | ------ | ------------------------------------ |\n| username | yes      | string | The username of the user to delete.  |"
+					},
+					"response": []
+				},
+				{
+					"name": "Grant Subaccount Access",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							},
+							{
+								"key": "Accept",
+								"value": "application/json"
+							},
+							{
+								"key": "Authorization",
+								"value": "{{API_KEY}}"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n  \"subaccount_id\": 123,\n  \"access_level\": \"subaccount_reporting\"\n}"
+						},
+						"url": {
+							"raw": "{{BASE_URL}}/api/v1/users/grace/subaccounts",
+							"host": [
+								"{{BASE_URL}}"
+							],
+							"path": [
+								"api",
+								"v1",
+								"users",
+								"grace",
+								"subaccounts"
+							]
+						},
+						"description": "Grants a user access to a subaccount at the given access level. If the user already has access to that subaccount, the call updates their access level instead.\n\nThe user must already have access to at least one subaccount; calling this endpoint for a primary-account user returns `400`. To give a new person subaccount access, invite them with a `subaccounts` array.\n\n#### Request Body Attributes\n\n| Field         | Required | Type   | Description                         | Notes                                                       |\n| ------------- | -------- | ------ | ----------------------------------- | ------------------------------------------------------------ |\n| subaccount_id | yes      | number | The subaccount to grant access to   |                                                              |\n| access_level  | yes      | string | The access level to grant           | One of `subaccount_reporting` or `subaccount_developer`      |"
+					},
+					"response": []
+				},
+				{
+					"name": "Revoke Subaccount Access",
+					"request": {
+						"method": "DELETE",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "{{API_KEY}}"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": ""
+						},
+						"url": {
+							"raw": "{{BASE_URL}}/api/v1/users/grace/subaccounts/123",
+							"host": [
+								"{{BASE_URL}}"
+							],
+							"path": [
+								"api",
+								"v1",
+								"users",
+								"grace",
+								"subaccounts",
+								"123"
+							]
+						},
+						"description": "Removes a user's access to a subaccount. A user's last subaccount cannot be removed.\n\n#### Path Parameters\n\n| Field        | Required | Type   | Description                          |\n| ------------ | -------- | ------ | ------------------------------------ |\n| username     | yes      | string | The username of the user.            |\n| subaccountId | yes      | number | The subaccount to revoke access to.  |"
+					},
+					"response": []
+				}
+			]
+		},
+		{
 			"name": "Webhooks",
 			"description": "https://developers.sparkpost.com/api/#/reference/webhooks",
 			"item": [
