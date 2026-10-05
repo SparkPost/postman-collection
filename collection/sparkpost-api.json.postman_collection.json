@@ -3482,6 +3482,47 @@
 			]
 		},
 		{
+			"name": "Recipient Validation",
+			"description": "https://developers.sparkpost.com/api/recipient-validation/",
+			"item": [
+				{
+					"name": "Validate an Email Address",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "{{API_KEY}}"
+							},
+							{
+								"key": "Accept",
+								"value": "application/json"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": ""
+						},
+						"url": {
+							"raw": "{{BASE_URL}}/api/v1/recipient-validation/single/some@ddress.com",
+							"host": [
+								"{{BASE_URL}}"
+							],
+							"path": [
+								"api",
+								"v1",
+								"recipient-validation",
+								"single",
+								"some@ddress.com"
+							]
+						},
+						"description": "Validates a single email address. The response says whether the address is `valid`, `neutral`, `risky`, `undeliverable` or a `typo`, and adds metadata about the address. An `undeliverable` result also includes a `reason`.\n\nPut the address directly in the path. URL-encode (UTF-8) any special characters in it, such as `/`.\n\n#### Path Parameters\n\n| Field   | Required | Type   | Description                      |\n| ------- | -------- | ------ | -------------------------------- |\n| address | yes      | string | The email address to validate.   |\n\n#### Response Attributes\n\nThe response contains a `results` object with these fields:\n\n| Field               | Type    | Description | Notes |\n| ------------------- | ------- | ----------- | ----- |\n| result              | string  | Overall status of the address. Use this field to decide whether to reject an address. | One of `valid`, `neutral`, `risky`, `undeliverable` or `typo` |\n| valid               | boolean | Whether the address syntax and the recipient domain (MX and A record check) are valid. | |\n| reason              | string  | Why the address was rated `undeliverable`. | One of `Invalid Syntax`, `Invalid Domain` or `Invalid Recipient`. Not returned for `valid`, `neutral` or `risky` results |\n| delivery_confidence | number  | SparkPost's confidence, from 0 to 100, that the address can be delivered to. | |\n| is_role             | boolean | Whether the address is role-based. | |\n| is_disposable       | boolean | Whether the address is disposable. | |\n| is_free             | boolean | Whether the address is from a free email provider. | |\n| did_you_mean        | string  | The corrected address, when the supplied address contains a typo. | Only present when `result` is `typo` |"
+					},
+					"response": []
+				}
+			]
+		},
+		{
 			"name": "Relay Webhooks",
 			"description": "https://developers.sparkpost.com/api/#/reference/relay-webhooks",
 			"item": [
