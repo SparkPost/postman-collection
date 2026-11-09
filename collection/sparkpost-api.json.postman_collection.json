@@ -4908,6 +4908,43 @@
 					"response": []
 				},
 				{
+					"name": "Search Templates",
+					"request": {
+						"method": "QUERY",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							},
+							{
+								"key": "Accept",
+								"value": "application/json"
+							},
+							{
+								"key": "Authorization",
+								"value": "{{API_KEY}}"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"query\": \"welcome status:published\",\n    \"per_page\": 2,\n    \"include\": [\"total_count\"]\n}"
+						},
+						"url": {
+							"raw": "{{BASE_URL}}/api/v1/templates",
+							"host": [
+								"{{BASE_URL}}"
+							],
+							"path": [
+								"api",
+								"v1",
+								"templates"
+							]
+						},
+						"description": "Returns the templates that match a query, one page at a time. `QUERY` is an HTTP method for a read that carries a request body.\n\nSee [Search Templates](https://developers.sparkpost.com/api/templates/#templates-query-search-templates) for the request and response, and [Search](https://developers.sparkpost.com/api/search/) for the query language."
+					},
+					"response": []
+				},
+				{
 					"name": "Retrieve a Template",
 					"request": {
 						"method": "GET",
